@@ -1,0 +1,187 @@
+<div id="seleccionarEquipo">
+    <div id="seleccionador">
+        <h1 style="margin-top: -100px;">Seleccione un Equipo</h1>
+        <section class="imagenes">
+
+            <img id="fotoBoadilla" src="Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png"
+                onclick="mostrarInfoEquipo()">
+            <img id="fotoMediterrani" src="Multimedia/Fotos/Escudo Equipos/ce-mediterrani.png">
+            <img id="fotoBarceloneta" src="Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png">
+            <img id="fotoBarcelona" src="Multimedia/Fotos/Escudo Equipos/cn-barcelona.png">
+            <img id="fotoCatalunya" src="Multimedia/Fotos/Escudo Equipos/cn-catalunya.png">
+            <img id="fotoTenerife" src="Multimedia/Fotos/Escudo Equipos/sc-tenerife-echeyde.png">
+
+
+
+        </section>
+
+        <div class="contenedorForm">
+            <h1>Buscar Jugador por Nombre</h1>
+            <hr>
+            <br>
+            <form id="formBuscar" action="buscarJugador.php" method="post" class="formBuscador">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <input type="submit" value="Buscar"><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="infoBoadilla" class="infoEquipo">
+    
+    <div>
+        <button class="btnAtras" onclick="volverSeleccionarEquipo()" >←</button>
+        <div style="text-align: center; margin-top: -60px;">
+
+            <img src="Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png" width="100px" style="margin-top: 25px; ">
+            <h2>CDN Boadilla</h2>
+        </div>
+    </div>
+
+    <div class="tablaInfoJugadores"> <!--Info Jugadores-->
+        <h3>Jugadores</h3>
+        <hr>
+
+        <div style="display: flex;">
+            
+            <div class="cuadradoJugadores"> <!--Jugador 1-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/RogerTahull.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Roger Tahull</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 2-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/GuzmanQuispe.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Guzman Quispe</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 3-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/MarcLarumbe.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Marc Larumbe</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 4-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/FelipePerrone.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Felipe Perrone</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 5-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/AmadeoLlados.png" width="125px">
+                <div style="text-align: center;">
+                    <p>Luis Sanchez</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 6-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/DanielLópez.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Daniel Lopez</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 7-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/MathewOrtega.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Mathew Ortega</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 8-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/CarlosFernandez.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Carlos Fernandez</p>
+
+                </div>
+            </div>
+
+            <div class="cuadradoJugadores"> <!--Jugador 9-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/MigueldeToro.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Miguel de Toro</p>
+
+                </div>
+
+            </div>
+
+            <div class="cuadradoJugadores" style="padding-right:25px;"> <!--Jugador 10-->
+
+                <img src="Multimedia/Fotos/Jugadores/Boadilla/FranFernández.jpg" width="125px">
+                <div style="text-align: center;">
+                    <p>Fran Fernandez</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tablaInfo"> <!--Info piscina -->
+
+        <h3>Piscina</h3>
+        <hr>
+
+        <div class="fotoPiscina" style="padding-right:25px;"> <!--Foto Piscina-->
+
+            <img src="Multimedia/Fotos/Piscinas/PiscinaBoadilla.jpg" width="450px" style="margin-bottom: 20px;">
+            <div style="text-align: left; margin-left: 20px;">
+                <p style="font-size: larger;"> <strong> Centro Deportivo M86 </strong></p>
+                <p> Dimensiones: 50m x 25m </p>
+                <p>Dirección: José Mtnez De Velasco, 3 - Madrid</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tablaInfo"> <!--Info Localidad -->
+
+        <h3>Localidad</h3>
+        <hr>
+
+        <div class="fotoPiscina" style="padding-right:25px;"> <!--Foto Piscina-->
+
+            <img src="Multimedia/Fotos/Ciudades/BoadillaDelMonte.jpg
+            " width="450px" style="margin-bottom: 20px;">
+            <div style="text-align: left; margin-left: 20px;">
+                <p style="font-size: larger;"> <strong> Boadilla del Monte </strong></p>
+                <p> Población: 52.626 (2018)</p>
+                <p> Código postal: 28660</p>
+                <p> Gentilicio: boadillano, -a​; boadillense</p>
+                <p> País: España</p>
+                <p> Superficie: 47,20 km²</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
