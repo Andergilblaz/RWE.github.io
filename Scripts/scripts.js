@@ -151,6 +151,8 @@ function mostrarInfoEquipo() {
     document.getElementById('seleccionador').style.display = 'none';
     document.getElementById('chica').style.display = 'none';
     document.getElementById('chico').style.display = 'none';
+    document.getElementById('infoJugadores').style.display = 'none';
+
     // Mostrar el contenido del equipo Boadilla
     cargarInfoBoadilla();
 }
@@ -165,7 +167,12 @@ function volverSeleccionarEquipo() {
     cargarSeleccionarEquipo();
 }
 
-
+function cargarInfoJugador(numeroJugador) {
+    // Obtener la URL base (sin parámetros)
+    const baseUrl = window.location.href.split('?')[0];
+    // Redirigir a la página infoJugadores.html con el parámetro 'jugador'
+    window.location.href = baseUrl.replace('equipos.html', 'infoJugadores.html') + '#' + numeroJugador;
+}
 
 
 
