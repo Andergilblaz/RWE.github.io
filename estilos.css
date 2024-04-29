@@ -992,34 +992,37 @@ input[type="password"] {
 
 /*-------------------------------InfoJugador-------------------------*/
 
-.infoJugador h1{
+.infoJugador h1 {
   margin-top: -130px;
 }
-.infoJugador{
+
+.infoJugador {
   font-size: larger;
   margin-left: 10px;
-  
+
 }
+
 .infoJugador h2 {
   text-decoration: underline;
 }
 
-.imagenesJugadores{
+.imagenesJugadores img {
   float: right;
   flex: 1;
-  margin-top: -590px;
-  margin-right: 25px;
-  height: 200px;
+  margin-top: -790px;
+  margin-right: 30px;
+  border-radius: 10px;
+
 }
 
-.cuadradoContenedor{
+.cuadradoContenedor {
   border-radius: 12px;
-width: 50%;
-/* Adjust width as needed */
-height: auto;
-margin: 10px;
-padding: 10px;
-background-color: #fff;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-margin-top: 0;
+  width: 50%;
+  /* Adjust width as needed */
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
 }

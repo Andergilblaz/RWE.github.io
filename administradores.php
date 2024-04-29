@@ -51,7 +51,7 @@
                 <?php
 
 
-                $xmlFile = 'PHP-XML-XSL-XSD/contacto.xml';
+                $xmlFile = './XML/contacto.xml';
 
                 // Verificar si el archivo XML ha sido modificado desde la última carga
                 $lastModifiedTime = isset($_SESSION['lastModifiedTime']) ? $_SESSION['lastModifiedTime'] : 0;
@@ -219,7 +219,7 @@
             }
 
             // Ruta al archivo XML de usuarios
-            $xmlFileUsuarios = 'PHP-XML-XSL-XSD/usuarios.xml';
+            $xmlFileUsuarios = './XML/usuarios.xml';
 
             // Procesar el formulario para agregar usuarios
             if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['agregar_usuario'])) {

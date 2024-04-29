@@ -3,7 +3,7 @@
 session_start();
 
 // Ruta al archivo XML que contiene las cuentas de usuario
-$xmlFile = 'usuarios.xml';
+$xmlFile = '../XML/usuarios.xml';
 
 // Verifica si se ha enviado un formulario con datos de inicio de sesión
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

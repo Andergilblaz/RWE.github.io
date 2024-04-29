@@ -1,9 +1,9 @@
 <?php
 // Comprueba si existe el archivo XML
-if (file_exists('contacto.xml')) {
+if (file_exists('../XML/contacto.xml')) {
     // Carga el archivo XML existente
     $xml = new DOMDocument('1.0', 'utf-8');
-    $xml->load('contacto.xml');
+    $xml->load('../XML/contacto.xml');
 
     // Obtiene el elemento raíz
     $raiz = $xml->documentElement;
@@ -32,7 +32,7 @@ if (file_exists('contacto.xml')) {
     $raiz->appendChild($nuevoNodo);
 
     // Guarda el archivo XML actualizado
-    $xml->save('contacto.xml');
+    $xml->save('../XML/contacto.xml');
      // Redirige a la página de confirmación
      header('Location: ../contacto.html?enviado=true');
      exit;
@@ -70,7 +70,7 @@ if (file_exists('contacto.xml')) {
     $raiz->appendChild($nuevoNodo);
 
     // Guarda el archivo XML
-    $xml->save('contacto.xml');
+    $xml->save('../XML/contacto.xml');
 
     // Redirige a la página de confirmación
     header('Location: ../contacto.html?enviado=true');
