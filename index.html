@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resultados Waterpolo Español</title>
   <link rel="stylesheet" href="estilos.css">
   <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
@@ -11,16 +10,16 @@
 </head>
 
 <script>
+     
+     window.onload = function () {
 
-  window.onload = function () {
-
-    cargarTablaMenu();
-    cargarPP();
-    cargarFooter();
-    cargarNoticias();
-    cargarTablaClasificacion();
-
-  }
+      cargarTablaMenu();
+      cargarPP();
+      cargarFooter();
+      cargarNoticias();
+      cargarTablaClasificacion();
+      
+     }
 </script>
 
 
@@ -76,7 +75,7 @@
         <!-- Noticias destacadas -->
         <section>
           <h3 class="scrollh3">Noticias Destacadas</h3>
-
+          <hr>
           <div id="noticias" class="noticias">
             <!-- Aqui iran las noticias -->
           </div>
