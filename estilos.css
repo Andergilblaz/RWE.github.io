@@ -3,15 +3,13 @@ body {
 
   background-color: rgb(1, 126, 209);
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: visible;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .tablaMenu {
   background-color: #324679;
-  width: 75%;
-  height: 50px;
+  width: 78%;
+  height: 52px;
   font-weight: bold;
   position: fixed;
   top: 2%;
@@ -145,59 +143,7 @@ a {
 }
 
 
-/*-----------------------------------Noticias--------------------------------*/
 
-/* Estilo para la sección de noticias */
-.noticias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3%;
-  margin-left: -250px;
-  margin-top: -400px;
-}
-
-/* Contenedor de la cuadrícula */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas con igual anchura */
-  gap: 20px;
-  /* Espacio entre las imágenes */
-
-}
-
-/* Estilo para cada elemento de la cuadrícula */
-.grid-item {
-  position: relative;
-  /* Posición relativa para contener el borde */
-  overflow: hidden;
-  /* Oculta el desbordamiento para el efecto de zoom */
-  width: 350px;
-  /* Ancho máximo del grid-item */
-  max-width: 450px;
-  /* Ancho máximo de cada imagen */
-}
-
-/* Estilo para la imagen dentro de cada grid-item */
-.grid-item img {
-  width: 100%;
-  /* Ancho máximo de la imagen */
-  height: auto;
-  /* Altura automática para mantener la proporción */
-  transition: transform 0.3s ease-in-out;
-  /* Transición para el efecto de zoom */
-  transform: scale(1);
-  /* Escala principal */
-  cursor: pointer;
-}
-
-/* Efecto de zoom al quitar el cursor del grid-item */
-.grid-item:not(:hover) img {
-  transform: scale(0.9);
-
-  /*Escala sin Hover*/
-}
 
 
 /*-------------------------PP-----------------------------*/
@@ -302,6 +248,60 @@ a {
 }
 
 
+/*-----------------------------------Noticias--------------------------------*/
+
+/* Estilo para la sección de noticias */
+.noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-left: -250px;
+  margin-top: -400px;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas con igual anchura */
+  gap: 20px;
+  /* Espacio entre las imágenes */
+
+}
+
+/* Estilo para cada elemento de la cuadrícula */
+.grid-item {
+  position: relative;
+  /* Posición relativa para contener el borde */
+  overflow: hidden;
+  /* Oculta el desbordamiento para el efecto de zoom */
+  width: 350px;
+  /* Ancho máximo del grid-item */
+  max-width: 450px;
+  /* Ancho máximo de cada imagen */
+}
+
+/* Estilo para la imagen dentro de cada grid-item */
+.grid-item img {
+  width: 100%;
+  /* Ancho máximo de la imagen */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  transition: transform 0.3s ease-in-out;
+  /* Transición para el efecto de zoom */
+  transform: scale(1);
+  /* Escala principal */
+  cursor: pointer;
+}
+
+/* Efecto de zoom al quitar el cursor del grid-item */
+.grid-item:not(:hover) img {
+  transform: scale(0.9);
+
+  /*Escala sin Hover*/
+}
+
 /*-------------- Scroll hacia abajo----------------*/
 @keyframes scale-up {
   to {
@@ -399,38 +399,137 @@ section div {
 /* Estilos para elementos específicos en dispositivos pequeños */
 @media (max-width: 768px) {
 
-  .chica,
-  .chico {
+  body {
+    background-size: auto;
+    background-color: rgb(1, 126, 209);
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* Tabla de menú */
+  .tablaMenu {
+    background-color: #324679;
     width: 100%;
-    /* Ocupar el ancho completo */
-    margin-top: 20px;
-    /* Ajustar margen */
-    float: none;
-    /* Eliminar flotado */
+    height: 50px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* Cambiado */
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 40px;
   }
 
+  .tablaMenu button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .tablaMenu .menuDesplegable {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #324679;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+  }
+
+  .tablaMenu:hover .menuDesplegable {
+    display: block;
+  }
+
+  /* Cuadrado de información */
   .cuadradoInfo {
-    margin-top: 20px;
-    /* Ajustar margen superior */
+    background-color: #dfe3df;
+    margin-top: 80px;
     margin-left: 5%;
-    /* Ajustar margen izquierdo */
     margin-right: 5%;
-    /* Ajustar margen derecho */
-  }
-
-  .scrollh1 {
-    font-size: 24px;
-  }
-
-  .scrollh3 {
-    font-size: 24px;
-  }
-
-  .scrollh1 span {
+    margin-bottom: 500px;
+    border-radius: 10px;
+    border-style: groove;
+    padding: 20px;
     height: auto;
+  }
+
+  /* Próximos partidos */
+  .ppc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Clasificación */
+  .clasificacionContenedor {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+
+  .tablaClasificacion table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tablaClasificacion th,
+  .tablaClasificacion td {
+    border: 1px solid #dddddd;
+    padding: 8px;
     text-align: center;
   }
+
+  .tablaClasificacion th {
+    background-color: #f2f2f2;
+  }
+
+  /* Noticias destacadas */
+  .noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Noticias destacadas - Artículos */
+  .grid-item {
+    width: 100%;
+    /* Modificado para ocupar el ancho completo */
+    margin: 10px auto;
+    /* Modificado para centrar */
+    max-width: 300px;
+    /* Agregado para limitar el ancho */
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #324679;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
 }
+
 
 /* Estilos para elementos específicos en dispositivos medianos */
 @media (max-width: 992px) {
@@ -744,39 +843,56 @@ input[type="submit"] {
 
 
 .cuadradoInfoInicioDeSesion {
-  width: 400px; /* Ancho del cuadrado */
-  padding: 20px; /* Espaciado interno */
-  background-color: #fff; /* Color de fondo del cuadrado */
-  border-radius: 8px; /* Borde redondeado */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  position: fixed; /* Position the square absolutely */
-  top: 50%; /* Position the square 50% from the top */
-  left: 50%; /* Position the square 50% from the left */
-  transform: translate(-50%, -50%); /* Translate the square back 50% to center it */
+  width: 400px;
+  /* Ancho del cuadrado */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: #fff;
+  /* Color de fondo del cuadrado */
+  border-radius: 8px;
+  /* Borde redondeado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  position: fixed;
+  /* Position the square absolutely */
+  top: 50%;
+  /* Position the square 50% from the top */
+  left: 50%;
+  /* Position the square 50% from the left */
+  transform: translate(-50%, -50%);
+  /* Translate the square back 50% to center it */
 
 }
 
 
 .cuadradoInfoInicioDeSesion form {
-  margin-top: 20px; /* Espacio superior para el formulario */
+  margin-top: 20px;
+  /* Espacio superior para el formulario */
 }
 
 .cuadradoInfoInicioDeSesion input[type="text"] {
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  padding: 8px; /* Espaciado interno */
-  margin-bottom: 12px; /* Espacio inferior entre inputs */
-  border: 1px solid #ccc; /* Borde del input */
-  border-radius: 4px; /* Borde redondeado del input */
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor */
+  padding: 8px;
+  /* Espaciado interno */
+  margin-bottom: 12px;
+  /* Espacio inferior entre inputs */
+  border: 1px solid #ccc;
+  /* Borde del input */
+  border-radius: 4px;
+  /* Borde redondeado del input */
 }
 
 .cuadradoInfoInicioDeSesion input[type="submit"] {
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  padding: 12px; /* Espaciado interno */
-  background-color: #007bff;  
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor */
+  padding: 12px;
+  /* Espaciado interno */
+  background-color: #007bff;
   color: #fff;
-  border: none; 
+  border: none;
   border-radius: 4px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 input[type="password"] {
@@ -793,7 +909,7 @@ input[type="password"] {
 
 /*---------------------Mensajes Recibidos------------------*/
 
-.recibidos{
+.recibidos {
   border-radius: 12px;
   width: 92%;
   /* Adjust width as needed */
@@ -807,41 +923,55 @@ input[type="password"] {
 }
 
 .botonMensajes {
-  background-color: #017ED1; /* Color de fondo */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Espacio interior */
-  border: none; /* Eliminar borde predeterminado */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Indicador de cursor al pasar el ratón */
-  transition: background-color 0.3s ease; /* Transición de color de fondo */
+  background-color: #017ED1;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  padding: 10px 20px;
+  /* Espacio interior */
+  border: none;
+  /* Eliminar borde predeterminado */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Indicador de cursor al pasar el ratón */
+  transition: background-color 0.3s ease;
+  /* Transición de color de fondo */
   margin: 15px;
   font-size: 15px;
   margin-bottom: -40px;
 }
 
-.botonMensajes:hover { /* Estilo al pasar el cursor por encima */
-  background-color: #017ED1; /* Color de fondo al pasar el cursor por encima */
+.botonMensajes:hover {
+  /* Estilo al pasar el cursor por encima */
+  background-color: #017ED1;
+  /* Color de fondo al pasar el cursor por encima */
 }
 
-.botonMensajes:active { /* Estilo al hacer clic */
-  background-color: #017ED1; /* Color de fondo al hacer clic */
+.botonMensajes:active {
+  /* Estilo al hacer clic */
+  background-color: #017ED1;
+  /* Color de fondo al hacer clic */
 }
 
 .botonMensajes-texto {
-  font-size: 16px; /* Tamaño de fuente del texto */
-  font-weight: bold; /* Peso de la fuente del texto */
-  text-align: center; /* Alineación del texto */
+  font-size: 16px;
+  /* Tamaño de fuente del texto */
+  font-weight: bold;
+  /* Peso de la fuente del texto */
+  text-align: center;
+  /* Alineación del texto */
 }
 
-.botonMensajesContainer{
-  display:flex;
+.botonMensajesContainer {
+  display: flex;
   justify-content: center;
-  
+
 }
 
 /*----------------Gestión de Usuarios----------------*/
 
-.gestionUsuariosContainer{
+.gestionUsuariosContainer {
   border-radius: 12px;
   width: 92%;
   /* Adjust width as needed */
@@ -852,7 +982,7 @@ input[type="password"] {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 0;
-  
+
 }
 
 .gestionUsuariosContainer h2 {
@@ -860,19 +990,36 @@ input[type="password"] {
   font-size: 30px;
 }
 
+/*-------------------------------InfoJugador-------------------------*/
 
+.infoJugador h1{
+  margin-top: -130px;
+}
+.infoJugador{
+  font-size: larger;
+  margin-left: 10px;
+  
+}
+.infoJugador h2 {
+  text-decoration: underline;
+}
 
+.imagenesJugadores{
+  float: right;
+  flex: 1;
+  margin-top: -590px;
+  margin-right: 25px;
+  height: 200px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cuadradoContenedor{
+  border-radius: 12px;
+width: 50%;
+/* Adjust width as needed */
+height: auto;
+margin: 10px;
+padding: 10px;
+background-color: #fff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-top: 0;
+}

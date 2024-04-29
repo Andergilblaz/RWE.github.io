@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Waterpolo Español</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <link rel="icon" type="image/jpg" href="./Multimedia/Fotos/LogoWaterpolo.png" />
+</head>
+
+<script>
+
+    window.onload = function () {
+
+        cargarTablaMenu();
+        cargarFooter();
+    }
+
+    /*Script para que cargue el jugador con el id que sale en la URL de la pagina*/
+    document.addEventListener('DOMContentLoaded', function () {
+        // Obtener el fragmento de la URL (el ID del jugador)
+        const jugadorId = window.location.hash.substring(1);
+
+        // Mostrar solo la información del jugador correspondiente
+        if (jugadorId) {
+            // Ocultar todos los contenedores de información de los jugadores
+            const contenedoresJugadores = document.querySelectorAll('[id^="infoJugador"]');
+            contenedoresJugadores.forEach(function (contenedor) {
+                contenedor.style.display = 'none';
+            });
+
+            // Mostrar el contenedor de información del jugador con el ID correspondiente
+            const contenedorJugador = document.getElementById('infoJugador' + jugadorId);
+            if (contenedorJugador) {
+                contenedorJugador.style.display = 'block';
+            }
+        }
+    });
+
+</script>
+
+
+<body>
+
+    <div class="tablaMenu"> <!--tablaMenu-->
+        <!-- Aqui se mostrara la tablaMenu -->
+        <header id="tablaMenu"> </header>
+    </div>
+
+    <article> <!--CuadradoInfo-->
+       <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
+
+            <div id="infoJugador1" class="infoJugador">
+               
+                <h1>Roger Tahull</h1> 
+                <hr>
+
+                <article class="cuadradoContenedor">
+                    <h2>Información del Jugador</h2> 
+                <p> <strong> Nombre Completo:</strong> Roger Tahull </p>
+                <p> <strong> Nacionalidad:</strong> Roger Tahull </p>
+                <p> <strong> Edad:</strong> Roger Tahull </p>
+                <p> <strong> Ciudad Nacimiento:</strong> Roger Tahull </p>
+                <p> <strong> Fecha Nacimiento:</strong> Roger Tahull </p>
+               
+               </article>
+
+               <article class="cuadradoContenedor">
+                <h2>Equipo Actual</h2> 
+                <p> <strong> Equipo:</strong> CDN Boadilla </p>
+                <p> <strong> Posición:</strong> Delantero</p>
+                <p> <strong> Goles:</strong> 15 </p>
+                <p> <strong> Asistencias:</strong> 21 </p>
+                <p> <strong> Tarjetas Amarillas:</strong> 11 </p>
+                <p> <strong> Tarjetas Rojas:</strong> 3 </p>
+               </article>
+
+              <aside class="imagenesJugadores">
+                <img src="./Multimedia/Fotos/Jugadores/Boadilla/RogerTahullInfo.jpg" alt="">
+              </aside>
+              <br><br>
+
+            </div>
+            <div id="infoJugador2">
+                <p>Hola Mundo2!</p>
+            </div>
+            <div id="infoJugador3">
+                <p>Hola Mundo3!</p>
+            </div>
+
+          
+        </div>
+    </article><br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
+
+    <div> <!--footer-->
+        <!-- Aqui se mostrara el footer -->
+        <footer id="footer"> </footer>
+    </div>
+</body>
+
+
+</html>
