@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="usuarios.xsd" ?>
+<login>
+    <cuenta>
+        <usuario>admin</usuario>
+        <contraseña>admin</contraseña>
+    </cuenta>
+    <cuenta>
+        <usuario>xinyu</usuario>
+        <contraseña>1234</contraseña>
+    </cuenta>
+
+    <cuenta>
+        <usuario>catalin</usuario>
+        <contraseña>1234</contraseña>
+    </cuenta>
+    <cuenta>
+        <usuario>ander</usuario>
+        <contraseña>1234</contraseña>
+    </cuenta>
+    <cuenta>
+        <usuario>david</usuario>
+        <contraseña>1234</contraseña>
+    </cuenta>
+
+    <cuenta>
+        <usuario>a</usuario>
+        <contraseña>a</contraseña>
+    </cuenta>
+</login>

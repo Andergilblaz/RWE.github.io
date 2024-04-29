@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="Cuenta">
+    <xs:sequence>
+      <xs:element name="usuario" type="xs:string"/>
+      <xs:element name="contraseña" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cuenta" type="Cuenta" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

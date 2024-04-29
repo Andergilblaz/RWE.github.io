@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados Waterpolo Español</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
+</head>
+
+<script> //Script para cargar la pagina principal por defecto
+    window.onload = function () {
+        cargarTablaMenu()
+        cargarFooter()
+       
+    };
+</script>
+
+<body>
+
+    <div class="tablaMenu"> <!--tablaMenu-->
+        <!-- Aqui se mostrara la tablaMenu -->
+        <header id="tablaMenu"> </header>
+    </div>
+    <img src="Multimedia/Fotos/Chica.png" class="chica" width="500px" style="float: left; margin-top: 130px;">
+    <img src="Multimedia/Fotos/Chico.png" class="chico" width="500px" style="float: right; margin-top: 120px;">
+    
+    <article class="cuadradoInfoInicioDeSesion"> <!--CuadradoInfo-->
+
+        <div class="contacto" >
+
+            <h2>Identifícate</h2>
+            
+            <p>Sección para administradores⚠️</p>
+                <hr>
+                <img src="Multimedia/Fotos/LogoWaterpolo.png" alt="Logotipo" width="100px" style="float: right; margin-top:-120px; margin-right: 10px;">
+            <form id="formContacto" action="PHP-XML-XSL-XSD/inicioDeSesion.php" method="post">
+
+              
+                    <div style="display: flex; width: 342px;">
+                        <div for="message"> <Label>Usuario:</Label>
+                            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" style="border: 1px solid #ccc;"><br>
+                           
+                        </div>
+
+                        <div style="margin-left: 23px;"> <Label for="message">Contraseña:</Label>
+                            <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" style="border: 1px solid #ccc;"><br>
+                           
+                        </div>
+
+                    </div>
+
+                <br>
+              
+
+                <input type="submit" value="Iniciar sesión" style="width: 114%;"><br><br>
+
+            </form>
+
+        </div>
+
+        <br>
+        </div> <!-- Fin del div del cuadrado -->
+    </article>
+    <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
+    <div> <!--footer-->
+        <!-- Aqui se mostrara el footer -->
+        <footer id="footer"> </footer>
+    </div>
+
+    <script>
+        // JavaScript para mostrar el mensaje de confirmación si el formulario se ha enviado correctamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const incorrecto = urlParams.get('incorrecto');
+            
+            if (incorrecto === 'true') {
+                const confirmationMessage = '❌Usuario o contraseña incorrectos, prueba otra vez❌\n' +
+                                            '⚠️Inicio de sesión solo habilitado para administradores⚠️';
+    
+                // Mostrar el cuadro de diálogo de confirmación personalizado
+                if (confirm(confirmationMessage)) {
+                    // Redirigir al usuario a inicioDeSesion.html si acepta
+                    window.location.href = 'inicioDeSesion.html';
+                } else {
+                    // Redirigir al usuario a inicioDeSesion.html también si cancela
+                    window.location.href = 'inicioDeSesion.html';
+                }
+            }
+        });
+    </script>
+    
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados Waterpolo Español</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
+</head>
+
+<script> //Script para cargar la pagina principal por defecto
+    window.onload = function () {
+        cargarTablaMenu()
+        cargarFooter()
+        cargarPartidosJ1()
+    };
+</script>
+
+<body>
+
+    <div class="tablaMenu"> <!--tablaMenu-->
+        <!-- Aqui se mostrara la tablaMenu -->
+        <header id="tablaMenu"> </header>
+    </div>
+
+    <article> <!--CuadradoInfo-->
+        <img src="Multimedia/Fotos/Chica.png" class="chica" width="300" style="float: left; margin-top: 130px;">
+        <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
+        <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
+
+            <div class="divBtnJornadas" style="margin-bottom: 50px;"> <!--Menu seleccion de jornada-->
+
+                <button class="btnJornadas" onclick="cargarPartidosJ1()">J1</button>
+                <button class="btnJornadas">J2</button>
+                <button class="btnJornadas">J3</button>
+                <button class="btnJornadas">J4</button>
+                <button class="btnJornadas">J5</button>
+                <button class="btnJornadas">J6</button>
+                <button class="btnJornadas">J7</button>
+                <button class="btnJornadas">J8</button>
+                <button class="btnJornadas">J9</button>
+                <button class="btnJornadas">J10</button>
+
+            </div>
+            
+            <div id="partidos" style="display: flex;">
+                <!-- Aqui caragaran los partidos de la jornada seleccionada -->
+            </div>
+
+
+        </div> <!-- Fin del div del cuadrado -->
+    </article>
+    <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
+    <div> <!--footer-->
+        <!-- Aqui se mostrara el footer -->
+        <footer id="footer"> </footer>
+    </div>
+</body>
+
+</html>

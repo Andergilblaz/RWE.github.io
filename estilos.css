@@ -1,0 +1,1025 @@
+body {
+  background-size: auto;
+
+  background-color: rgb(1, 126, 209);
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tablaMenu {
+  background-color: #324679;
+  width: 78%;
+  height: 52px;
+  font-weight: bold;
+  position: fixed;
+  top: 2%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+
+.tablaMenu th a {
+  margin: 20px;
+  /* Adjust the value for desired space */
+}
+
+h1 {
+  text-align: center;
+  height: 100%;
+  padding-top: 15%;
+  font-size: 45px;
+  text-align: center;
+
+}
+
+
+.footer {
+  background-color: #324679;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #324679;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.dropdown-content {
+  /*Contenido desplegado */
+  display: none;
+  position: absolute;
+  background-color: #324679;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.button {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.dropdown-content a {
+  padding: 6px;
+  /*Hueco entre botones desplegados*/
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+
+.dropdown-content a:hover {
+  background-color: white;
+  Color: #324679;
+  border-radius: 12px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cuadradoInfo {
+  background-color: #dfe3df;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove;
+
+}
+
+.chico {
+  right: 5px;
+  /* Adjust for desired right margin */
+}
+
+#textoMedio {
+  text-align: center;
+}
+
+#textoMedio h1 {
+  font-size: 50px;
+  color: black;
+  /* Color del texto */
+  opacity: 1;
+  /* Inicialmente visible */
+  transition: opacity 1s ease-in-out;
+  /* Transición de opacidad */
+}
+
+
+
+.btnScroll {
+  font-size: 80px;
+  width: 80px;
+  border: none;
+  background-color: #dfe3df;
+}
+
+
+
+
+
+/*-------------------------PP-----------------------------*/
+
+.ppc {
+  display: flex;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: -10px;
+}
+
+.ppbody {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: opacity 0.5s ease, height 0.5s ease;
+  /* Transiciones suaves de opacidad y altura */
+
+}
+
+/* Main container styling */
+.container {
+  border-radius: 12px;
+  width: 500px;
+  /* Adjust width as needed */
+  height: 300px;
+  /* Adjust height as needed */
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+/* Detalles del partido */
+.match-details h1 {
+  font-size: 28px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+.match-details p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+/* Detalles de los equipos */
+.team-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.team-details div {
+  flex: 1;
+  text-align: center;
+}
+
+.team-details h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Estado del partido */
+.match-status {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+
+/*-----------------------------------Clasificación----------------------------*/
+.clasificacionContenedor {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  width: 600px;
+  /* Adjust width as needed */
+  height: 300px;
+}
+
+.tablaClasificacion {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+}
+
+
+/*-----------------------------------Noticias--------------------------------*/
+
+/* Estilo para la sección de noticias */
+.noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-left: -250px;
+  margin-top: -400px;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas con igual anchura */
+  gap: 20px;
+  /* Espacio entre las imágenes */
+
+}
+
+/* Estilo para cada elemento de la cuadrícula */
+.grid-item {
+  position: relative;
+  /* Posición relativa para contener el borde */
+  overflow: hidden;
+  /* Oculta el desbordamiento para el efecto de zoom */
+  width: 350px;
+  /* Ancho máximo del grid-item */
+  max-width: 450px;
+  /* Ancho máximo de cada imagen */
+}
+
+/* Estilo para la imagen dentro de cada grid-item */
+.grid-item img {
+  width: 100%;
+  /* Ancho máximo de la imagen */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  transition: transform 0.3s ease-in-out;
+  /* Transición para el efecto de zoom */
+  transform: scale(1);
+  /* Escala principal */
+  cursor: pointer;
+}
+
+/* Efecto de zoom al quitar el cursor del grid-item */
+.grid-item:not(:hover) img {
+  transform: scale(0.9);
+
+  /*Escala sin Hover*/
+}
+
+/*-------------- Scroll hacia abajo----------------*/
+@keyframes scale-up {
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes fade-away {
+  to {
+    opacity: 0;
+  }
+}
+
+section {
+  view-timeline: --scroll;
+}
+
+
+.scrollh1 span:first-child {
+  animation: fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 20% exit 50%;
+}
+
+.scrollh1 span:last-child {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Definir la sombra del texto */
+  animation:
+    scale-up both ease-in-out,
+    fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range:
+    exit 0% exit 100%,
+    exit 20% exit 40%;
+}
+
+/* basic */
+section {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 span:first-of-type {
+  color: #324679;
+  font-size: 0.35em;
+}
+
+section:nth-of-type(1) {
+  height: 100vh;
+}
+
+section:nth-of-type(2) {
+  height: 140vh;
+}
+
+.scrollh1 {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.scrollh3 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  text-align: center;
+  margin-top: -25px;
+}
+
+section div {
+  width: 800px;
+  max-width: 100vw;
+
+}
+
+:is(.scrollh1, .hscrollh3) {
+  font-size: 80px;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  margin: 0;
+  translate: -50% -50%;
+  width: 100%;
+}
+
+/* reset */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------Responsive------------------------------*/
+/* Estilos para elementos específicos en dispositivos pequeños */
+@media (max-width: 768px) {
+
+  body {
+    background-size: auto;
+    background-color: rgb(1, 126, 209);
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* Tabla de menú */
+  .tablaMenu {
+    background-color: #324679;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* Cambiado */
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+
+  .tablaMenu button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .tablaMenu .menuDesplegable {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #324679;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+  }
+
+  .tablaMenu:hover .menuDesplegable {
+    display: block;
+  }
+
+  /* Cuadrado de información */
+  .cuadradoInfo {
+    background-color: #dfe3df;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 500px;
+    border-radius: 10px;
+    border-style: groove;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Próximos partidos */
+  .ppc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Clasificación */
+  .clasificacionContenedor {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+
+  .tablaClasificacion table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tablaClasificacion th,
+  .tablaClasificacion td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .tablaClasificacion th {
+    background-color: #f2f2f2;
+  }
+
+  /* Noticias destacadas */
+  .noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Noticias destacadas - Artículos */
+  .grid-item {
+    width: 100%;
+    /* Modificado para ocupar el ancho completo */
+    margin: 10px auto;
+    /* Modificado para centrar */
+    max-width: 300px;
+    /* Agregado para limitar el ancho */
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #324679;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
+}
+
+
+/* Estilos para elementos específicos en dispositivos medianos */
+@media (max-width: 992px) {
+
+  .container,
+  .tablaMenu {
+    width: 97%;
+    /* Ajustar el ancho máximo */
+    max-width: 100%;
+  }
+
+  .ppc {
+    flex-direction: column;
+    /* Cambiar a diseño de columna */
+  }
+}
+
+/* Estilos para elementos específicos en dispositivos grandes */
+@media (min-width: 1200px) {
+  .tablaMenu {
+    padding: 15px;
+    /* Ajustar espaciado */
+  }
+
+  .ppc {
+    justify-content: space-between;
+    /* Alinear elementos */
+  }
+}
+
+/*----------------------------------FotosEquipos------------------------*/
+
+.imagenes {
+  display: flex;
+  width: 600px;
+
+  align-items: center;
+  margin-left: 25%;
+  margin-top: -200px;
+}
+
+.imagenes img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.imagenes img:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*------------------------------------Buscador--------------------------*/
+.contenedorForm {
+  text-align: center;
+  margin-top: -355px;
+  /* Ajusta este valor según sea necesario */
+  z-index: 999;
+  /* Asegura que el formulario esté en la parte superior */
+}
+
+.contenedorForm h1 {
+  font-size: 40px;
+}
+
+.formBuscador {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formBuscador label {
+  font-weight: bold;
+}
+
+.formBuscador input[type="text"],
+.formBuscador input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.formBuscador input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.formBuscador input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/*-------------------------------InfoEquipo-------------------------*/
+
+.infoEquipo {
+  text-align: center;
+
+}
+
+.tablaInfo {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  width: 95%;
+  margin: 2.5%;
+  height: 330px;
+  text-align: left;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.tablaInfoJugadores {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  width: 95%;
+  margin: 2.5%;
+  height: 300px;
+  text-align: left;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.cuadradoJugadores {
+  margin: 15px;
+  display: block;
+}
+
+.fotoPiscina {
+  display: flex;
+
+}
+
+.btnAtras {
+  border-radius: 5px;
+  background-color: #017ED1;
+  color: white;
+  font-size: 25px;
+  margin: 10px;
+  border: none;
+}
+
+.btnAtras:hover {
+  cursor: pointer;
+}
+
+/*-----------------------------Partidos-----------------------------*/
+
+.divBtnJornadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+
+}
+
+.btnJornadas {
+  background-color: #007bff;
+  /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.btnJornadas:hover {
+  background-color: #0056b3;
+  /* Azul más oscuro */
+}
+
+.jornada1 {
+  display: flex;
+  align-self: auto;
+  flex: 2;
+  flex-direction: column;
+}
+
+.partidosBody {
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  margin-right: 10px;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+
+.partidosContainer {
+  border-radius: 12px;
+  width: 425px;
+  /* Adjust width as needed */
+  height: 300px;
+  /* Adjust height as needed */
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+.detallesPartido h1 {
+  font-size: 28px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+.detallesPartido p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.detallesEquipo {
+  display: flex;
+  /* Already set to flexbox */
+  justify-content: space-between;
+  /* Maintains spacing between elements */
+}
+
+.detallesEquipo div {
+  flex: 1;
+  /* Flex equally - Not mandatory for horizontal layout */
+  text-align: center;
+}
+
+.detallesEquipo h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.estadoPartido {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+/*----------------------------Contacto-------------------------------*/
+
+.contacto {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.contacto h2 {
+  font-size: 30px;
+}
+
+.contacto p {
+  color: rgb(114, 110, 110);
+
+}
+
+/* General form styling */
+#formContacto {
+  width: 99%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: -20px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+/*-----------------------------------Inicio de Sesión-----------------------------*/
+
+
+.cuadradoInfoInicioDeSesion {
+  width: 400px;
+  /* Ancho del cuadrado */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: #fff;
+  /* Color de fondo del cuadrado */
+  border-radius: 8px;
+  /* Borde redondeado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  position: fixed;
+  /* Position the square absolutely */
+  top: 50%;
+  /* Position the square 50% from the top */
+  left: 50%;
+  /* Position the square 50% from the left */
+  transform: translate(-50%, -50%);
+  /* Translate the square back 50% to center it */
+
+}
+
+
+.cuadradoInfoInicioDeSesion form {
+  margin-top: 20px;
+  /* Espacio superior para el formulario */
+}
+
+.cuadradoInfoInicioDeSesion input[type="text"] {
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor */
+  padding: 8px;
+  /* Espaciado interno */
+  margin-bottom: 12px;
+  /* Espacio inferior entre inputs */
+  border: 1px solid #ccc;
+  /* Borde del input */
+  border-radius: 4px;
+  /* Borde redondeado del input */
+}
+
+.cuadradoInfoInicioDeSesion input[type="submit"] {
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor */
+  padding: 12px;
+  /* Espaciado interno */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="password"] {
+
+  width: 100%;
+  height: 33.3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+
+
+/*---------------------Mensajes Recibidos------------------*/
+
+.recibidos {
+  border-radius: 12px;
+  width: 92%;
+  /* Adjust width as needed */
+  height: auto;
+  /* Adjust height as needed */
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+.botonMensajes {
+  background-color: #017ED1;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  padding: 10px 20px;
+  /* Espacio interior */
+  border: none;
+  /* Eliminar borde predeterminado */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Indicador de cursor al pasar el ratón */
+  transition: background-color 0.3s ease;
+  /* Transición de color de fondo */
+  margin: 15px;
+  font-size: 15px;
+  margin-bottom: -40px;
+}
+
+.botonMensajes:hover {
+  /* Estilo al pasar el cursor por encima */
+  background-color: #017ED1;
+  /* Color de fondo al pasar el cursor por encima */
+}
+
+.botonMensajes:active {
+  /* Estilo al hacer clic */
+  background-color: #017ED1;
+  /* Color de fondo al hacer clic */
+}
+
+.botonMensajes-texto {
+  font-size: 16px;
+  /* Tamaño de fuente del texto */
+  font-weight: bold;
+  /* Peso de la fuente del texto */
+  text-align: center;
+  /* Alineación del texto */
+}
+
+.botonMensajesContainer {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*----------------Gestión de Usuarios----------------*/
+
+.gestionUsuariosContainer {
+  border-radius: 12px;
+  width: 92%;
+  /* Adjust width as needed */
+  height: auto;
+  /* Adjust height as needed */
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+
+}
+
+.gestionUsuariosContainer h2 {
+  text-align: left;
+  font-size: 30px;
+}
+
+/*-------------------------------InfoJugador-------------------------*/
+
+.infoJugador h1{
+  margin-top: -130px;
+}
+.infoJugador{
+  font-size: larger;
+  margin-left: 10px;
+  
+}
+.infoJugador h2 {
+  text-decoration: underline;
+}
+
+.imagenesJugadores{
+  float: right;
+  flex: 1;
+  margin-top: -590px;
+  margin-right: 25px;
+  height: 200px;
+}
+
+.cuadradoContenedor{
+  border-radius: 12px;
+width: 50%;
+/* Adjust width as needed */
+height: auto;
+margin: 10px;
+padding: 10px;
+background-color: #fff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-top: 0;
+}
