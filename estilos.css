@@ -12,10 +12,9 @@ body {
   height: 52px;
   font-weight: bold;
   position: fixed;
-  top: 2%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,11 +22,21 @@ body {
   z-index: 1000;
 }
 
-
-.tablaMenu th a {
-  margin: 20px;
-  /* Adjust the value for desired space */
+.menuResponsive {
+  display: none;
 }
+
+.tablaMenu ul {
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+  margin-top: 23px; /* Elimina el margen predeterminado de la lista */
+  list-style-type: none; /* Elimina los puntos de la lista */
+  width: 90%;
+}
+
+.tablaMenu li a{
+  font-size: 18px;
+}
+
 
 h1 {
   text-align: center;
@@ -35,7 +44,6 @@ h1 {
   padding-top: 15%;
   font-size: 45px;
   text-align: center;
-
 }
 
 
@@ -61,14 +69,14 @@ h1 {
 
 
 .dropdown-content {
-  /*Contenido desplegado */
   display: none;
   position: absolute;
   background-color: #324679;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+  top: 100%; /* Añade esta línea */
   z-index: 1;
-  border-radius: 12px;
+  border-radius: 5px; /* Añade esta línea */
+
 }
 
 .button {
@@ -315,11 +323,6 @@ a {
   }
 }
 
-section {
-  view-timeline: --scroll;
-}
-
-
 .scrollh1 span:first-child {
   animation: fade-away both linear;
   animation-timeline: --scroll;
@@ -341,6 +344,7 @@ section {
 /* basic */
 section {
   position: relative;
+  view-timeline: --scroll;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -395,169 +399,81 @@ section div {
   box-sizing: border-box;
 }
 
-/*-----------------------------------------Responsive------------------------------*/
-/* Estilos para elementos específicos en dispositivos pequeños */
-@media (max-width: 768px) {
+/*----------------------Responsive------------------------*/
 
-  body {
-    background-size: auto;
-    background-color: rgb(1, 126, 209);
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  /* Tabla de menú */
-  .tablaMenu {
-    background-color: #324679;
-    width: 100%;
-    height: 50px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    /* Cambiado */
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 40px;
-  }
-
-  .tablaMenu button {
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .tablaMenu .menuDesplegable {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #324679;
-    border-radius: 10px;
-    padding: 10px;
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 500px) {
+ 
+  .dropdownNone{
     display: none;
   }
 
-  .tablaMenu:hover .menuDesplegable {
+  .menuResponsive {
+    display: block;
+  }
+  .tablaMenu.show {
+    display: flex;
+  }
+
+.chico, .chica {
+   display:none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #324679;
+    min-width: 100px;
+    top: 100%; /* Añade esta línea */
+    z-index: 1;
+    border-radius: 5px; /* Añade esta línea */
+
+  }
+
+  .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  /* Cuadrado de información */
-  .cuadradoInfo {
-    background-color: #dfe3df;
-    margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 500px;
-    border-radius: 10px;
-    border-style: groove;
-    padding: 20px;
-    height: auto;
-  }
 
-  /* Próximos partidos */
-  .ppc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
+.dropdown-content a:first-child {
+  margin-top: 20px;
+}
 
-  /* Clasificación */
-  .clasificacionContenedor {
-    background-color: white;
-    border-radius: 12px;
-    padding: 12px;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow-x: auto;
-  }
-
-  .tablaClasificacion table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  .tablaClasificacion th,
-  .tablaClasificacion td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: center;
-  }
-
-  .tablaClasificacion th {
-    background-color: #f2f2f2;
-  }
-
-  /* Noticias destacadas */
-  .noticias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  /* Noticias destacadas - Artículos */
-  .grid-item {
-    width: 100%;
-    /* Modificado para ocupar el ancho completo */
-    margin: 10px auto;
-    /* Modificado para centrar */
-    max-width: 300px;
-    /* Agregado para limitar el ancho */
-  }
-
-  .grid-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Footer */
-  .footer {
-    background-color: #324679;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  .dropdown-content a {
+    display: block;
+    color: #fff;
     padding: 10px;
-    color: white;
+    text-decoration: none;
   }
 }
 
-
-/* Estilos para elementos específicos en dispositivos medianos */
-@media (max-width: 992px) {
-
-  .container,
-  .tablaMenu {
-    width: 97%;
-    /* Ajustar el ancho máximo */
-    max-width: 100%;
-  }
-
-  .ppc {
-    flex-direction: column;
-    /* Cambiar a diseño de columna */
-  }
+.textoScrollResponsiveNO{
+  display: none;
 }
 
-/* Estilos para elementos específicos en dispositivos grandes */
-@media (min-width: 1200px) {
-  .tablaMenu {
-    padding: 15px;
-    /* Ajustar espaciado */
-  }
+.textoScrollResponsiveSI{
+  display: block;
 
-  .ppc {
-    justify-content: space-between;
-    /* Alinear elementos */
-  }
+}
+
+.cuadradoInfo{
+  width: 98%;
+  margin-left: 3px;
+  margin-top: 45%;
+}
+
+.ppc{
+display: table-row;
+font-size: 12px;
 }
 
 /*----------------------------------FotosEquipos------------------------*/
@@ -565,7 +481,7 @@ section div {
 .imagenes {
   display: flex;
   width: 600px;
-
+  height: 25vh;
   align-items: center;
   margin-left: 25%;
   margin-top: -200px;
