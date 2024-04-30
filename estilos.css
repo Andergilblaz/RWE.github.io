@@ -547,36 +547,33 @@ section div {
       flex-wrap: wrap;
       justify-content: center;
     }
-
-
-
   }
+}
 
-  /*----------------------------------FotosEquipos------------------------*/
+/*----------------------------------FotosEquipos------------------------*/
 
-  .imagenes {
-    display: flex;
-    width: 600px;
-    height: 25vh;
-    align-items: center;
-    margin-left: 25%;
-    margin-top: -200px;
-  }
+.imagenes {
+  display: flex;
+  width: 600px;
+  height: 25vh;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: -200px;
+}
 
-  .imagenes img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-  }
+.imagenes img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
 
-  .imagenes img:hover {
-    cursor: pointer;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-  }
+.imagenes img:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
 /*------------------------------------Buscador--------------------------*/
