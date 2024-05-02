@@ -273,7 +273,7 @@ a {
   align-items: center;
   margin-bottom: 3%;
   margin-left: -250px;
-  margin-top: -130px;
+  
 }
 
 /* Contenedor de la cuadrícula */
@@ -288,6 +288,7 @@ a {
 
 /* Estilo para cada elemento de la cuadrícula */
 .grid-item {
+  margin-top: 5px;
   position: relative;
   /* Posición relativa para contener el borde */
   overflow: hidden;
@@ -379,7 +380,7 @@ section:nth-of-type(2) {
 .scrollh3 {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   text-align: center;
-  margin-top: -25px;
+  
 }
 
 section div {
@@ -982,7 +983,7 @@ input[type="password"] {
 /*-------------------------------InfoJugador-------------------------*/
 
 .infoJugador h1 {
-  margin-top: -130px;
+  margin-top: -145px;
 }
 
 .infoJugador {
@@ -992,13 +993,13 @@ input[type="password"] {
 }
 
 .infoJugador h2 {
-  text-decoration: underline;
+  text-align: center;
 }
 
 .imagenesJugadores img {
   float: right;
   flex: 1;
-margin-top: -383px;
+margin-top: -400px;
   margin-right: 150px;
   border-radius: 10px;
 

@@ -21,7 +21,7 @@
         <header id="tablaMenu"> <!-- Aquí se cargará el menú dinámico --></header>
     </div>
 
-    <img src="Multimedia/Fotos/Chica.png" class="chica" width="250px" style="float: left; margin-top: 130px;">
+    <img src="Multimedia/Fotos/Chica.png" class="chica" width="230px" style="float: left; margin-top: 130px; z-index:-1;">
     <img src="Multimedia/Fotos/Chico.png" class="chico" width="250px" style="float: right; margin-top: 120px;">
 
 
@@ -151,7 +151,7 @@
                             <?php echo isset($envio['apellidos']) ? $envio['apellidos'] : 'N/A'; ?></p>
                         <p><strong style="color:Black;">Correo:</strong>
                             <?php echo isset($envio['correo']) ? $envio['correo'] : 'N/A'; ?></p>
-                        <p><strong style="color:Black;">Mensaje:</strong>
+                        <p><strong style="color:Black; z-index:1;">Mensaje:</strong>
                             <?php echo isset($envio['mensaje']) ? $envio['mensaje'] : 'N/A'; ?></p>
 
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
