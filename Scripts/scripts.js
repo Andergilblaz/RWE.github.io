@@ -75,7 +75,16 @@ function cargarPP() {
     setInterval(cargarProximoPartido, 5000); // Cargar el próximo partido cada 5 segundos (5000 milisegundos)
 }
 
-
+function cargarTablaClasificacionPreview() {
+    fetch('CargasDinamicas/tablaClasificacion.html')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const htmlDocument = parser.parseFromString(data, 'text/html');
+            const tablaClasificacionPreview = htmlDocument.getElementById('tablaClasificacionPreview').innerHTML; //Le pones el id que quieras coger
+            document.getElementById('tablaClasificacionPreview').innerHTML = tablaClasificacion; //Pone el contenido donde debe
+        });
+}
 
 function cargarTablaClasificacion() {
     fetch('CargasDinamicas/tablaClasificacion.html')

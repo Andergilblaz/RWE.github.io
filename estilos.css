@@ -77,11 +77,9 @@ h1 {
   background-color: #324679;
   min-width: 100px;
   top: 100%;
-  /* Añade esta línea */
   z-index: 1;
   border-radius: 5px;
-  /* Añade esta línea */
-
+margin-top: -15px;
 }
 
 .button {
@@ -90,7 +88,7 @@ h1 {
 }
 
 .dropdown-content a {
-  padding: 6px;
+  padding: 7px;
   /*Hueco entre botones desplegados*/
   text-decoration: none;
   display: block;
@@ -446,10 +444,10 @@ section div {
     background-color: #324679;
     min-width: 100px;
     top: 100%;
-    /* Añade esta línea */
+
     z-index: 1;
     border-radius: 5px;
-    /* Añade esta línea */
+
 
   }
 
@@ -677,13 +675,16 @@ section div {
 
 /*-----------------------------Partidos-----------------------------*/
 
+.contenedorGeneralPartidos{ /*En partidos.html*/
+  display: flex;
+  justify-content: center;
+}
+
 .divBtnJornadas {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-
-
 }
 
 .btnJornadas {
@@ -727,9 +728,7 @@ section div {
 .partidosContainer {
   border-radius: 12px;
   width: 425px;
-  /* Adjust width as needed */
   height: 300px;
-  /* Adjust height as needed */
   margin: 50px auto;
   padding: 10px;
   background-color: #fff;
@@ -739,7 +738,7 @@ section div {
 
 .detallesPartido h1 {
   font-size: 28px;
-  margin-top: -70px;
+  margin-top: -60px; /*Altura para el texto de 1ª división*/
   margin-bottom: 10px;
 }
 
@@ -999,11 +998,13 @@ input[type="password"] {
 .imagenesJugadores img {
   float: right;
   flex: 1;
-  margin-top: -790px;
-  margin-right: 30px;
+margin-top: -383px;
+  margin-right: 150px;
   border-radius: 10px;
 
 }
+
+
 
 .cuadradoContenedor {
   border-radius: 12px;
@@ -1011,6 +1012,7 @@ input[type="password"] {
   /* Adjust width as needed */
   height: auto;
   margin: 10px;
+  margin-left: 100px;
   padding: 10px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

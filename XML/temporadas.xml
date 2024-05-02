@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="temporadas.xsd"?>
+
+<temporadas>
+    <temporada>
+        <numeroTemporada>1</numeroTemporada>
+        <fechaInicio>2021-09-01</fechaInicio>
+        <fechaFin>2022-06-30</fechaFin>
+        <equipos>
+            <equipo>
+                <nombreEquipo>Tenerife</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barceloneta</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Boadilla</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barcelona</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Catalunya</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Mediterrani</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+        </equipos>
+        <jornadas>
+            <jornada>
+                <numeroJornada>1</numeroJornada>
+                <fecha>2021-09-01</fecha>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Boadilla</equipoLocal>
+                        <equipoVisitante>Barcelona</equipoVisitante>
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Catalunya</equipoLocal>
+                        <equipoVisitante>Mediterrani</equipoVisitante>
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>2</numeroJornada>
+                <fecha>2021-09-08</fecha>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Boadilla</equipoVisitante>       
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>               
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barcelona</equipoLocal>
+                        <equipoVisitante>Catalunya</equipoVisitante>
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Mediterrani</equipoLocal>
+                        <equipoVisitante>Tenerife</equipoVisitante>
+                        <fechaPartido>2021-09-01</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                    </partido>
+                </partidos>
+            </jornada>
+        </jornadas>
+    </temporada>
+</temporadas>

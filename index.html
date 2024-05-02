@@ -11,16 +11,16 @@
 </head>
 
 <script>
-     
-     window.onload = function () {
 
-      cargarTablaMenu();
-      cargarPP();
-      cargarFooter();
-      cargarNoticias();
-      cargarTablaClasificacion();
-      
-     }
+  window.onload = function () {
+
+    cargarTablaMenu();
+    cargarPP();
+    cargarFooter();
+    cargarNoticias();
+    cargarTablaClasificacion();
+
+  }
 </script>
 
 
@@ -36,7 +36,7 @@
     <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
     <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
 
-      <div id="textoScroll" > <!--textoScroll-->
+      <div id="textoScroll"> <!--textoScroll-->
         <section>
           <div class="textoScrollResponsiveNO">
             <h1 class="scrollh1">
@@ -51,11 +51,11 @@
             </h1>
           </div>
 
-            <div class="textoScrollResponsiveSI">
+          <div class="textoScrollResponsiveSI">
 
-              <h1>Resultados del waterpolo español</h1>
+            <h1>Resultados del waterpolo español</h1>
 
-            </div>
+          </div>
         </section>
 
         <div class="ppc"> <!--proximosPartidos-->
@@ -74,17 +74,24 @@
           </div>
 
           <!-- El texto de Clasificación esta en el doc tablaClasificacion por motivos de estilos -->
-          <div style="margin-left: 20px;" id="tablaClasificacion"> <!--tablaClasificación-->
+          <div style="margin-left: 40px;" id="tablaClasificacion"> <!--tablaClasificación-->
             <!-- Aqui se mostrara la clasificación -->
           </div>
         </div>
 
 
-        
-       
+
+
       </div>
 
-
+      <!-- Noticias destacadas -->
+      <section>
+        <h3 class="scrollh3">Noticias Destacadas</h3>
+        <hr>
+        <div id="noticias" class="noticias">
+          <!-- Aqui iran las noticias -->
+        </div>
+      </section> <br>
 
     </div> <!-- Fin del div del cuadrado -->
   </article>
