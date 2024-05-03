@@ -110,8 +110,8 @@ function cargarSeleccionarEquipo() {
         });
 }
 
-function cargarInfoBoadilla() { 
-    fetch('CargasDinamicas/infoEquipos.html') 
+function cargarInfoBoadilla() {
+    fetch('CargasDinamicas/infoEquipos.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('infoEquipo').style.display = 'block';
@@ -120,7 +120,7 @@ function cargarInfoBoadilla() {
 
             // Extraer el contenido del div con id 'infoBoadilla' del documento analizado
             const infoBoadillaContent = htmlDocument.getElementById('infoBoadilla');
-            
+
             // Verificar si se encontró el elemento
             if (infoBoadillaContent) {
                 // Obtener el contenido interno del div 'infoBoadilla'
@@ -137,8 +137,8 @@ function cargarInfoBoadilla() {
         });
 }
 
-function cargarPartidosJ1() { 
-    fetch('CargasDinamicas/infoPartidos.html') 
+function cargarPartidosJ1() {
+    fetch('CargasDinamicas/infoPartidos.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -182,6 +182,10 @@ function cargarInfoJugador(numeroJugador) {
     // Redirigir a la página infoJugadores.html con el parámetro 'jugador'
     window.location.href = baseUrl.replace('equipos.html', 'infoJugadores.html') + '#' + numeroJugador;
 }
+
+
+
+
 
 
 
