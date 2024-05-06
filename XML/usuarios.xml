@@ -4,27 +4,33 @@
     <cuenta>
         <usuario>admin</usuario>
         <contraseña>admin</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
     <cuenta>
         <usuario>xinyu</usuario>
         <contraseña>1234</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
 
     <cuenta>
         <usuario>catalin</usuario>
         <contraseña>1234</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
     <cuenta>
         <usuario>ander</usuario>
         <contraseña>1234</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
     <cuenta>
         <usuario>david</usuario>
         <contraseña>1234</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
 
     <cuenta>
         <usuario>a</usuario>
         <contraseña>a</contraseña>
+        <foto>../Multimedia/Fotos/Usuarios/sinImagen.jpg</foto>
     </cuenta>
 </login>

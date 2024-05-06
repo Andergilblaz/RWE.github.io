@@ -79,7 +79,7 @@ h1 {
   top: 100%;
   z-index: 1;
   border-radius: 5px;
-margin-top: -15px;
+  margin-top: -15px;
 }
 
 .button {
@@ -273,7 +273,7 @@ a {
   align-items: center;
   margin-bottom: 3%;
   margin-left: -250px;
-  
+
 }
 
 /* Contenedor de la cuadrícula */
@@ -380,7 +380,7 @@ section:nth-of-type(2) {
 .scrollh3 {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   text-align: center;
-  
+
 }
 
 section div {
@@ -515,6 +515,7 @@ section div {
 
   .clasificacionContenedorGeneral h2 {
     margin-top: 10%;
+    margin-left: -5%;
 
   }
 
@@ -524,7 +525,7 @@ section div {
     padding: 12px;
     width: 101%;
     height: fit-content;
-    margin-left: -3%;
+    margin-left: -5%;
     margin-bottom: 10%;
   }
 
@@ -548,6 +549,7 @@ section div {
     }
   }
 }
+
 
 /*----------------------------------FotosEquipos------------------------*/
 
@@ -676,7 +678,8 @@ section div {
 
 /*-----------------------------Partidos-----------------------------*/
 
-.contenedorGeneralPartidos{ /*En partidos.html*/
+.contenedorGeneralPartidos {
+  /*En partidos.html*/
   display: flex;
   justify-content: center;
 }
@@ -739,7 +742,8 @@ section div {
 
 .detallesPartido h1 {
   font-size: 28px;
-  margin-top: -60px; /*Altura para el texto de 1ª división*/
+  margin-top: -60px;
+  /*Altura para el texto de 1ª división*/
   margin-bottom: 10px;
 }
 
@@ -774,6 +778,7 @@ section div {
   color: #333;
 
 }
+
 
 /*----------------------------Contacto-------------------------------*/
 
@@ -999,7 +1004,7 @@ input[type="password"] {
 .imagenesJugadores img {
   float: right;
   flex: 1;
-margin-top: -400px;
+  margin-top: -400px;
   margin-right: 150px;
   border-radius: 10px;
 

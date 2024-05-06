@@ -9,11 +9,22 @@
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
 
-<script> //Script para cargar la pagina principal por defecto
+<script>
     window.onload = function () {
-        cargarTablaMenu()
-        cargarFooter()
-        cargarPartidosJ1()
+        cargarTablaMenu();
+        cargarFooter();
+        cargarPartidosJ1();
+
+        var urlParams = new URLSearchParams(window.location.search);
+        var temporada = urlParams.get('temporada');
+
+        if (temporada) {
+            var boton = document.querySelector('#botonTemporada');
+            if (boton) {
+                boton.textContent = temporada + '↓';
+                console.log(temporada);
+            }
+        }
     };
 </script>
 
@@ -25,17 +36,20 @@
     </div>
 
     <article> <!--CuadradoInfo-->
-        <img src="Multimedia/Fotos/Chica.png" class="chica" width="300" style="float: left; margin-top: 130px;">
+        <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
         <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
         <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
 
+
+            <!--Botón para el cambio de temporada-->
+
             <div class="dropdownNone" style="float:left;">
-                <li class="dropdown" style="list-style: none; border-radius: 12px;">
-                    <div class="dropdown-content" style="margin-top: -590px;">
+                <li class="dropdown" style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
+                    <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;"  width="10px">
                         <a href="./partidos.html?temporada=2022-23">2022-23</a>
                         <a href="./partidos.html?temporada=2023-24">2023-24</a>
                     </div>
-                    <button id="botonTemporada" class="dropbtn">2023-24↓</button>
+                    <button id="botonTemporada" class="dropbtn"  style=" font-size: large; border-radius: 5px;">2023-24↓</button>
                 </li>
             </div>
 
@@ -53,8 +67,8 @@
                 <button class="btnJornadas">J10</button>
 
             </div>
-            
-            <div id="partidos" + class="contenedorGeneralPartidos">
+
+            <div id="partidos" class="contenedorGeneralPartidos">
                 <!-- Aqui caragaran los partidos de la jornada seleccionada -->
             </div>
 
