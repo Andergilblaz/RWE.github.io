@@ -4,8 +4,7 @@
 <temporadas>
     <temporada>
         <numeroTemporada>1</numeroTemporada>
-        <fechaInicio>2021-09-01</fechaInicio>
-        <fechaFin>2022-06-30</fechaFin>
+        <fechaTemporada>2023-24</fechaTemporada>
         <equipos>
             <equipo>
                 <nombreEquipo>Tenerife</nombreEquipo>
@@ -244,50 +243,60 @@
         </equipos>
         <jornadas>
             <jornada>
-                <numeroJornada>1</numeroJornada>
-                <fecha>2021-09-01</fecha>
+                <numeroJornada>1-23</numeroJornada>
                 <partidos>
                     <partido>
-                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <fechaPartido>2021-09-01</fechaPartido>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Boadilla</equipoLocal>
-                        <equipoVisitante>Barcelona</equipoVisitante>
-                        <fechaPartido>2021-09-01</fechaPartido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Catalunya</equipoLocal>
-                        <equipoVisitante>Mediterrani</equipoVisitante>
-                        <fechaPartido>2021-09-01</fechaPartido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>     
                     </partido>
                 </partidos>
             </jornada>
             <jornada>
                 <numeroJornada>2</numeroJornada>
-                <fecha>2021-09-08</fecha>
                 <partidos>
                     <partido>
-                        <equipoLocal>Barceloneta</equipoLocal>
-                        <equipoVisitante>Boadilla</equipoVisitante>       
-                        <fechaPartido>2021-09-01</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>               
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>    
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>      
                     </partido>
                     <partido>
-                        <equipoLocal>Barcelona</equipoLocal>
-                        <equipoVisitante>Catalunya</equipoVisitante>
-                        <fechaPartido>2021-09-01</fechaPartido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Mediterrani</equipoLocal>
-                        <equipoVisitante>Tenerife</equipoVisitante>
-                        <fechaPartido>2021-09-01</fechaPartido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
                     </partido>
                 </partidos>
             </jornada>

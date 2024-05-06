@@ -14,8 +14,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="numeroTemporada" type="xs:integer"/>
-                <xs:element name="fechaInicio" type="xs:date"/>
-                <xs:element name="fechaFin" type="xs:date"/>
+                <xs:element name="fechaTemporada" type="xs:string"/>         
                 <xs:element ref="equipos"/>
                 <xs:element ref="jornadas" minOccurs="0"/>
             </xs:sequence>
@@ -73,8 +72,7 @@
     <xs:element name="jornada">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="numeroJornada" type="xs:integer"/>
-                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="numeroJornada" type="xs:string"/>
                 <xs:element ref="partidos"/>
             </xs:sequence>
         </xs:complexType>
@@ -93,8 +91,10 @@
             <xs:sequence>
                 <xs:element name="equipoLocal" type="xs:string"/>
                 <xs:element name="equipoVisitante" type="xs:string"/>
-                <xs:element name="fechaPartido" type="xs:date"/>
+                <xs:element name="fechaPartido" type="xs:string"/>
                 <xs:element name="piscinaPartido" type="xs:integer"/>
+                <xs:element name="estadoPartido" type="xs:string"/>
+                <xs:element name="resultado" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
