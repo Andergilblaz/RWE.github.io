@@ -33,17 +33,11 @@
             <?php
             session_start(); // Inicia la sesión
             
-            if (isset($_GET['admin'])) {
-                // Si el parámetro 'admin' está presente en la URL, obtén su valor
-                $usuario = $_GET['admin'];
-
-                // Almacena el usuario en la sesión
-                $_SESSION['usuario'] = $usuario;
-
-                // Muestra un mensaje de bienvenida personalizado
+            // Luego puedes acceder a $_SESSION['usuario']
+            if (isset($_SESSION['usuario'])) {
+                $usuario = $_SESSION['usuario'];
                 echo "<h2>¡Bienvenido $usuario!</h2>";
             } else {
-                // Si no se proporciona el parámetro 'admin' en la URL, muestra un mensaje de bienvenida genérico
                 echo "<h2>¡Bienvenido!</h2>";
             }
             ?>
@@ -198,7 +192,7 @@
             </div>
         </div>
 
-        <article>
+        <article> <!-- Cuadrado de administradores-->
             <?php
             // Función para cargar los datos de usuarios desde el archivo XML
             function cargarUsuarios($xmlFile)
@@ -213,7 +207,8 @@
                         foreach ($xml->cuenta as $cuenta) {
                             $usuario = (string) $cuenta->usuario;
                             $contrasena = (string) $cuenta->contraseña;
-                            $usuarios[] = ['usuario' => $usuario, 'contraseña' => $contrasena];
+                            $foto = (string) $cuenta->foto; // Obtener la ruta de la foto
+                            $usuarios[] = ['usuario' => $usuario, 'contraseña' => $contrasena, 'foto' => $foto];
                         }
                     } else {
                         echo "Error al cargar el archivo XML.";
@@ -227,64 +222,6 @@
 
             // Ruta al archivo XML de usuarios
             $xmlFileUsuarios = './XML/usuarios.xml';
-
-            // Procesar el formulario para agregar usuarios
-            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['agregar_usuario'])) {
-                $nuevoUsuario = $_POST['nuevo_usuario'];
-                $nuevaContrasena = $_POST['nueva_contrasena'];
-
-                // Verificar si el archivo XML existe antes de intentar cargarlo
-                if (file_exists($xmlFileUsuarios)) {
-                    $xml = simplexml_load_file($xmlFileUsuarios);
-
-                    if ($xml) {
-                        // Agregar el nuevo usuario al archivo XML
-                        $nuevoCuenta = $xml->addChild('cuenta');
-                        $nuevoCuenta->addChild('usuario', $nuevoUsuario);
-                        $nuevoCuenta->addChild('contraseña', $nuevaContrasena);
-
-                        // Guardar el archivo XML modificado
-                        $xml->asXML($xmlFileUsuarios);
-
-                        // Recargar la lista de usuarios
-                        $usuarios = cargarUsuarios($xmlFileUsuarios);
-                    } else {
-                        echo "Error al cargar el archivo XML.";
-                    }
-                } else {
-                    echo "El archivo XML de usuarios no existe.";
-                }
-            }
-
-            // Procesar el formulario para eliminar usuarios
-            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['eliminar_usuario'])) {
-                $usuarioEliminar = $_POST['usuario_eliminar'];
-
-                // Verificar si el archivo XML existe antes de intentar cargarlo
-                if (file_exists($xmlFileUsuarios)) {
-                    $xml = simplexml_load_file($xmlFileUsuarios);
-
-                    if ($xml) {
-                        // Eliminar el usuario del archivo XML
-                        foreach ($xml->cuenta as $cuenta) {
-                            if ((string) $cuenta->usuario === $usuarioEliminar) {
-                                unset($cuenta[0]);
-                                break;
-                            }
-                        }
-
-                        // Guardar el archivo XML modificado
-                        $xml->asXML($xmlFileUsuarios);
-
-                        // Recargar la lista de usuarios
-                        $usuarios = cargarUsuarios($xmlFileUsuarios);
-                    } else {
-                        echo "Error al cargar el archivo XML.";
-                    }
-                } else {
-                    echo "El archivo XML de usuarios no existe.";
-                }
-            }
 
             // Cargar la lista de usuarios desde el archivo XML
             $usuarios = cargarUsuarios($xmlFileUsuarios);
@@ -302,26 +239,15 @@
             <body>
 
                 <article class="gestionUsuariosContainer">
-                    <h2>Gestión de usuarios</h2>
+                    <h2>Usuarios registrados</h2>
                     <hr>
-
-                    <!-- Formulario para agregar un nuevo usuario -->
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                        <label for="nuevo_usuario">Nuevo Usuario:</label>
-                        <input type="text" id="nuevo_usuario" name="nuevo_usuario" required>
-                        <label for="nueva_contrasena">Contraseña:</label>
-                        <input type="password" id="nueva_contrasena" name="nueva_contrasena" required>
-                        <button type="submit" name="agregar_usuario">Agregar Usuario</button>
-                    </form>
-                    <br>
-
                     <!-- Tabla de usuarios -->
                     <table border="1">
                         <thead>
                             <tr>
                                 <th>Usuario</th>
                                 <th>Contraseña</th>
-                                <th>Acción</th>
+                                <th>Imagen</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -329,13 +255,8 @@
                                 <tr>
                                     <td><?php echo $usuario['usuario']; ?></td>
                                     <td><?php echo $usuario['contraseña']; ?></td>
-                                    <td>
-                                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                                            <input type="hidden" name="usuario_eliminar"
-                                                value="<?php echo $usuario['usuario']; ?>">
-                                            <button type="submit" name="eliminar_usuario">Eliminar</button>
-                                        </form>
-                                    </td>
+                                    <td><img src="<?php echo $usuario['foto']; ?>" width="75"></td>
+                                    <!-- Mostrar la foto -->
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -345,6 +266,7 @@
             </body>
 
             </html>
+
 
 
 

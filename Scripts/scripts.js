@@ -1,18 +1,38 @@
 
-function cargarTablaMenu() { //Funcion cargar Nav
-    fetch('CargasDinamicas/navFooter.html') //Busca dentro del archivo articulos.html
+function cargarTablaMenu() {
+
+    fetch('CargasDinamicas/navFooter.php')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
             const htmlDocument = parser.parseFromString(data, 'text/html');
 
-            const tablaMenu = htmlDocument.getElementById('tablaMenu').innerHTML; //Le pones el id que quieras coger
-            document.getElementById('tablaMenu').innerHTML = tablaMenu; //Pone el contenido donde debe
+            // Verificar si hay un administrador en el sessionStorage
+            const usuario = sessionStorage.getItem('usuario');
+            const menuUsuario = htmlDocument.getElementById('menuUsuario');
+
+            // Verificar si hay un administrador en el sessionStorage
+            if (usuario !== null) {
+                const menuAdmin = htmlDocument.getElementById('menuAdmin');
+                menuAdmin.style.display = 'block'; // Mostrar el menú de administrador
+                menuUsuario.style.display = 'none'; // Ocultar el menú de inicio de sesión
+                document.getElementById('tablaMenu').innerHTML = htmlDocument.getElementById('tablaMenu').innerHTML;
+                
+                
+            } else {
+                const menuAdmin = htmlDocument.getElementById('menuAdmin');
+                menuAdmin.style.display = 'none'; // Mostrar el menú de administrador
+                menuUsuario.style.display = 'block'; // Mostrar el menú de inicio de sesión
+                document.getElementById('tablaMenu').innerHTML = htmlDocument.getElementById('tablaMenu').innerHTML;
+
+            }
+
         });
 }
 
+
 function cargarFooter() { //Funcion cargar Footer
-    fetch('CargasDinamicas/navFooter.html') //Busca dentro del archivo articulos.html
+    fetch('CargasDinamicas/navFooter.php') //Busca dentro del archivo articulos.html
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -194,33 +214,33 @@ function cerrarSesion() {
     alert("Funcionalidad de cerrar sesión en proceso...");
 }
 
- // Función para obtener el valor del parámetro "temporada" de la URL
- function getSeasonFromURL() {
+// Función para obtener el valor del parámetro "temporada" de la URL
+function getSeasonFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('temporada');
-  }
+}
 
-  // Función para actualizar el texto del botón según la temporada en la URL
-  function updateButtonSeason() {
+// Función para actualizar el texto del botón según la temporada en la URL
+function updateButtonSeason() {
     const season = getSeasonFromURL();
     if (season) {
-      document.querySelector('#botonTemporada').textContent = season + '↓';
+        document.querySelector('#botonTemporada').textContent = season + '↓';
     }
-  }
+}
 
-  // Llamar a la función para actualizar el texto del botón cuando se carga la página
-  updateButtonSeason();
+// Llamar a la función para actualizar el texto del botón cuando se carga la página
+updateButtonSeason();
 
 
 
-  function cargarMenuSegunAdmin() {
+function cargarMenuSegunAdmin() {
     const parametroAdmin = obtenerParametroAdmin();
     const menuAdmin = document.getElementById('menuAdmin');
     const menuUsuario = document.getElementById('menuUsuario');
 
     // Ocultar ambos menús por defecto
     menuAdmin.style.display = 'none';
-   
+
 
     if (parametroAdmin && parametroAdmin === 'a') {
         // Si el parámetro admin existe y es 'a', mostrar el menú de administrador
@@ -242,8 +262,9 @@ function cerrarSesion() {
 
 function cerrarSesion() {
     alert('Sesión cerrada correctamente.');
-    // Eliminar el parámetro 'admin' de la URL
-    window.location.href = index.html
+
+    window.sessionStorage.clear(); // Borra el sessionStorage
+    window.location.href = './index.html'; // Redirige al index
 }
 //----------------------------------------Boton Scroll---------------------------------------//
 document.addEventListener("DOMContentLoaded", function () {

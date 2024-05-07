@@ -1,3 +1,53 @@
+<?php
+session_start(); // Inicia la sesión
+
+// Función para cargar la foto de un usuario desde el archivo XML
+function cargarFotoUsuario($xmlFile, $nombreUsuario)
+{
+    // Verificar si el archivo XML existe
+    if (file_exists($xmlFile)) {
+        $xml = simplexml_load_file($xmlFile);
+
+        if ($xml) {
+            foreach ($xml->cuenta as $cuenta) {
+                $usuario = (string) $cuenta->usuario;
+                $foto = (string) $cuenta->foto;
+
+                // Si el usuario coincide con el nombre de usuario buscado, retorna la foto
+                if ($usuario === $nombreUsuario) {
+                    return $foto;
+                }
+            }
+        } else {
+            echo "Error al cargar el archivo XML.";
+        }
+    } else {
+        echo "El archivo XML de usuarios no existe.";
+    }
+
+    return null; // Retorna null si no se encontró la foto del usuario
+}
+
+// Ruta al archivo XML de usuarios
+$xmlFileUsuarios = '../XML/usuarios.xml';
+
+// Obtener el nombre de usuario almacenado en el sessionStorage
+$nombreUsuario = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : null;
+
+// Inicializar la variable de la foto de perfil con una imagen predeterminada
+$fotoPerfil = './Multimedia/Fotos/Usuarios/sinImagen.jpg';
+
+// Si se encontró un nombre de usuario en el sessionStorage, intentar cargar la foto del usuario desde el archivo XML
+if ($nombreUsuario) {
+    $fotoPerfil = cargarFotoUsuario($xmlFileUsuarios, $nombreUsuario);
+    if (!$fotoPerfil) {
+        // Si no se encuentra la foto del usuario en el XML, utilizar una imagen predeterminada
+        $fotoPerfil = './Multimedia/Fotos/Usuarios/sinImagen.jpg';
+    }
+}
+?>
+
+
 <head>
   <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
 </head>
@@ -26,7 +76,7 @@
       <li class="button"><a href="./contacto.html">Contacto Web</a></li>
 
       <!-- Si no has iniciado sesión -->
-      <div class="menuUsuario">
+      <div class="menuUsuario" id="menuUsuario">
         <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil"
             src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px"
             style="border-radius: 50%; margin-top: 5px;"></button>
@@ -41,16 +91,16 @@
       <!-- Si ha iniciado sesión -->
 
       <div class="menuUsuario" id="menuAdmin">
-        <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil"
-            src="./Multimedia/Fotos/Usuarios/FelipePerrone.jpg" width="40px"
+        <button class="menuUsuario-boton" style="vertical-align: center;">
+        <img id="imagenPerfil" src="<?php echo $fotoPerfil; ?>" width="40px"
             style="border-radius: 50%; margin-top: 5px;"></button>
-        <div class="menuUsuario-contenido" style="">
-          <img src="./Multimedia/Fotos/Usuarios/FelipePerrone.jpg" alt="Imagen usuario hover" width="75px">
+        <div class="menuUsuario-contenido">
+          <img src="<?php echo $fotoPerfil; ?>" alt="Imagen usuario hover" width="75px">
           <p id="nombreUsuario" style="color: black; text-align: center; font-size: larger;">¡Bienvenido!</p>
 
-          <a href="./administradores.php?admin=">Administrar</a>
-          <button style="margin-top: 15px;" onclick="editarPerfil()">Editar perfil</button>
-          <button onclick="cerrarSesion()">Cerrar sesión</button>
+          <a href="./administradores.php?" style="margin-bottom: 10px;">Administrar</a>
+          <button style="margin-right: 10px;" onclick=" window.location.href = './PHP/editarPerfil.php';">Editar perfil</button>
+          <button  class="botonesMenuAdmin"onclick="cerrarSesion()">Cerrar sesión</button>
         </div>
       </div>
 

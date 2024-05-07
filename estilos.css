@@ -160,7 +160,8 @@ a {
 }
 
 
-/*Menu usuario iniciado sesión*/
+/*----Menu usuario iniciado sesión----*/
+
 .menuUsuario {
   position: relative;
   display: inline-block;
@@ -187,6 +188,7 @@ a {
   text-decoration: none;
   display: block;
   margin-left: -10px;
+ 
 }
 
 .menuUsuario-contenido img {
@@ -216,6 +218,7 @@ a {
 .menuUsuario .menuUsuario-boton:hover {
   background-color: #324679;
 }
+
 
 
 /*-------------------------PP-----------------------------*/
