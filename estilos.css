@@ -156,6 +156,62 @@ a {
 
 .textoScrollResponsiveSI {
   display: none;
+  margin: -100px;
+}
+
+
+/*Menu usuario iniciado sesión*/
+.menuUsuario {
+  position: relative;
+  display: inline-block;
+}
+
+.menuUsuario-contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuUsuario-contenido a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuUsuario-contenido img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.menuUsuario-contenido a:hover {
+  background-color: #f1f1f1;
+}
+
+.menuUsuario:hover .menuUsuario-contenido {
+  display: block;
+}
+
+.menuUsuario .menuUsuario-boton {
+  background-color: #324679;
+  color: white;
+  padding: 0px; /* Aumento del tamaño del botón */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menuUsuario .menuUsuario-boton:hover {
+  background-color: #324679;
 }
 
 
@@ -778,7 +834,6 @@ section div {
   color: #333;
 
 }
-
 
 /*----------------------------Contacto-------------------------------*/
 

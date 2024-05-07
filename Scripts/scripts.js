@@ -184,7 +184,15 @@ function cargarInfoJugador(numeroJugador) {
 }
 
 
+function editarPerfil() {
+    // Aquí puedes agregar el código JavaScript para la funcionalidad de editar perfil
+    alert("Funcionalidad de editar perfil en proceso...");
+}
 
+function cerrarSesion() {
+    // Aquí puedes agregar el código JavaScript para la funcionalidad de cerrar sesión
+    alert("Funcionalidad de cerrar sesión en proceso...");
+}
 
 
 

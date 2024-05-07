@@ -21,16 +21,17 @@
         </li>
       </div>
       <li class="button"><a href="./contacto.html">Contacto Web</a></li>
-      <div class="dropdownNone">
-        <li class="dropdown">
-          <div class="dropdown-content">
-            <a href="./prueba1.html">Español</a>
-            <a href="./prueba2.html">English</a>
-          </div>
-          <button class="dropbtn" style="vertical-align: center;"><img id="imagenPerfil" src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px" style="border-radius: 50%; /*Circulo*/ margin-top: px;">
-            ↓</button>
-        </li>
-      </div>
+      <div class="menuUsuario">
+        <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil" src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px" style="border-radius: 50%; margin-top: 5px;"></button>
+        <div class="menuUsuario-contenido">
+          <img src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
+            <p style="color: black;">Bienvenido, [Nombre de usuario]</p>
+            <a href="./administradores.php">Administrar</a>
+            <button onclick="editarPerfil()">Editar perfil</button>
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+    </div>
+    
 
 
 
