@@ -175,16 +175,18 @@ a {
   z-index: 1;
   border-radius: 10px; /* Bordes redondeados */
   padding: 10px;
-
+  top: 160px; 
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .menuUsuario-contenido a {
   color: black;
   padding: 10px;
   text-decoration: none;
   display: block;
+  margin-left: -10px;
 }
 
 .menuUsuario-contenido img {
@@ -195,6 +197,7 @@ a {
 
 .menuUsuario-contenido a:hover {
   background-color: #f1f1f1;
+  text-decoration: underline;
 }
 
 .menuUsuario:hover .menuUsuario-contenido {

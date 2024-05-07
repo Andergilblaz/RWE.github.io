@@ -194,9 +194,57 @@ function cerrarSesion() {
     alert("Funcionalidad de cerrar sesión en proceso...");
 }
 
+ // Función para obtener el valor del parámetro "temporada" de la URL
+ function getSeasonFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('temporada');
+  }
+
+  // Función para actualizar el texto del botón según la temporada en la URL
+  function updateButtonSeason() {
+    const season = getSeasonFromURL();
+    if (season) {
+      document.querySelector('#botonTemporada').textContent = season + '↓';
+    }
+  }
+
+  // Llamar a la función para actualizar el texto del botón cuando se carga la página
+  updateButtonSeason();
 
 
 
+  function cargarMenuSegunAdmin() {
+    const parametroAdmin = obtenerParametroAdmin();
+    const menuAdmin = document.getElementById('menuAdmin');
+    const menuUsuario = document.getElementById('menuUsuario');
+
+    // Ocultar ambos menús por defecto
+    menuAdmin.style.display = 'none';
+   
+
+    if (parametroAdmin && parametroAdmin === 'a') {
+        // Si el parámetro admin existe y es 'a', mostrar el menú de administrador
+        menuAdmin.style.display = 'block';
+        const nombreUsuario = obtenerParametroUsuario();
+        const nombreUsuarioElemento = document.getElementById('nombreUsuario');
+        if (nombreUsuario) {
+            // Si se proporciona el nombre de usuario en la URL, mostrarlo
+            nombreUsuarioElemento.innerText = `¡Bienvenido, ${nombreUsuario}!`;
+        } else {
+            // Si no se proporciona el nombre de usuario, mostrar un mensaje de bienvenida genérico
+            nombreUsuarioElemento.innerText = '¡Bienvenido!';
+        }
+    } else {
+        // Si el parámetro admin no existe o no es 'a', mostrar el menú de usuario estándar
+        menuUsuario.style.display = 'block';
+    }
+}
+
+function cerrarSesion() {
+    alert('Sesión cerrada correctamente.');
+    // Eliminar el parámetro 'admin' de la URL
+    window.location.href = index.html
+}
 //----------------------------------------Boton Scroll---------------------------------------//
 document.addEventListener("DOMContentLoaded", function () {
     // Obtener referencia al botón de scroll
@@ -214,6 +262,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
 

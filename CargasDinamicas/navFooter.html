@@ -1,9 +1,12 @@
+<head>
+  <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+</head>
 <div id="tablaMenu"> <!--TablaMenu-->
   <header>
 
 
     <ul class="tablaMenu" style="color: white;">
-    
+
       <li><a href="./index.html"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
       <li class="button"><a href="./index.html">Inicio</a></li>
       <li class="button"><a href="./partidos.html">Partidos</a></li>
@@ -21,18 +24,35 @@
         </li>
       </div>
       <li class="button"><a href="./contacto.html">Contacto Web</a></li>
-      <div class="menuUsuario">
-        <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil" src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px" style="border-radius: 50%; margin-top: 5px;"></button>
-        <div class="menuUsuario-contenido">
-          <img src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
-            <p style="color: black;">Bienvenido, [Nombre de usuario]</p>
-            <a href="./administradores.php">Administrar</a>
-            <button onclick="editarPerfil()">Editar perfil</button>
-            <button onclick="cerrarSesion()">Cerrar sesión</button>
-        </div>
-    </div>
-    
 
+      <!-- Si no has iniciado sesión -->
+      <div class="menuUsuario">
+        <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil"
+            src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px"
+            style="border-radius: 50%; margin-top: 5px;"></button>
+        <div class="menuUsuario-contenido" style="margin-top: -10px;">
+          <img src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
+          <p style="color: black; text-align: center; font-size: larger;">¡Bienvenido!</p>
+          <p style="color: rgb(56, 56, 56); text-align: center; margin-top: -15px;">Por favor, Inicia sesión</p>
+          <a href="./inicioDeSesion.html">Iniciar Sesión</a>
+        </div>
+      </div>
+
+      <!-- Si ha iniciado sesión -->
+
+      <div class="menuUsuario" id="menuAdmin">
+        <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil"
+            src="./Multimedia/Fotos/Usuarios/FelipePerrone.jpg" width="40px"
+            style="border-radius: 50%; margin-top: 5px;"></button>
+        <div class="menuUsuario-contenido" style="">
+          <img src="./Multimedia/Fotos/Usuarios/FelipePerrone.jpg" alt="Imagen usuario hover" width="75px">
+          <p id="nombreUsuario" style="color: black; text-align: center; font-size: larger;">¡Bienvenido!</p>
+
+          <a href="./administradores.php?admin=">Administrar</a>
+          <button style="margin-top: 15px;" onclick="editarPerfil()">Editar perfil</button>
+          <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+      </div>
 
 
       <!-- Menu responsive -->
@@ -48,30 +68,14 @@
             <a href="./index.html">Español</a>
             <a href="./pruebas.html">English</a>
             <a href="./contacto.html">Contacto Web</a>
-            <a href="./inicioDeSesion.html"><img id="imagenPerfil" src="/Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="imagenPerfil" width="100px"></a>
+            <a href="./inicioDeSesion.html"><img id="imagenPerfil" src="/Multimedia/Fotos/Usuarios/sinImagen.jpg"
+                alt="imagenPerfil" width="100px"></a>
           </div>
           <button class="dropbtn">Menu ↓</button>
         </li>
       </div>
     </ul>
-    <script>
-      // Función para obtener el valor del parámetro "temporada" de la URL
-      function getSeasonFromURL() {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('temporada');
-      }
 
-      // Función para actualizar el texto del botón según la temporada en la URL
-      function updateButtonSeason() {
-        const season = getSeasonFromURL();
-        if (season) {
-          document.querySelector('#botonTemporada').textContent = season + '↓';
-        }
-      }
-
-      // Llamar a la función para actualizar el texto del botón cuando se carga la página
-      updateButtonSeason();
-    </script>
 
 
 

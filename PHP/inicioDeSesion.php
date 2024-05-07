@@ -21,22 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Recorre cada cuenta de usuario en el XML
         foreach ($xml->cuenta as $cuenta) {
             // Obtiene el usuario y la contraseña de la cuenta actual
-            $xmlUsuario = (string)$cuenta->usuario;
-            $xmlContraseña = (string)$cuenta->contraseña;
+            $xmlUsuario = (string) $cuenta->usuario;
+            $xmlContraseña = (string) $cuenta->contraseña;
 
             // Verifica si el usuario y la contraseña coinciden
             if ($xmlUsuario === $usuario && $xmlContraseña === $contraseña) {
                 $usuarioEncontrado = true;
                 $esAdministrador = ($usuario === 'admin'); // Simulación de estado de administrador
 
-                // Establece el estado de administrador en sessionStorage (JavaScript)
-                echo '<script>sessionStorage.setItem("esAdministrador", ' . ($esAdministrador ? 'true' : 'false') . ');</script>';
-
                 // Guarda el nombre de usuario en la sesión
                 $_SESSION['usuario'] = $usuario;
 
                 // Redirige según el resultado del inicio de sesión
-                header('Location: ../administradores.php');
+                header('Location: ../index.html?admin=' . ($usuario));
                 exit;
             }
         }
@@ -49,3 +46,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<!-- Script JavaScript para guardar el usuario en sessionStorage -->
+<script>
+    // Verificamos si se pasó un usuario en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const usuario = urlParams.get('admin');
+
+    // Si se pasó un usuario en la URL, lo guardamos en sessionStorage
+    if (usuario) {
+        sessionStorage.setItem('usuario', usuario);
+        console.log('Usuario guardado en sessionStorage:', usuario);
+    }
+</script>

@@ -19,7 +19,7 @@
     cargarFooter();
     cargarNoticias();
     cargarTablaClasificacion();
-
+    co
   }
 </script>
 
@@ -101,5 +101,25 @@
     <footer id="footer"> </footer>
   </div>
 </body>
+
+
+<script>
+  // Función para obtener el parámetro de la URL
+  function obtenerParametroURL(nombre) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(nombre);
+  }
+
+  // Obtenemos el usuario de la URL
+  const usuario = obtenerParametroURL('admin');
+
+  // Si se encontró un usuario en la URL, lo guardamos en sessionStorage
+  if (usuario) {
+    sessionStorage.setItem('usuario', usuario);
+    console.log('Usuario guardado en sessionStorage:', usuario);
+  }
+</script>
+
+
 
 </html>

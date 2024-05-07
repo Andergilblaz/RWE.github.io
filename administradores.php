@@ -21,7 +21,8 @@
         <header id="tablaMenu"> <!-- Aquí se cargará el menú dinámico --></header>
     </div>
 
-    <img src="Multimedia/Fotos/Chica.png" class="chica" width="230px" style="float: left; margin-top: 130px; z-index:-1;">
+    <img src="Multimedia/Fotos/Chica.png" class="chica" width="230px"
+        style="float: left; margin-top: 130px; z-index:-1;">
     <img src="Multimedia/Fotos/Chico.png" class="chico" width="250px" style="float: right; margin-top: 120px;">
 
 
@@ -32,11 +33,17 @@
             <?php
             session_start(); // Inicia la sesión
             
-            // Luego puedes acceder a $_SESSION['usuario']
-            if (isset($_SESSION['usuario'])) {
-                $usuario = $_SESSION['usuario'];
+            if (isset($_GET['admin'])) {
+                // Si el parámetro 'admin' está presente en la URL, obtén su valor
+                $usuario = $_GET['admin'];
+
+                // Almacena el usuario en la sesión
+                $_SESSION['usuario'] = $usuario;
+
+                // Muestra un mensaje de bienvenida personalizado
                 echo "<h2>¡Bienvenido $usuario!</h2>";
             } else {
+                // Si no se proporciona el parámetro 'admin' en la URL, muestra un mensaje de bienvenida genérico
                 echo "<h2>¡Bienvenido!</h2>";
             }
             ?>
@@ -137,37 +144,37 @@
                 }
                 ?>
 
-                    <?php if (!empty($envio) && is_array($envio)): ?>
-                        <h2>Mensajes recibidos</h2>
-                        <hr>
-                        <p style="color:Black; font-size:25px"> <strong> Mensaje número <?php echo $_SESSION['posicion'] + 1; ?>
-                                de
-                                <?php echo $_SESSION['numeroregistros']; ?>
-                            </strong>
-                        </p>
-                        <p><strong style="color:Black;">Nombre:</strong>
-                            <?php echo isset($envio['nombre']) ? $envio['nombre'] : 'N/A'; ?></p>
-                        <p><strong style="color:Black;">Apellidos:</strong>
-                            <?php echo isset($envio['apellidos']) ? $envio['apellidos'] : 'N/A'; ?></p>
-                        <p><strong style="color:Black;">Correo:</strong>
-                            <?php echo isset($envio['correo']) ? $envio['correo'] : 'N/A'; ?></p>
-                        <p><strong style="color:Black; z-index:1;">Mensaje:</strong>
-                            <?php echo isset($envio['mensaje']) ? $envio['mensaje'] : 'N/A'; ?></p>
+                <?php if (!empty($envio) && is_array($envio)): ?>
+                    <h2>Mensajes recibidos</h2>
+                    <hr>
+                    <p style="color:Black; font-size:25px"> <strong> Mensaje número <?php echo $_SESSION['posicion'] + 1; ?>
+                            de
+                            <?php echo $_SESSION['numeroregistros']; ?>
+                        </strong>
+                    </p>
+                    <p><strong style="color:Black;">Nombre:</strong>
+                        <?php echo isset($envio['nombre']) ? $envio['nombre'] : 'N/A'; ?></p>
+                    <p><strong style="color:Black;">Apellidos:</strong>
+                        <?php echo isset($envio['apellidos']) ? $envio['apellidos'] : 'N/A'; ?></p>
+                    <p><strong style="color:Black;">Correo:</strong>
+                        <?php echo isset($envio['correo']) ? $envio['correo'] : 'N/A'; ?></p>
+                    <p><strong style="color:Black; z-index:1;">Mensaje:</strong>
+                        <?php echo isset($envio['mensaje']) ? $envio['mensaje'] : 'N/A'; ?></p>
 
-                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                            <input type="hidden" name="leido" value="marcar como leido">
-                            <button style="margin-left:-3px;" class="botonMensajes" type="submit">Marcar como leído</button>
-                        </form>
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <input type="hidden" name="leido" value="marcar como leido">
+                        <button style="margin-left:-3px;" class="botonMensajes" type="submit">Marcar como leído</button>
+                    </form>
 
+                <?php else: ?>
+
+                    <?php if ($_SESSION['posicion'] < 0 || $_SESSION['posicion'] >= $_SESSION['numeroregistros']): ?>
+                        <p>No hay más mensajes para leer.</p>
                     <?php else: ?>
-
-                        <?php if ($_SESSION['posicion'] < 0 || $_SESSION['posicion'] >= $_SESSION['numeroregistros']): ?>
-                            <p>No hay más mensajes para leer.</p>
-                        <?php else: ?>
-                            <p>Error al cargar los mensajes.</p>
-                        <?php endif; ?>
-
+                        <p>Error al cargar los mensajes.</p>
                     <?php endif; ?>
+
+                <?php endif; ?>
 
                 <div class="botonMensajesContainer">
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
