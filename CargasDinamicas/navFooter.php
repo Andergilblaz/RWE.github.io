@@ -118,8 +118,6 @@ if ($nombreUsuario) {
             <a href="./index.html">Español</a>
             <a href="./pruebas.html">English</a>
             <a href="./contacto.html">Contacto Web</a>
-            <a href="./inicioDeSesion.html"><img id="imagenPerfil" src="/Multimedia/Fotos/Usuarios/sinImagen.jpg"
-                alt="imagenPerfil" width="100px"></a>
           </div>
           <button class="dropbtn">Menu ↓</button>
         </li>

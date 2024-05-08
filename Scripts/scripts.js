@@ -46,7 +46,7 @@ function cargarFooter() { //Funcion cargar Footer
 
 
 function cargarNoticias() { //Funcion cargar Footer
-    fetch('CargasDinamicas/noticias.html') //Busca dentro del archivo articulos.html
+    fetch('CargasDinamicas/infoNoticias.html') //Busca dentro del archivo articulos.html
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
