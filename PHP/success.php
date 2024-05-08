@@ -44,9 +44,9 @@ if (!$usuarioActualizado) {
     <h1>Perfil Actualizado</h1>
     <p>Los datos de tu perfil han sido actualizados con éxito:</p>
     <ul>
-        <li><strong>Nombre de Usuario:</strong> <?php echo $usuarioActualizado->usuario; ?></li>
-        <li><strong>Contraseña:</strong> <?php echo $usuarioActualizado->contraseña; ?></li>
-        <!-- Agrega aquí cualquier otro dato que desees mostrar -->
+        <li><strong>Nuevo Nombre de Usuario:</strong> <?php echo $usuarioActualizado->usuario; ?></li>
+        <li><strong>Nueva Contraseña:</strong> <?php echo $usuarioActualizado->contraseña; ?></li>
+       
     </ul>
     <a href="../index.html">Volver a la página principal</a>
 </body>

@@ -82,7 +82,7 @@ if ($nombreUsuario) {
             style="border-radius: 50%; margin-top: 5px;"></button>
         <div class="menuUsuario-contenido" style="margin-top: -10px;">
           <img src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
-          <p style="color: black; text-align: center; font-size: larger;">¡Bienvenido!</p>
+          <p style="color: black; text-align: center; font-size: larger;">¡Bienvenido! </p>
           <p style="color: rgb(56, 56, 56); text-align: center; margin-top: -15px;">Por favor, Inicia sesión</p>
           <a href="./inicioDeSesion.html">Iniciar Sesión</a>
         </div>
@@ -96,7 +96,7 @@ if ($nombreUsuario) {
             style="border-radius: 50%; margin-top: 5px;"></button>
         <div class="menuUsuario-contenido">
           <img src="<?php echo $fotoPerfil; ?>" alt="Imagen usuario hover" width="75px">
-          <p id="nombreUsuario" style="color: black; text-align: center; font-size: larger;">¡Bienvenido!</p>
+          <p id="nombreUsuario" style="color: black; text-align: center; font-size: larger;">¡Bienvenido <?php echo $_SESSION['usuario']; ?>!</p>
 
           <a href="./administradores.php?" style="margin-bottom: 10px;">Administrar</a>
           <button style="margin-right: 10px;" onclick=" window.location.href = './PHP/editarPerfil.php';">Editar perfil</button>

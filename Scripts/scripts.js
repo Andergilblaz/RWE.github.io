@@ -131,13 +131,16 @@ function cargarSeleccionarEquipo() {
 }
 
 function cargarInfoBoadilla() {
+    // Ocultar el botón antes de cargar la información del equipo
+    document.getElementById('botonTemporada').style.display = 'none';
+
     fetch('CargasDinamicas/infoEquipos.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('infoEquipo').style.display = 'block';
             const parser = new DOMParser();
             const htmlDocument = parser.parseFromString(data, 'text/html');
-
+            
             // Extraer el contenido del div con id 'infoBoadilla' del documento analizado
             const infoBoadillaContent = htmlDocument.getElementById('infoBoadilla');
 
@@ -156,6 +159,7 @@ function cargarInfoBoadilla() {
             console.error("Error al cargar y procesar el documento HTML:", error);
         });
 }
+
 
 function cargarPartidosJ1() {
     fetch('CargasDinamicas/infoPartidos.html')

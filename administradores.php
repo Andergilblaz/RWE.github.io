@@ -1,9 +1,20 @@
+<?php
+session_start();
+
+// Verificar si el usuario está autenticado
+if (!isset($_SESSION['usuario'])) {
+    $alertMessage = "⚠️Inicia sesión para acceder a esta página⚠️";
+    echo "<script>alert('$alertMessage'); window.location.href='./inicioDeSesion.html';</script>";
+   exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Resultados Waterpolo Español</title>
+    <title>RWE - Administrador: <?php echo $_SESSION['usuario']; ?></title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
     <script src="Scripts/scripts.js"></script>
@@ -14,6 +25,7 @@
         cargarTablaMenu();
     };
 </script>
+
 
 <body>
 
@@ -31,7 +43,7 @@
     <article class="cuadradoInfo">
         <div class="contacto"> <!-- Cuadrado de mensajes recibidos-->
             <?php
-            session_start(); // Inicia la sesión
+           
             
             // Luego puedes acceder a $_SESSION['usuario']
             if (isset($_SESSION['usuario'])) {

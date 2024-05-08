@@ -19,12 +19,12 @@
     </cuenta>
     <cuenta>
         <usuario>ander</usuario>
-        <contraseña>1234</contraseña>
+        <contraseña>a</contraseña>
         <foto>./Multimedia/Fotos/Usuarios/perfilAnder.jpg</foto>
     </cuenta>
     <cuenta>
         <usuario>david</usuario>
-        <contraseña>1234</contraseña>
+        <contraseña>a</contraseña>
         <foto>./Multimedia/Fotos/Usuarios/perfilDavid.jpg</foto>
     </cuenta>
 
