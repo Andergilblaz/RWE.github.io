@@ -9,86 +9,95 @@
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
 
-<script> //Script para cargar la pagina principal por defecto
+<script>
     window.onload = function () {
-        cargarTablaMenu()
-        cargarFooter()
-        cargarPartidosJ1()
-       
-    };
+    cargarTablaMenu();
+    cargarFooter();
+    }
 </script>
 
 <body>
 
-    <div class="tablaMenu"> <!--tablaMenu-->
+    <div class="tablaMenu">
         <!-- Aqui se mostrara la tablaMenu -->
         <header id="tablaMenu"> </header>
     </div>
 
-    <article class="cuadradoInfo"> <!--CuadradoInfo-->
+    <article class="cuadradoInfo">
 
         <div class="contacto">
-
             <h2>Contacta con nosotros</h2>
-            
             <p>Estaremos encantados de responder cualquier pregunta que tengas. Complete el formulario y nos
-                comunicaremos con usted tan pronto como podamos.</p>
-                <hr>
-            <form id="formContacto" action="PHP-XML-XSL-XSD/mensajesContacto.php" method="post">
-
+                comunicaremos contigo tan pronto como podamos.</p>
+            <hr>
+            <form id="formContacto" action="PHP/mensajesContacto.php" method="post"
+                onsubmit="return validarFormulario()">
                 <div style="display: flex;">
                     <div style="display: flex;">
-                        <div for="message"> <Label>Nombre:</Label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" style="border: 1px solid #ccc;"><br>
-                           
+                        <div for="message">
+                            <label>Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"
+                                style="border: 1px solid #ccc;" required><br>
                         </div>
-
-                        <div style="margin-left: 20px;"> <Label for="message">Apellido/s:</Label>
-                            <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tu apellido" style="border: 1px solid #ccc;"><br>
-                           
+                        <div style="margin-left: 20px;">
+                            <label for="message">Apellido/s:</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tu apellido"
+                                style="border: 1px solid #ccc;" required><br>
                         </div>
                     </div>
-
                 </div><br>
-                <div> <!--Gmail-->
-                    <Label htmlFor="message">Correo:</Label>
-                    <input type="text" id="correo" name="correo" placeholder="Introduce tu correo" style="border: 1px solid #ccc;"><br>
+                <div>
+                    <label for="message">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Introduce tu correo"
+                        style="border: 1px solid #ccc;" required><br>
                 </div>
-
-                <div> <!--Mensaje-->
-                    <Label htmlFor="message">Mensaje:</Label>
-                    <Textarea name="mensaje" id="mensaje" placeholder="Pon aquí tu mensaje"></Textarea><br><br>
+                <div>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Pon aquí tu mensaje" required></textarea><br><br>
                 </div>
-
-                <input type="submit" value="Enviar" target="_blank"><br><br>
-
+                <input type="submit" value="Enviar">
             </form>
-
         </div>
 
-        <br>
-        </div> <!-- Fin del div del cuadrado -->
     </article>
-    <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
-    <div> <!--footer-->
-        <!-- Aqui se mostrara el footer -->
+
+    <br><br><br><br>
+
+    <div>
         <footer id="footer"> </footer>
     </div>
 
     <script>
-    // JavaScript para mostrar el mensaje de confirmación si el formulario se ha enviado correctamente
-    document.addEventListener('DOMContentLoaded', function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const enviado = urlParams.get('enviado');
-        
-        if (enviado === 'true') {
-            if (confirm('¡Mensaje enviado correctamente, contactaremos contigo lo antes posible!')) {
-                window.location.href = 'contacto.html'; // Redirige a contacto.html cuando el usuario acepteS
-            }
-        }
-    });
-</script>
+        function validarFormulario() {
+            // Obtener los valores de los campos del formulario
+            const nombre = document.getElementById('nombre').value.trim();
+            const apellidos = document.getElementById('apellidos').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
 
+            // Verificar que los campos no estén vacíos
+            if (nombre === '' || apellidos === '' || correo === '' || mensaje === '') {
+                alert('Por favor, complete todos los campos del formulario.');
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Si todos los campos están completos, se permite enviar el formulario
+            return true;
+        }
+
+
+        // JavaScript para mostrar el mensaje de confirmación si el formulario se ha enviado correctamente
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const enviado = urlParams.get('enviado');
+
+            if (enviado === 'true') {
+                if (confirm('¡Mensaje enviado correctamente, contactaremos contigo lo antes posible!')) {
+                    window.location.href = 'contacto.html'; // Redirige a contacto.html cuando el usuario acepteS
+                }
+            }
+        });
+    </script>
 
 </body>
 

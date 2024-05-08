@@ -5,6 +5,7 @@
     <xs:sequence>
       <xs:element name="usuario" type="xs:string"/>
       <xs:element name="contraseña" type="xs:string"/>
+      <xs:element name="foto" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 

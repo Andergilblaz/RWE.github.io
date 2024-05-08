@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de elementos -->
+    <xs:element name="temporadas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="temporada" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="temporada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numeroTemporada" type="xs:integer"/>
+                <xs:element name="fechaTemporada" type="xs:string"/>         
+                <xs:element ref="equipos"/>
+                <xs:element ref="jornadas" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="equipos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="equipo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="equipo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombreEquipo" type="xs:string"/>
+                <xs:element name="escudo" type="xs:string"/>
+                <xs:element name="ciudad" type="xs:string"/>
+                <xs:element name="habitantes" type="xs:integer"/>
+                <xs:element ref="jugadores"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jugadores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jugador" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellidos" type="xs:string"/>
+                            <xs:element name="fechaNacimiento" type="xs:date"/>
+                            <xs:element name="nacionalidad" type="xs:string"/>
+                            <xs:element name="posicion" type="xs:string"/>
+                            <xs:element name="dorsal" type="xs:integer"/>
+                            <xs:element name="foto" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jornadas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jornada" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jornada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numeroJornada" type="xs:string"/>
+                <xs:element ref="partidos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partido" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="equipoLocal" type="xs:string"/>
+                <xs:element name="equipoVisitante" type="xs:string"/>
+                <xs:element name="fechaPartido" type="xs:string"/>
+                <xs:element name="piscinaPartido" type="xs:integer"/>
+                <xs:element name="estadoPartido" type="xs:string"/>
+                <xs:element name="resultado" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

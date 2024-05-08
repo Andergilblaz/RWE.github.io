@@ -1,3 +1,8 @@
+/*
+⚠️PARA BUSCAR RÁPIDAMENTE PRESIONA CTRL + F 
+Y ESCRIBE EL NOMBRE DE LA SECCIÓN QUE DESEAS ENCONTRAR⚠️
+*/
+
 body {
   background-size: auto;
 
@@ -12,10 +17,9 @@ body {
   height: 52px;
   font-weight: bold;
   position: fixed;
-  top: 2%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,11 +27,24 @@ body {
   z-index: 1000;
 }
 
-
-.tablaMenu th a {
-  margin: 20px;
-  /* Adjust the value for desired space */
+.menuResponsive {
+  display: none;
 }
+
+.tablaMenu ul {
+  padding: 0;
+  /* Elimina el relleno predeterminado de la lista */
+  margin-top: 23px;
+  /* Elimina el margen predeterminado de la lista */
+  list-style-type: none;
+  /* Elimina los puntos de la lista */
+  width: 90%;
+}
+
+.tablaMenu li a {
+  font-size: 18px;
+}
+
 
 h1 {
   text-align: center;
@@ -35,7 +52,6 @@ h1 {
   padding-top: 15%;
   font-size: 45px;
   text-align: center;
-
 }
 
 
@@ -61,14 +77,14 @@ h1 {
 
 
 .dropdown-content {
-  /*Contenido desplegado */
   display: none;
   position: absolute;
   background-color: #324679;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+  top: 100%;
   z-index: 1;
-  border-radius: 12px;
+  border-radius: 5px;
+  margin-top: -15px;
 }
 
 .button {
@@ -77,7 +93,7 @@ h1 {
 }
 
 .dropdown-content a {
-  padding: 6px;
+  padding: 7px;
   /*Hueco entre botones desplegados*/
   text-decoration: none;
   display: block;
@@ -111,7 +127,7 @@ a {
   border-radius: 10px;
   border-color: black;
   border-style: groove;
-
+  height: 2200px;
 }
 
 .chico {
@@ -143,6 +159,72 @@ a {
 }
 
 
+.textoScrollResponsiveSI {
+  display: none;
+  margin: -100px;
+}
+
+
+/*----Menu usuario iniciado sesión----*/
+
+.menuUsuario {
+  position: relative;
+  display: inline-block;
+}
+
+.menuUsuario-contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 10px;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.menuUsuario-contenido a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  margin-left: -10px;
+
+}
+
+.menuUsuario-contenido img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.menuUsuario-contenido a:hover {
+  background-color: #f1f1f1;
+  text-decoration: underline;
+}
+
+.menuUsuario:hover .menuUsuario-contenido {
+  display: block;
+}
+
+.menuUsuario .menuUsuario-boton {
+  background-color: #324679;
+  color: white;
+  padding: 0px;
+  /* Aumento del tamaño del botón */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menuUsuario .menuUsuario-boton:hover {
+  background-color: #324679;
+}
 
 
 
@@ -247,6 +329,9 @@ a {
   }
 }
 
+.tablaClub {
+  width: 1000px;
+}
 
 /*-----------------------------------Noticias--------------------------------*/
 
@@ -256,8 +341,8 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 3%;
-  margin-left: -250px;
-  margin-top: -400px;
+  margin-left: -297px;
+
 }
 
 /* Contenedor de la cuadrícula */
@@ -272,6 +357,7 @@ a {
 
 /* Estilo para cada elemento de la cuadrícula */
 .grid-item {
+  margin-top: 5px;
   position: relative;
   /* Posición relativa para contener el borde */
   overflow: hidden;
@@ -315,11 +401,6 @@ a {
   }
 }
 
-section {
-  view-timeline: --scroll;
-}
-
-
 .scrollh1 span:first-child {
   animation: fade-away both linear;
   animation-timeline: --scroll;
@@ -341,6 +422,7 @@ section {
 /* basic */
 section {
   position: relative;
+  view-timeline: --scroll;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -367,7 +449,7 @@ section:nth-of-type(2) {
 .scrollh3 {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   text-align: center;
-  margin-top: -25px;
+
 }
 
 section div {
@@ -395,177 +477,164 @@ section div {
   box-sizing: border-box;
 }
 
-/*-----------------------------------------Responsive------------------------------*/
-/* Estilos para elementos específicos en dispositivos pequeños */
-@media (max-width: 768px) {
+/*----------------------Responsive------------------------*/
 
-  body {
-    background-size: auto;
-    background-color: rgb(1, 126, 209);
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+/* Index */
+@media screen and (max-width: 850px) {
 
-  /* Tabla de menú */
-  .tablaMenu {
-    background-color: #324679;
-    width: 100%;
-    height: 50px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    /* Cambiado */
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 40px;
-  }
-
-  .tablaMenu button {
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .tablaMenu .menuDesplegable {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #324679;
-    border-radius: 10px;
-    padding: 10px;
+  .dropdownNone {
     display: none;
   }
 
-  .tablaMenu:hover .menuDesplegable {
+  .menuResponsive {
     display: block;
   }
 
-  /* Cuadrado de información */
-  .cuadradoInfo {
-    background-color: #dfe3df;
-    margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 500px;
-    border-radius: 10px;
-    border-style: groove;
-    padding: 20px;
-    height: auto;
+  .tablaMenu.show {
+    display: flex;
   }
 
-  /* Próximos partidos */
-  .ppc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .chico,
+  .chica {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #324679;
+    min-width: 100px;
+    top: 100%;
+
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .dropdown-content a:first-child {
     margin-top: 20px;
   }
 
-  /* Clasificación */
+  .dropdown-content a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .textoScrollResponsiveNO {
+    display: none;
+  }
+
+  .textoScrollResponsiveSI {
+    display: block;
+  }
+
+.h1ScrollResponsive{
+  margin-top: -415px;
+}
+
+  .cuadradoInfo {
+    width: 99%;
+    margin-left: 4px;
+    margin-top: 45%;
+    height: 3650px;
+    
+  }
+
+  .ppc {
+    display: table-row;
+    font-size: 12px;    
+  }
+
+  .ppcResponsive{
+    margin-top: -550px;
+  }
+
+
+  .ppbody,
+  .container {
+    font-size: 12px;
+    margin-left: 0;
+    width: 98%;
+    height: fit-content;
+  }
+
+
+  .match-details {
+    font-size: xx-small;
+    margin-top: 10%;
+  }
+
+
+  .team-details img {
+    width: 70px;
+  }
+
+  .tablaClub {
+    width: 200px;
+  }
+
+
+  .clasificacionContenedorGeneral h2 {
+    margin-top: 10%;
+    margin-left: -10%;
+
+  }
+  .textoClasificaciónResponsive{
+    margin-left: -30px;
+  }
+
   .clasificacionContenedor {
     background-color: white;
     border-radius: 12px;
     padding: 12px;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow-x: auto;
+    width: 109%;
+    height: fit-content;
+    margin-left: -11%;
+    margin-bottom: 10%;
   }
 
-  .tablaClasificacion table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  .tablaClasificacion th,
-  .tablaClasificacion td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: center;
-  }
-
-  .tablaClasificacion th {
-    background-color: #f2f2f2;
-  }
-
-  /* Noticias destacadas */
-  .noticias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  /* Noticias destacadas - Artículos */
-  .grid-item {
-    width: 100%;
-    /* Modificado para ocupar el ancho completo */
-    margin: 10px auto;
-    /* Modificado para centrar */
-    max-width: 300px;
-    /* Agregado para limitar el ancho */
-  }
-
-  .grid-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Footer */
   .footer {
-    background-color: #324679;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: white;
+    position: inherit;
+    width: 103%;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* 3 columnas con igual anchura */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+
+   
+  }
+  .noticias {
+  margin: 0;
   }
 }
 
-
-/* Estilos para elementos específicos en dispositivos medianos */
-@media (max-width: 992px) {
-
-  .container,
-  .tablaMenu {
-    width: 97%;
-    /* Ajustar el ancho máximo */
-    max-width: 100%;
-  }
-
-  .ppc {
-    flex-direction: column;
-    /* Cambiar a diseño de columna */
-  }
-}
-
-/* Estilos para elementos específicos en dispositivos grandes */
-@media (min-width: 1200px) {
-  .tablaMenu {
-    padding: 15px;
-    /* Ajustar espaciado */
-  }
-
-  .ppc {
-    justify-content: space-between;
-    /* Alinear elementos */
-  }
-}
 
 /*----------------------------------FotosEquipos------------------------*/
 
 .imagenes {
   display: flex;
   width: 600px;
-
+  height: 25vh;
   align-items: center;
   margin-left: 25%;
   margin-top: -200px;
@@ -687,13 +756,17 @@ section div {
 
 /*-----------------------------Partidos-----------------------------*/
 
+.contenedorGeneralPartidos {
+  /*En partidos.html*/
+  display: flex;
+  justify-content: center;
+}
+
 .divBtnJornadas {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-
-
 }
 
 .btnJornadas {
@@ -737,9 +810,7 @@ section div {
 .partidosContainer {
   border-radius: 12px;
   width: 425px;
-  /* Adjust width as needed */
-  height: 300px;
-  /* Adjust height as needed */
+  height: 290px;
   margin: 50px auto;
   padding: 10px;
   background-color: #fff;
@@ -749,7 +820,8 @@ section div {
 
 .detallesPartido h1 {
   font-size: 28px;
-  margin-top: -70px;
+  margin-top: -60px;
+  /*Altura para el texto de 1ª división*/
   margin-bottom: 10px;
 }
 
@@ -992,34 +1064,40 @@ input[type="password"] {
 
 /*-------------------------------InfoJugador-------------------------*/
 
-.infoJugador h1{
-  margin-top: -130px;
+.infoJugador h1 {
+  margin-top: -145px;
 }
-.infoJugador{
+
+.infoJugador {
   font-size: larger;
   margin-left: 10px;
-  
-}
-.infoJugador h2 {
-  text-decoration: underline;
+
 }
 
-.imagenesJugadores{
+.infoJugador h2 {
+  text-align: center;
+}
+
+.imagenesJugadores img {
   float: right;
   flex: 1;
-  margin-top: -590px;
-  margin-right: 25px;
-  height: 200px;
+  margin-top: -400px;
+  margin-right: 150px;
+  border-radius: 10px;
+
 }
 
-.cuadradoContenedor{
+
+
+.cuadradoContenedor {
   border-radius: 12px;
-width: 50%;
-/* Adjust width as needed */
-height: auto;
-margin: 10px;
-padding: 10px;
-background-color: #fff;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-margin-top: 0;
+  width: 50%;
+  /* Adjust width as needed */
+  height: auto;
+  margin: 10px;
+  margin-left: 100px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
 }

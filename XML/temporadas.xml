@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="temporadas.xsd"?>
+
+<temporadas>
+    <temporada>
+        <numeroTemporada>1</numeroTemporada>
+        <fechaTemporada>2023-24</fechaTemporada>
+        <equipos>
+            <equipo>
+                <nombreEquipo>Tenerife</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barceloneta</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Boadilla</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barcelona</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Catalunya</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Mediterrani</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+        </equipos>
+        <jornadas>
+            <jornada>
+                <numeroJornada>1-23</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>aa CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>     
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>2</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>    
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>      
+                    </partido>
+                    <partido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <piscinaPartido>1</piscinaPartido>
+                        <estadoPartido>Finalizado</estadoPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+        </jornadas>
+    </temporada>
+</temporadas>

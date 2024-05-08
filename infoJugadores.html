@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-y: hidden;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados Waterpolo Español</title>
-    <link rel="stylesheet" href="./estilos.css">
-    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <link rel="stylesheet" href="estilos.css">
+    <script src="./Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
     <link rel="icon" type="image/jpg" href="./Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
 
@@ -17,6 +17,11 @@
         cargarTablaMenu();
         cargarFooter();
     }
+
+    function volverJugador() {
+        window.location.href = 'equipos.html';
+    }
+
 
     /*Script para que cargue el jugador con el id que sale en la URL de la pagina*/
     document.addEventListener('DOMContentLoaded', function () {
@@ -50,38 +55,32 @@
     </div>
 
     <article> <!--CuadradoInfo-->
-       <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
+        <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
 
             <div id="infoJugador1" class="infoJugador">
-               
-                <h1>Roger Tahull</h1> 
+                <button class="btnAtras" onclick="volverJugador();">←</button>
+                <h1 style="margin-top: -220px;">Roger Tahull</h1>
                 <hr>
 
                 <article class="cuadradoContenedor">
-                    <h2>Información del Jugador</h2> 
-                <p> <strong> Nombre Completo:</strong> Roger Tahull </p>
-                <p> <strong> Nacionalidad:</strong> Roger Tahull </p>
-                <p> <strong> Edad:</strong> Roger Tahull </p>
-                <p> <strong> Ciudad Nacimiento:</strong> Roger Tahull </p>
-                <p> <strong> Fecha Nacimiento:</strong> Roger Tahull </p>
-               
-               </article>
+                    <h2>Información del Jugador</h2>
+                    <hr>
+                    <p> <strong> Nombre:</strong> Roger </p>
+                    <p> <strong> Apellido/s:</strong> Tahull </p>
+                    <p> <strong> Nacionalidad:</strong> Española </p>
+                    <p> <strong> Fecha nacimiento:</strong> 1991-03-30 </p>
+                    <p> <strong> Posición:</strong> Delantero </p>
+                    <p> <strong> Dorsal:</strong> 33 </p>
+                    <br>
+                </article>
 
-               <article class="cuadradoContenedor">
-                <h2>Equipo Actual</h2> s
-                <p> <strong> Equipo:</strong> CDN Boadilla </p>
-                <img src="./Multimedia/Fotos//Escudo Equipos/cdn-boadilla.png" alt="Escudo boadilla" width="50px">
-                <p> <strong> Posición:</strong> Delantero</p>
-                <p> <strong> Goles:</strong> 12 </p>
-                <p> <strong> Asistencias:</strong> 22</p>
-                <p> <strong> Tarjetas Amarillas:</strong> 11 </p>
-                <p> <strong> Tarjetas Rojas:</strong> 2 </p>
-               </article>
 
-              <aside class="imagenesJugadores">
-                <img src="./Multimedia/Fotos/Jugadores/Boadilla/RogerTahullInfo.jpg" alt="">
-              </aside>
-              <br><br>
+                <aside class="imagenesJugadores">
+                    <img src="./Multimedia/Fotos/Jugadores/Boadilla/RogerTahullInfo.jpg" alt="Foto roger" width="300px"
+                        height=390px>
+                </aside>
+                <br>
+
 
             </div>
             <div id="infoJugador2">
@@ -91,7 +90,7 @@
                 <p>Hola Mundo3!</p>
             </div>
 
-          
+
         </div>
     </article><br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
 
