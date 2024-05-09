@@ -91,9 +91,10 @@
             <xs:sequence>
                 <xs:element name="equipoLocal" type="xs:string"/>
                 <xs:element name="equipoVisitante" type="xs:string"/>
+                <xs:element name="escudoLocal" type="xs:string"/>
+                <xs:element name="escudoVisitante" type="xs:string"/>
                 <xs:element name="fechaPartido" type="xs:string"/>
-                <xs:element name="piscinaPartido" type="xs:integer"/>
-                <xs:element name="estadoPartido" type="xs:string"/>
+                <xs:element name="piscinaPartido" type="xs:string"/>
                 <xs:element name="resultado" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>

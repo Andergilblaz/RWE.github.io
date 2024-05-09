@@ -6,27 +6,9 @@
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <script src="Scripts/partidos.js"></script> <!-- Incluye el archivo JavaScript -->
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
-
-<script>
-    window.onload = function () {
-        cargarTablaMenu();
-        cargarFooter();
-        cargarPartidosJ1();
-
-        var urlParams = new URLSearchParams(window.location.search);
-        var temporada = urlParams.get('temporada');
-
-        if (temporada) {
-            var boton = document.querySelector('#botonTemporada');
-            if (boton) {
-                boton.textContent = temporada + '↓';
-                console.log(temporada);
-            }
-        }
-    };
-</script>
 
 <body>
 
@@ -68,7 +50,7 @@
 
             </div>
 
-            <div id="partidos" class="contenedorGeneralPartidos">
+            <div id="contenedorResultados" class="contenedorGeneralPartidos">
                 <!-- Aqui caragaran los partidos de la jornada seleccionada -->
             </div>
 
@@ -80,7 +62,25 @@
         <!-- Aqui se mostrara el footer -->
         <footer id="footer"> </footer>
     </div>
-</body>
 
+    <script>
+        window.onload = function () {
+            cargarTablaMenu();
+            cargarFooter();
+            var urlParams = new URLSearchParams(window.location.search);
+            var temporada = urlParams.get('temporada');
+
+            if (temporada) {
+                cargarResultadosTemporada(temporada);
+                var boton = document.querySelector('#botonTemporada');
+                if (boton) {
+                    boton.textContent = temporada + '↓';
+                    console.log(temporada);
+                }
+            }
+        };
+    </script>
+
+</body>
 
 </html>

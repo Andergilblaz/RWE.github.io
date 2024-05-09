@@ -47,7 +47,7 @@
             </equipo>
             <equipo>
                 <nombreEquipo>Barceloneta</nombreEquipo>
-                <escudo>escudo1.jpg</escudo>
+                <escudo>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudo>
                 <ciudad>Tenerife</ciudad>
                 <habitantes>100000</habitantes>
                 <jugadores>
@@ -246,27 +246,31 @@
                 <numeroJornada>1-23</numeroJornada>
                 <partidos>
                     <partido>
-                        <equipoLocal>aa CNAB</equipoLocal>
-                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Boadilla</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>
-                        <estadoPartido>Finalizado</estadoPartido>
+                        <piscinaPartido>Club Natació Atlétic-Barcelona</piscinaPartido>
                         <resultado>3-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
-                        <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>
+                        
                     </partido>
                     <partido>
-                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
-                        <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>     
                     </partido>
                 </partidos>
@@ -275,27 +279,30 @@
                 <numeroJornada>2-23</numeroJornada>
                 <partidos>
                     <partido>
-                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>    
-                        <estadoPartido>Finalizado</estadoPartido>
-                        <resultado>3-2</resultado>      
+                        <resultado>5-2</resultado>      
                     </partido>
                     <partido>
-                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
-                        <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Zodiac CNAB</equipoLocal>
+                        <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
-                        <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>
                     </partido>
                 </partidos>
