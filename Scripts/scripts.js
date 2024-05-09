@@ -174,6 +174,24 @@ function cargarPartidosJ1() {
         .catch(error => {
             console.error("Error al cargar y procesar el documento HTML:", error);
         });
+        console.log("Cargando partidos de la jornada 1...");
+}
+
+function cargarPartidosJ2() {
+    fetch('CargasDinamicas/infoPartidos.html')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const htmlDocument = parser.parseFromString(data, 'text/html');
+
+            const partidosJ2 = htmlDocument.getElementById('jornada2').innerHTML; // Obtener el contenido de Jornada2
+            document.getElementById('partidos').innerHTML = partidosJ2; // Corregir el nombre de la variable a partidosJ2
+        })
+        .catch(error => {
+            console.error("Error al cargar y procesar el documento HTML:", error);
+        });
+
+    console.log("Cargando partidos de la jornada 2...");
 }
 
 
@@ -270,6 +288,94 @@ function cerrarSesion() {
     window.sessionStorage.clear(); // Borra el sessionStorage
     window.location.href = './index.html'; // Redirige al index
 }
+
+
+
+//----------------------------------------Cargar Resultados---------------------------------------//
+
+
+// Función para cargar los datos del XML y generar el HTML correspondiente
+function cargarResultadosTemporada(temporada) {
+    // Ruta del archivo XML
+    var url = './XML/temporadas.xml'; // Ajusta la ruta según la ubicación de tu archivo XML
+
+    // Realizar la solicitud AJAX
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Cuando la solicitud sea exitosa, procesar el XML
+            procesarXML(this, temporada);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+
+// Función para procesar el XML y generar el HTML correspondiente
+function procesarXML(xml, temporada) {
+    var xmlDoc = xml.responseXML;
+
+    // Obtener todas las temporadas del XML
+    var temporadas = xmlDoc.getElementsByTagName("temporada");
+
+    // Iterar sobre las temporadas para encontrar la temporada especificada
+    for (var i = 0; i < temporadas.length; i++) {
+        var temporadaActual = temporadas[i].getElementsByTagName("fechaTemporada")[0].childNodes[0].nodeValue;
+        
+        // Verificar si la temporada coincide
+        if (temporadaActual === temporada) {
+            // Obtener los datos de las jornadas de la temporada
+            var jornadas = temporadas[i].getElementsByTagName("jornada");
+
+            // Generar el HTML para mostrar los resultados de las jornadas
+            var resultadosHTML = '<div id="temporada' + (i+1) + '">';
+
+            for (var j = 0; j < jornadas.length; j++) {
+                var jornada = jornadas[j];
+                var numeroJornada = jornada.getElementsByTagName("numeroJornada")[0].childNodes[0].nodeValue;
+                var partidos = jornada.getElementsByTagName("partido");
+
+                resultadosHTML += '<div id="jornada' + (j+1) + '">';
+
+                for (var k = 0; k < partidos.length; k++) {
+                    var partido = partidos[k];
+                    var equipoLocal = partido.getElementsByTagName("equipoLocal")[0].childNodes[0].nodeValue;
+                    var equipoVisitante = partido.getElementsByTagName("equipoVisitante")[0].childNodes[0].nodeValue;
+                    var fechaPartido = partido.getElementsByTagName("fechaPartido")[0].childNodes[0].nodeValue;
+                    var resultado = partido.getElementsByTagName("resultado")[0].childNodes[0].nodeValue;
+
+                    resultadosHTML += '<div>';
+                    resultadosHTML += '<h1>1ª Division Española</h1>';
+                    resultadosHTML += '<p>' + equipoLocal + '</p>';
+                    resultadosHTML += '<p>' + fechaPartido + '</p>';
+                    resultadosHTML += '<p><strong>Resultado:</strong> ' + resultado + '</p>';
+                    resultadosHTML += '</div>';
+                }
+
+                resultadosHTML += '</div>';
+            }
+
+            resultadosHTML += '</div>';
+
+            // Insertar el HTML generado en el contenedor deseado
+            document.getElementById("contenedorResultados").innerHTML = resultadosHTML;
+
+            // Salir del bucle una vez que se haya encontrado la temporada
+            return;
+        }
+    }
+
+    // Si no se encuentra la temporada
+    document.getElementById("contenedorResultados").innerHTML = "No se encontraron resultados para la temporada especificada.";
+}
+
+// Llamar a la función para cargar los resultados de la temporada 2023-24
+cargarResultadosTemporada("2023-24");
+
+
+
+
+
 //----------------------------------------Boton Scroll---------------------------------------//
 document.addEventListener("DOMContentLoaded", function () {
     // Obtener referencia al botón de scroll

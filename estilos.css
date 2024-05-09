@@ -127,8 +127,8 @@ a {
   border-radius: 10px;
   border-color: black;
   border-style: groove;
-  height: 2200px;
 }
+
 
 .chico {
   right: 5px;
@@ -547,12 +547,12 @@ section div {
   margin-top: -415px;
 }
 
-  .cuadradoInfo {
-    width: 99%;
+  #cuadradoInfoIndex .cuadradoInfo {
+    width: 98%;
     margin-left: 4px;
     margin-top: 45%;
     height: 3650px;
-    
+    margin-right: 4px;
   }
 
   .ppc {

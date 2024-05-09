@@ -272,12 +272,12 @@
                 </partidos>
             </jornada>
             <jornada>
-                <numeroJornada>2</numeroJornada>
+                <numeroJornada>2-23</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Zodiac CNAB</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>    
                         <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>      
@@ -285,7 +285,7 @@
                     <partido>
                         <equipoLocal>Zodiac CNAB</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
                         <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>
@@ -293,7 +293,7 @@
                     <partido>
                         <equipoLocal>Zodiac CNAB</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <piscinaPartido>1</piscinaPartido>
                         <estadoPartido>Finalizado</estadoPartido>
                         <resultado>3-2</resultado>
