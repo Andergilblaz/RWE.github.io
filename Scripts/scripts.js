@@ -161,38 +161,6 @@ function cargarInfoBoadilla() {
 }
 
 
-function cargarPartidosJ1() {
-    fetch('CargasDinamicas/infoPartidos.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const htmlDocument = parser.parseFromString(data, 'text/html');
-
-            const partidosJ1 = htmlDocument.getElementById('jornada1').innerHTML; // Obtener el contenido de Jornada1
-            document.getElementById('partidos').innerHTML = partidosJ1; // Asignar el contenido a 'partidosJ1'
-        })
-        .catch(error => {
-            console.error("Error al cargar y procesar el documento HTML:", error);
-        });
-        console.log("Cargando partidos de la jornada 1...");
-}
-
-function cargarPartidosJ2() {
-    fetch('CargasDinamicas/infoPartidos.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const htmlDocument = parser.parseFromString(data, 'text/html');
-
-            const partidosJ2 = htmlDocument.getElementById('jornada2').innerHTML; // Obtener el contenido de Jornada2
-            document.getElementById('partidos').innerHTML = partidosJ2; // Corregir el nombre de la variable a partidosJ2
-        })
-        .catch(error => {
-            console.error("Error al cargar y procesar el documento HTML:", error);
-        });
-
-    console.log("Cargando partidos de la jornada 2...");
-}
 
 
 
@@ -249,11 +217,6 @@ function updateButtonSeason() {
         document.querySelector('#botonTemporada').textContent = season + '↓';
     }
 }
-
-// Llamar a la función para actualizar el texto del botón cuando se carga la página
-updateButtonSeason();
-
-
 
 function cargarMenuSegunAdmin() {
     const parametroAdmin = obtenerParametroAdmin();

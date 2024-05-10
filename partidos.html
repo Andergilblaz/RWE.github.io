@@ -5,82 +5,81 @@
     <meta charset="UTF-8">
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
-    <script src="Scripts/partidos.js"></script> <!-- Incluye el archivo JavaScript -->
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
 
 <body>
-
-    <div class="tablaMenu"> <!--tablaMenu-->
-        <!-- Aqui se mostrara la tablaMenu -->
-        <header id="tablaMenu"> </header>
+    <div class="tablaMenu">
+        <header id="tablaMenu"></header>
     </div>
 
-    <article> <!--CuadradoInfo-->
+    <article>
         <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
         <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
-        <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
-
-
-            <!--Botón para el cambio de temporada-->
-
+        <div class="cuadradoInfo">
             <div class="dropdownNone" style="float:left;">
-                <li class="dropdown" style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
-                    <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;"  width="10px">
-                        <a href="./partidos.html?temporada=2022-23">2022-23</a>
-                        <a href="./partidos.html?temporada=2023-24">2023-24</a>
+                <li class="dropdown"
+                    style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
+                    <div class="dropdown-content"
+                        style="margin-top: -569px; margin-right: 10px; text-align: center;" width="10px">
+                        <a href="./partidos.html?temporada=2023&jornada=1">2023</a>
+                        <a href="./partidos.html?temporada=2024&jornada=1">2024</a>
                     </div>
-                    <button id="botonTemporada" class="dropbtn"  style=" font-size: large; border-radius: 5px;">2023-24↓</button>
+                    <button id="botonTemporada" class="dropbtn"
+                        style=" font-size: large; border-radius: 5px;">2024↓</button>
                 </li>
             </div>
 
-            <div class="divBtnJornadas" style="margin-bottom: 50px;"> <!--Menu seleccion de jornada-->
-
-                <button class="btnJornadas" onclick="cargarPartidosJ1()">J1</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ2()">J2</button>
-                <button class="btnJornadas">J3</button>
-                <button class="btnJornadas">J4</button>
-                <button class="btnJornadas">J5</button>
-                <button class="btnJornadas">J6</button>
-                <button class="btnJornadas">J7</button>
-                <button class="btnJornadas">J8</button>
-                <button class="btnJornadas">J9</button>
-                <button class="btnJornadas">J10</button>
-
+            <div class="divBtnJornadas" style="margin-bottom: 50px;">
+                <button class="btnJornadas" onclick="cargarPartidosJ(1)">J1</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(2)">J2</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(3)">J3</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(4)">J4</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(5)">J5</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(6)">J6</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(7)">J7</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(8)">J8</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(9)">J9</button>
+                <button class="btnJornadas" onclick="cargarPartidosJ(10)">J10</button>
             </div>
 
-            <div id="contenedorResultados" class="contenedorGeneralPartidos">
-                <!-- Aqui caragaran los partidos de la jornada seleccionada -->
-            </div>
-
-
-        </div> <!-- Fin del div del cuadrado -->
+            <div id="tabla-container" class="contenedorGeneralPartidos"></div>
+            <br><br>
+        </div>
     </article>
-    <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
-    <div> <!--footer-->
-        <!-- Aqui se mostrara el footer -->
-        <footer id="footer"> </footer>
+
+    <div>
+        <footer id="footer"></footer>
     </div>
 
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/partidos.js"></script>
     <script>
         window.onload = function () {
             cargarTablaMenu();
             cargarFooter();
+            cargarResultadosURL();
+        };
+
+        function cargarResultadosURL() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var temporadaParam = urlParams.get('temporada');
+            var jornadaParam = urlParams.get('jornada');
+            if (temporadaParam && jornadaParam) {
+                cargarResultadosTemporada(temporadaParam, jornadaParam);
+                document.getElementById('botonTemporada').textContent = temporadaParam + '↓';
+            }
+        }
+
+        function cargarPartidosJ(jornada) {
             var urlParams = new URLSearchParams(window.location.search);
             var temporada = urlParams.get('temporada');
-
             if (temporada) {
-                cargarResultadosTemporada(temporada);
-                var boton = document.querySelector('#botonTemporada');
-                if (boton) {
-                    boton.textContent = temporada + '↓';
-                    console.log(temporada);
-                }
+                var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=" + jornada);
+                window.location.href = nuevaURL;
             }
-        };
+        }
     </script>
-
 </body>
 
 </html>

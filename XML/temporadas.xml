@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="temporadas.xsd"?>
+<?xml-stylesheet type="text/xsl" href="temporadas.xsl"?>
 
 <temporadas>
     <temporada>
-        <numeroTemporada>1</numeroTemporada>
-        <fechaTemporada>2023-24</fechaTemporada>
+        <numeroTemporada>2023</numeroTemporada>
         <equipos>
             <equipo>
                 <nombreEquipo>Tenerife</nombreEquipo>
@@ -243,7 +243,7 @@
         </equipos>
         <jornadas>
             <jornada>
-                <numeroJornada>1-23</numeroJornada>
+                <numeroJornada>1</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
@@ -251,40 +251,36 @@
                         <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <piscinaPartido>Club Natació Atlétic-Barcelona</piscinaPartido>
-                        <resultado>3-2</resultado>
+                        <resultado>1-2</resultado>
                     </partido>
                     <partido>
-                        <equipoLocal>Barceloneta</equipoLocal>
-                        <equipoVisitante>Barceloneta</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
-                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <equipoLocal>Catalunya</equipoLocal>
+                        <equipoVisitante>Mediterrani</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-catalunya.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/ce-mediterrani.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>
-                        <resultado>3-2</resultado>
+                        <resultado>1-2</resultado>
                         
                     </partido>
                     <partido>
-                        <equipoLocal>Barceloneta</equipoLocal>
-                        <equipoVisitante>Barceloneta</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
-                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <equipoLocal>Tenerife</equipoLocal>
+                        <equipoVisitante>Barcelona</equipoVisitante>
+                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/sc-tenerife-echeyde.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cn-barcelona.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>
-                        <resultado>3-2</resultado>     
+                        <resultado>5-4</resultado>     
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
-                <numeroJornada>2-23</numeroJornada>
+        <!-- <jornada>
+                <numeroJornada>2</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
-                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>    
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>    
                         <resultado>5-2</resultado>      
                     </partido>
                     <partido>
@@ -293,7 +289,6 @@
                         <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>
                         <resultado>3-2</resultado>
                     </partido>
                     <partido>
@@ -302,11 +297,10 @@
                         <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
-                        <piscinaPartido>1</piscinaPartido>
                         <resultado>3-2</resultado>
                     </partido>
                 </partidos>
-            </jornada>
+            </jornada>-->
         </jornadas>
     </temporada>
 </temporadas>

@@ -13,8 +13,7 @@
     <xs:element name="temporada">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="numeroTemporada" type="xs:integer"/>
-                <xs:element name="fechaTemporada" type="xs:string"/>         
+                <xs:element name="numeroTemporada" type="xs:integer"/>      
                 <xs:element ref="equipos"/>
                 <xs:element ref="jornadas" minOccurs="0"/>
             </xs:sequence>
@@ -94,7 +93,6 @@
                 <xs:element name="escudoLocal" type="xs:string"/>
                 <xs:element name="escudoVisitante" type="xs:string"/>
                 <xs:element name="fechaPartido" type="xs:string"/>
-                <xs:element name="piscinaPartido" type="xs:string"/>
                 <xs:element name="resultado" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
