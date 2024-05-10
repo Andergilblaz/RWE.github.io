@@ -13,10 +13,10 @@
     <xs:element name="temporada">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="numeroTemporada" type="xs:integer"/>      
                 <xs:element ref="equipos"/>
                 <xs:element ref="jornadas" minOccurs="0"/>
             </xs:sequence>
+            <xs:attribute name="numeroTemporada" type="xs:integer"/>
         </xs:complexType>
     </xs:element>
 

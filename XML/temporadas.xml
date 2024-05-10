@@ -3,8 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="temporadas.xsl"?>
 
 <temporadas>
-    <temporada>
-        <numeroTemporada>2023</numeroTemporada>
+    <temporada numeroTemporada="2023">
         <equipos>
             <equipo>
                 <nombreEquipo>Tenerife</nombreEquipo>
@@ -47,7 +46,7 @@
             </equipo>
             <equipo>
                 <nombreEquipo>Barceloneta</nombreEquipo>
-                <escudo>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudo>
+                <escudo>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudo>
                 <ciudad>Tenerife</ciudad>
                 <habitantes>100000</habitantes>
                 <jugadores>
@@ -248,45 +247,45 @@
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Boadilla</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
-                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
                         <resultado>1-2</resultado>
                     </partido>
                     <partido>
                         <equipoLocal>Catalunya</equipoLocal>
                         <equipoVisitante>Mediterrani</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-catalunya.png</escudoLocal>
-                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/ce-mediterrani.png</escudoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Catalunya.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CE Mediterrani.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <resultado>1-2</resultado>
-                        
+                        <resultado>1-6</resultado>
+
                     </partido>
                     <partido>
                         <equipoLocal>Tenerife</equipoLocal>
                         <equipoVisitante>Barcelona</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/sc-tenerife-echeyde.png</escudoLocal>
-                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cn-barcelona.png</escudoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CN Barcelona.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
-                        <resultado>5-4</resultado>     
+                        <resultado>5-12</resultado>
                     </partido>
                 </partidos>
             </jornada>
-        <!-- <jornada>
+            <jornada>
                 <numeroJornada>2</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
-                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>    
-                        <resultado>5-2</resultado>      
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
                     </partido>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <resultado>3-2</resultado>
@@ -294,13 +293,778 @@
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
-                        <escudoLocal>./Multimedia/Fotos/Escudo Equipos/cn-atletic-barceloneta.png</escudoLocal>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
                         <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
                 </partidos>
-            </jornada>-->
+            </jornada>
+            <jornada>
+                <numeroJornada>3</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>4</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>5</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>6</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>7</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>8</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>9</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>10</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+        </jornadas>
+    </temporada>
+
+    <temporada  numeroTemporada="2024">
+        
+        <equipos>
+            <equipo>
+                <nombreEquipo>Tenerife</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barceloneta</nombreEquipo>
+                <escudo>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Boadilla</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barcelona</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Catalunya</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Mediterrani</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <habitantes>100000</habitantes>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+        </equipos>
+        <jornadas>
+            <jornada>
+                <numeroJornada>1</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Boadilla</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <resultado>1-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Catalunya</equipoLocal>
+                        <equipoVisitante>Mediterrani</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Catalunya.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CE Mediterrani.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <resultado>1-6</resultado>
+
+                    </partido>
+                    <partido>
+                        <equipoLocal>Tenerife</equipoLocal>
+                        <equipoVisitante>Barcelona</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                        <escudoVisitante>http://10.9.51.56/xml/Escudos/CN Barcelona.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 1</fechaPartido>
+                        <resultado>5-12</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>2</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>3</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>4</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>5</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>6</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>7</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>8</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>9</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada>
+                <numeroJornada>10</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>http://10.9.51.56/xml/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>./Multimedia/Fotos/Escudo Equipos/cdn-boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00 - Jornada 2</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
         </jornadas>
     </temporada>
 </temporadas>
