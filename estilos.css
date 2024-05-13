@@ -493,6 +493,10 @@ section div {
     display: flex;
   }
 
+  .buscador {
+    display: none;
+  }
+
   .chico,
   .chica {
     display: none;

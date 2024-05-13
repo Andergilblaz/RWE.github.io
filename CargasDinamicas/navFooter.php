@@ -56,7 +56,7 @@ if ($nombreUsuario) {
 
         <li><a href="./index.html"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
         <li class="button"><a href="./index.html">Inicio</a></li>
-        <li class="button"><a href="./partidos.php">Partidos</a></li>
+        <li class="button"><a href="./partidos.php">Temporadas</a></li>
         <li class="button"><a href="./clasificacion.html">Clasificación</a></li>
         <li class="button"><a href="./noticias.html">Noticias</a></li>
         <li class="button"><a href="./resumenes.html">Resúmenes</a></li>
@@ -71,7 +71,7 @@ if ($nombreUsuario) {
         </div>
         <li class="button"><a href="./contacto.html">Contacto Web</a></li>
 
-        <li>
+        <li class="buscador">
           <form action="./PHP/buscarJugador.php" method="post" style="position: relative; margin-top:10px;">
             <input type="text" id="nombre" name="nombre" placeholder="Buscar jugador..."
               style="padding-right: 30px; height:25px; width:150px;">
@@ -118,8 +118,7 @@ if ($nombreUsuario) {
           <li class="dropdown">
             <div class="dropdown-content">
               <a href="./index.html">Inicio</a>
-              <a href="./partidos.php">Partidos</a>
-              <a href="./equipos.php">Equipos</a>
+              <a href="./partidos.php">Temporadas</a>
               <a href="./clasificacion.html">Clasificación</a>
               <a href="./noticias.html">Noticias</a>
               <a href="./resumenes.html">Resúmenes</a>

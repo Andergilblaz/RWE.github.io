@@ -103,7 +103,9 @@
 
 
             <br><br><br>
-            <div id="tabla-container" class="contenedorGeneralPartidos"></div>
+            <div id="tabla-container" class="contenedorGeneralPartidos">
+                <!-- Aquí se generaran los partidos -->
+            </div>
             <br><br>
         </div>
         <br><br><br>

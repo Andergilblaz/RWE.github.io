@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [
+    <!ENTITY escudo "entity-value">
+]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <!-- Estilos para la tabla de los partidos -->
@@ -14,10 +17,19 @@
                 <!-- Iterar sobre cada partido de la jornada -->
                 <xsl:for-each select="partidos/partido">
                     <tr style="text-align:center; font-size: 18px; background-color:white; ">
-                        <td><img src="{escudoLocal}" alt="Escudo Local" width="100px"/></td>
+                        <td><xsl:value-of select="fechaPartido"/></td>
+                        <td>
+                            <a href="equipos.php?{../../../@nombreTemporada}&escudo;={escudoLocal}">
+                                <img src="{escudoLocal}" alt="Escudo Local" width="100px"/>
+                            </a>
+                        </td>
                         <td><xsl:value-of select="equipoLocal"/></td>
                         <td><strong><xsl:value-of select="resultado"/></strong></td>
-                        <td><xsl:value-of select="equipoVisitante"/></td>
+                        <td>
+                            <a href="equipos.php?{../../../@nombreTemporada}&escudo;={escudoVisitante}">
+                                <img src="{escudVisitante}" alt="Escudo Visitante" width="100px"/>
+                            </a>
+                        </td>
                         <td><img src="{escudoVisitante}" alt="Escudo Visitante" width="100px"/></td>
                         <!-- Insertar una celda vacía para separar cada tres partidos -->
                         <xsl:if test="position() mod 3 = 0 and position() != last()"></xsl:if>
