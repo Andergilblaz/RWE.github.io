@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="temporadas.xsl"?>
 
 <temporadas>
-    <temporada numeroTemporada="2023">
+    <temporada id="2023">
         <equipos>
             <equipo>
                 <nombreEquipo>Tenerife</nombreEquipo>
@@ -241,7 +241,7 @@
             </equipo>
         </equipos>
         <jornadas>
-            <jornada>
+            <jornada id="1">
                 <numeroJornada>1</numeroJornada>
                 <partidos>
                     <partido>
@@ -271,7 +271,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="2">
                 <numeroJornada>2</numeroJornada>
                 <partidos>
                     <partido>
@@ -300,7 +300,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="3">
                 <numeroJornada>3</numeroJornada>
                 <partidos>
                     <partido>
@@ -329,7 +329,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="4">
                 <numeroJornada>4</numeroJornada>
                 <partidos>
                     <partido>
@@ -358,7 +358,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="5">
                 <numeroJornada>5</numeroJornada>
                 <partidos>
                     <partido>
@@ -387,7 +387,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="6"> 
                 <numeroJornada>6</numeroJornada>
                 <partidos>
                     <partido>
@@ -416,7 +416,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="7">
                 <numeroJornada>7</numeroJornada>
                 <partidos>
                     <partido>
@@ -445,7 +445,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="8">
                 <numeroJornada>8</numeroJornada>
                 <partidos>
                     <partido>
@@ -474,7 +474,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="9">
                 <numeroJornada>9</numeroJornada>
                 <partidos>
                     <partido>
@@ -503,7 +503,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="10">
                 <numeroJornada>10</numeroJornada>
                 <partidos>
                     <partido>
@@ -535,7 +535,7 @@
         </jornadas>
     </temporada>
 
-    <temporada  numeroTemporada="2024">
+    <temporada  id="2024">
         
         <equipos>
             <equipo>
@@ -774,7 +774,7 @@
             </equipo>
         </equipos>
         <jornadas>
-            <jornada>
+            <jornada id="1">
                 <numeroJornada>1</numeroJornada>
                 <partidos>
                     <partido>
@@ -804,8 +804,8 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
-                <numeroJornada>2</numeroJornada>
+            <jornada id="2">
+                <numeroJornada >2</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
@@ -833,7 +833,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="3" >
                 <numeroJornada>3</numeroJornada>
                 <partidos>
                     <partido>
@@ -862,7 +862,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="4" >
                 <numeroJornada>4</numeroJornada>
                 <partidos>
                     <partido>
@@ -891,8 +891,8 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
-                <numeroJornada>5</numeroJornada>
+            <jornada id="5" >
+                <numeroJornada >5</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
@@ -920,8 +920,8 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
-                <numeroJornada>6</numeroJornada>
+            <jornada id="6" >
+                <numeroJornada >6</numeroJornada>
                 <partidos>
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
@@ -949,7 +949,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="7">
                 <numeroJornada>7</numeroJornada>
                 <partidos>
                     <partido>
@@ -978,7 +978,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada id="8" >
                 <numeroJornada>8</numeroJornada>
                 <partidos>
                     <partido>
@@ -1007,7 +1007,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="9" >
                 <numeroJornada>9</numeroJornada>
                 <partidos>
                     <partido>
@@ -1036,7 +1036,7 @@
                     </partido>
                 </partidos>
             </jornada>
-            <jornada>
+            <jornada  id="10">
                 <numeroJornada>10</numeroJornada>
                 <partidos>
                     <partido>

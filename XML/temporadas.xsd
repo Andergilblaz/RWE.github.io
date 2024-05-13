@@ -16,7 +16,7 @@
                 <xs:element ref="equipos"/>
                 <xs:element ref="jornadas" minOccurs="0"/>
             </xs:sequence>
-            <xs:attribute name="numeroTemporada" type="xs:integer"/>
+            <xs:attribute name="id" type="xs:integer"/>
         </xs:complexType>
     </xs:element>
 
@@ -74,6 +74,7 @@
                 <xs:element name="numeroJornada" type="xs:string"/>
                 <xs:element ref="partidos"/>
             </xs:sequence>
+            <xs:attribute name="id" type="xs:integer"/>
         </xs:complexType>
     </xs:element>
 

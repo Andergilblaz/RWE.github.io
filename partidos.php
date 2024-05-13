@@ -1,3 +1,7 @@
+<?php
+    $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,15 +26,13 @@
                     style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
                     <div class="dropdown-content"
                         style="margin-top: -569px; margin-right: 10px; text-align: center;" width="10px">
-                        <a href="./partidos.html?temporada=2023">2023</a>
-                        <a href="./partidos.html?temporada=2024">2024</a>
+                        <a href="./partidos.php?temporada=2023">2023</a>
+                        <a href="./partidos.php?temporada=2024">2024</a>
                     </div>
                     <button id="botonTemporada" class="dropbtn"
-                        style=" font-size: large; border-radius: 5px;">2024↓</button>
+                        style=" font-size: large; border-radius: 5px;"><?php echo $temporada; ?>↓</button>
                 </li>
             </div>
-            
-
 
             <br><br><br>
             <div id="tabla-container" class="contenedorGeneralPartidos"></div>
@@ -49,30 +51,19 @@
             cargarTablaMenu();
             cargarFooter();
             cargarResultadosURL();
-
         };
 
         function cargarResultadosURL() {
             var urlParams = new URLSearchParams(window.location.search);
             var temporadaParam = urlParams.get('temporada');
-            var jornadaParam = urlParams.get('jornada');
-            if (temporadaParam && jornadaParam) {
-                cargarResultadosTemporada(temporadaParam, jornadaParam);
+            if (temporadaParam) {
+                cargarResultadosTemporada(temporadaParam);
                 document.getElementById('botonTemporada').textContent = temporadaParam + '↓';
+            } else {
+                // Cargar resultados por defecto si no se especifican parámetros de temporada y jornada
+                cargarResultadosTemporada();
             }
         }
-
-        function cargarPartidosJ(jornada) {
-            var urlParams = new URLSearchParams(window.location.search);
-            var temporada = urlParams.get('temporada');
-            if (temporada) {
-                var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=" + jornada);
-                window.location.href = nuevaURL;
-            }
-        }
-
-        // Llamar a la función para cargar los resultados de la temporada cuando la página esté lista
-        document.addEventListener('DOMContentLoaded', cargarResultadosTemporada);
     </script>
 </body>
 

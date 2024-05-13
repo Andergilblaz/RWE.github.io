@@ -1,4 +1,4 @@
-function cargarResultadosTemporada(temporada = null) {
+function cargarResultadosTemporada(temporadaId = null) {
     const xmlUrl = './XML/temporadas.xml';
     const xslUrl = './XML/temporadas.xsl';
 
@@ -6,30 +6,30 @@ function cargarResultadosTemporada(temporada = null) {
         .then(response => response.text())
         .then(xmlText => {
             const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+            let xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-            // Filtrar la temporada si se proporciona un valor para el parámetro 'temporada'
-            if (temporada) {
-                const temporadaElement = xmlDoc.querySelector(`temporada[numeroTemporada="${temporada}"]`);
+            // Filtrar la temporada si se proporciona un valor para el parámetro 'temporadaId'
+            if (temporadaId) {
+                const temporadaElement = xmlDoc.querySelector(`temporada[id="${temporadaId}"]`);
                 if (!temporadaElement) {
-                    throw new Error(`No se encontró la temporada con número ${temporada}`);
+                    throw new Error(`No se encontró la temporada con ID ${temporadaId}`);
                 }
-                xmlDoc.documentElement.replaceChild(temporadaElement, xmlDoc.documentElement.firstChild);
-            }
 
-            // Comprobar si existe una temporada posterior a la actual y si es así, detener la carga
-            const nextTemporada = xmlDoc.querySelector('temporada[numeroTemporada="' + (parseInt(temporada) + 1) + '"]');
-            if (nextTemporada) {
-                if (parseInt(nextTemporada.getAttribute('numeroTemporada')) > parseInt(temporada) + 1) {
-                    throw new Error('No se cargarán temporadas posteriores a la seleccionada.');
-                }
+                // Crear un nuevo documento XML con solo el elemento de la temporada seleccionada
+                const newXmlDoc = parser.parseFromString('<temporadas></temporadas>', 'text/xml');
+                newXmlDoc.documentElement.appendChild(newXmlDoc.importNode(temporadaElement, true));
+                xmlDoc = newXmlDoc;
             }
 
             return transformarXMLconXSL(xmlDoc, xslUrl);
         })
         .then(html => {
             const tablaContainer = document.getElementById('tabla-container');
-            tablaContainer.innerHTML = html;
+            if (tablaContainer) {
+                tablaContainer.innerHTML = html;
+            } else {
+                console.error('No se encontró el contenedor de tabla.');
+            }
         })
         .catch(error => {
             console.error('Error al cargar o transformar el XML:', error);
@@ -60,12 +60,13 @@ function transformarXMLconXSL(xml, xslUrl) {
     });
 }
 
+// Obtener el parámetro 'temporadaId' de la URL
 const urlParams = new URLSearchParams(window.location.search);
-const temporada = urlParams.get('temporada');
+const temporadaId = urlParams.get('temporada');
 
-// Only load the season if the 'temporada' parameter is provided and equals '2023'
-if (temporada === '2023') {
-    cargarResultadosTemporada(temporada);
+// Cargar los resultados de la temporada si se proporcionó el parámetro 'temporadaId'
+if (temporadaId) {
+    cargarResultadosTemporada(temporadaId);
 } else {
     console.error('La temporada no es válida o no se proporcionó.');
 }
