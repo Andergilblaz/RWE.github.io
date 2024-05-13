@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<!-- Estilos para la tabla de los partidos -->
 <xsl:template match="/">
     <table border="0" style="width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden;">
         <tbody>

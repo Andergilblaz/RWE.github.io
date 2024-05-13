@@ -1,3 +1,5 @@
+<?php $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024'; ?>  
+
 <!DOCTYPE html>
 <html>
 
@@ -34,10 +36,10 @@
       <li class="dropdown"
         style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
         <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;" width="10px">
-          <a href="./equipos.html?temporada=2022-23">2022-23</a>
-          <a href="./equipos.html?temporada=2023-24">2023-24</a>
+          <a href="./equipos.php?temporada=2023">2023</a>
+          <a href="./equipos.php?temporada=2024">2024</a>
         </div>
-        <button id="botonTemporada" class="dropbtn" style=" font-size: large; border-radius: 5px;">2023-24↓</button>
+        <button id="botonTemporada" class="dropbtn" style=" font-size: large; border-radius: 5px;"><?php echo $temporada; ?>↓</button>
       </li>
     </div>
 

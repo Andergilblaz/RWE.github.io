@@ -120,7 +120,7 @@ function cargarTablaClasificacion() {
 
 // Función para cargar y mostrar el contenido del equipo a seleccionar
 function cargarSeleccionarEquipo() {
-    fetch('CargasDinamicas/infoEquipos.html')
+    fetch('CargasDinamicas/infoEquipos.php')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -134,7 +134,7 @@ function cargarInfoBoadilla() {
     // Ocultar el botón antes de cargar la información del equipo
     document.getElementById('botonTemporada').style.display = 'none';
 
-    fetch('CargasDinamicas/infoEquipos.html')
+    fetch('CargasDinamicas/infoEquipos.php')
         .then(response => response.text())
         .then(data => {
             document.getElementById('infoEquipo').style.display = 'block';
