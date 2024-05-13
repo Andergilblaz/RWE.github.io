@@ -59,7 +59,7 @@ if ($nombreUsuario) {
 
       <li><a href="./index.html"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
       <li class="button"><a href="./index.html">Inicio</a></li>
-      <li class="button"><a href="./partidos.html">Partidos</a></li>
+      <li class="button"><a href="./partidos.php">Partidos</a></li>
       <li class="button"><a href="./equipos.html">Equipos</a></li>
       <li class="button"><a href="./clasificacion.html">Clasificación</a></li>
       <li class="button"><a href="./noticias.html">Noticias</a></li>
@@ -110,7 +110,7 @@ if ($nombreUsuario) {
         <li class="dropdown">
           <div class="dropdown-content">
             <a href="./index.html">Inicio</a>
-            <a href="./partidos.html">Partidos</a>
+            <a href="./partidos.php">Partidos</a>
             <a href="./equipos.html">Equipos</a>
             <a href="./clasificacion.html">Clasificación</a>
             <a href="./noticias.html">Noticias</a>

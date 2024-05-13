@@ -543,9 +543,9 @@ section div {
     display: block;
   }
 
-.h1ScrollResponsive{
-  margin-top: -415px;
-}
+  .h1ScrollResponsive {
+    margin-top: -415px;
+  }
 
   #cuadradoInfoIndex .cuadradoInfo {
     width: 98%;
@@ -557,10 +557,10 @@ section div {
 
   .ppc {
     display: table-row;
-    font-size: 12px;    
+    font-size: 12px;
   }
 
-  .ppcResponsive{
+  .ppcResponsive {
     margin-top: -550px;
   }
 
@@ -594,7 +594,8 @@ section div {
     margin-left: -10%;
 
   }
-  .textoClasificaciónResponsive{
+
+  .textoClasificaciónResponsive {
     margin-left: -30px;
   }
 
@@ -621,10 +622,11 @@ section div {
     gap: 20px;
     /* Espacio entre las imágenes */
 
-   
+
   }
+
   .noticias {
-  margin: 0;
+    margin: 0;
   }
 }
 
@@ -760,41 +762,7 @@ section div {
   /*En partidos.html*/
   display: flex;
   justify-content: center;
-}
 
-.divBtnJornadas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.btnJornadas {
-  background-color: #007bff;
-  /* Azul */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-}
-
-.btnJornadas:hover {
-  background-color: #0056b3;
-  /* Azul más oscuro */
-}
-
-.jornada1 {
-  display: flex;
-  align-self: auto;
-  flex: 2;
-  flex-direction: column;
 }
 
 .partidosBody {
