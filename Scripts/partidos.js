@@ -1,23 +1,33 @@
-// Función para cargar el XML y aplicar la transformación XSL
-function cargarResultadosTemporada() {
-    // Ruta del archivo XML
+function cargarResultadosTemporada(temporada = null) {
     const xmlUrl = './XML/temporadas.xml';
-    // Ruta del archivo XSL
     const xslUrl = './XML/temporadas.xsl';
 
-    // Cargar el archivo XML
     fetch(xmlUrl)
         .then(response => response.text())
         .then(xmlText => {
-            // Convertir el texto XML en un objeto XML
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-            // Transformar el XML con XSL
+            // Filtrar la temporada si se proporciona un valor para el parámetro 'temporada'
+            if (temporada) {
+                const temporadaElement = xmlDoc.querySelector(`temporada[numeroTemporada="${temporada}"]`);
+                if (!temporadaElement) {
+                    throw new Error(`No se encontró la temporada con número ${temporada}`);
+                }
+                xmlDoc.documentElement.replaceChild(temporadaElement, xmlDoc.documentElement.firstChild);
+            }
+
+            // Comprobar si existe una temporada posterior a la actual y si es así, detener la carga
+            const nextTemporada = xmlDoc.querySelector('temporada[numeroTemporada="' + (parseInt(temporada) + 1) + '"]');
+            if (nextTemporada) {
+                if (parseInt(nextTemporada.getAttribute('numeroTemporada')) > parseInt(temporada) + 1) {
+                    throw new Error('No se cargarán temporadas posteriores a la seleccionada.');
+                }
+            }
+
             return transformarXMLconXSL(xmlDoc, xslUrl);
         })
         .then(html => {
-            // Agregar el HTML transformado a un contenedor en tu página
             const tablaContainer = document.getElementById('tabla-container');
             tablaContainer.innerHTML = html;
         })
@@ -50,96 +60,12 @@ function transformarXMLconXSL(xml, xslUrl) {
     });
 }
 
-// Llamar a la función para cargar los resultados de la temporada cuando la página esté lista
-document.addEventListener('DOMContentLoaded', cargarResultadosTemporada);
+const urlParams = new URLSearchParams(window.location.search);
+const temporada = urlParams.get('temporada');
 
-function cargarPartidosJ1() {
-    // Obtener el parámetro de la URL correspondiente al año
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-
-    // Cambiar el valor de la jornada a 1
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=1");
-
-    // Redirigir a la nueva URL
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ2() {
-    // Obtener el parámetro de la URL correspondiente al año
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-
-    // Cambiar el valor de la jornada a 2
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=2");
-
-    // Redirigir a la nueva URL
-    window.location.href = nuevaURL;
-}
-function cargarPartidosJ3() {
-    // Obtener el parámetro de la URL correspondiente al año
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-
-    // Cambiar el valor de la jornada a 3
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=3");
-
-    // Redirigir a la nueva URL
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ4() {
-    // Obtener el parámetro de la URL correspondiente al año
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-
-    // Cambiar el valor de la jornada a 4
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=4");
-
-    // Redirigir a la nueva URL
-    window.location.href = nuevaURL;
-}
-
-// Repite el mismo patrón para las jornadas restantes...
-
-function cargarPartidosJ5() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=5");
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ6() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=6");
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ7() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=7");
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ8() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=8");
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ9() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=9");
-    window.location.href = nuevaURL;
-}
-
-function cargarPartidosJ10() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var temporada = urlParams.get('temporada');
-    var nuevaURL = window.location.href.replace(/jornada=\d+/, "jornada=10");
-    window.location.href = nuevaURL;
+// Only load the season if the 'temporada' parameter is provided and equals '2023'
+if (temporada === '2023') {
+    cargarResultadosTemporada(temporada);
+} else {
+    console.error('La temporada no es válida o no se proporcionó.');
 }

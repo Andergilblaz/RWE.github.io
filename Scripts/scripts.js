@@ -199,10 +199,6 @@ function editarPerfil() {
     alert("Funcionalidad de editar perfil en proceso...");
 }
 
-function cerrarSesion() {
-    // Aquí puedes agregar el código JavaScript para la funcionalidad de cerrar sesión
-    alert("Funcionalidad de cerrar sesión en proceso...");
-}
 
 // Función para obtener el valor del parámetro "temporada" de la URL
 function getSeasonFromURL() {
@@ -246,7 +242,7 @@ function cargarMenuSegunAdmin() {
 }
 
 function cerrarSesion() {
-    alert('Sesión cerrada correctamente.');
+    alert('Sesión cerrada correctamente.'); //Manda un mensaje de que se ha cerrado sesión
 
     window.sessionStorage.clear(); // Borra el sessionStorage
     window.location.href = './index.html'; // Redirige al index

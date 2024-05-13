@@ -22,27 +22,17 @@
                     style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
                     <div class="dropdown-content"
                         style="margin-top: -569px; margin-right: 10px; text-align: center;" width="10px">
-                        <a href="./partidos.html?temporada=2023&jornada=1">2023</a>
-                        <a href="./partidos.html?temporada=2024&jornada=1">2024</a>
+                        <a href="./partidos.html?temporada=2023">2023</a>
+                        <a href="./partidos.html?temporada=2024">2024</a>
                     </div>
                     <button id="botonTemporada" class="dropbtn"
                         style=" font-size: large; border-radius: 5px;">2024↓</button>
                 </li>
             </div>
+            
 
-            <div class="divBtnJornadas" style="margin-bottom: 50px;">
-                <button class="btnJornadas" onclick="cargarPartidosJ(1)">J1</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(2)">J2</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(3)">J3</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(4)">J4</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(5)">J5</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(6)">J6</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(7)">J7</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(8)">J8</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(9)">J9</button>
-                <button class="btnJornadas" onclick="cargarPartidosJ(10)">J10</button>
-            </div>
 
+            <br><br><br>
             <div id="tabla-container" class="contenedorGeneralPartidos"></div>
             <br><br>
         </div>
@@ -59,6 +49,7 @@
             cargarTablaMenu();
             cargarFooter();
             cargarResultadosURL();
+
         };
 
         function cargarResultadosURL() {
@@ -79,6 +70,9 @@
                 window.location.href = nuevaURL;
             }
         }
+
+        // Llamar a la función para cargar los resultados de la temporada cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', cargarResultadosTemporada);
     </script>
 </body>
 
