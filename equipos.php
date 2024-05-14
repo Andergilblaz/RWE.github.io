@@ -60,7 +60,7 @@
     }
 
     // Ruta al archivo XML de equipos
-    $xmlFileEquipos = './XML/temporadas.xml';
+    $xmlFileEquipos = '../XML/temporadas.xml';
 
     // Obtener la URL del escudo desde la URL de la página
     $urlEscudo = isset($_GET['entity-value']) ? $_GET['entity-value'] : null;
