@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resultados Waterpolo Español</title>
   <link rel="stylesheet" href="estilos.css">
   <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
@@ -10,37 +11,42 @@
 </head>
 
 <script>
-     
-     window.onload = function () {
 
-      cargarTablaMenu();
-      cargarPP();
-      cargarFooter();
-      cargarNoticias();
-      cargarTablaClasificacion();
-      
-     }
+  window.onload = function () {
+
+    cargarTablaMenu();
+    cargarPP();
+    cargarFooter();
+    cargarNoticias();
+    cargarTablaClasificacion();
+    
+  }
 </script>
+
 
 
 <body>
 
   <div class="tablaMenu"> <!--tablaMenu-->
     <!-- Aqui se mostrara la tablaMenu -->
+    <div class="admin">
+      <!-- Aquí se mostrara la ventana login -->
+    </div>
     <header id="tablaMenu"> </header>
   </div>
 
   <article> <!--CuadradoInfo-->
     <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
-    <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
-    <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
+    <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 100px;">
+    <div class="cuadradoInfo" style="height: 2200px;"> <!-- Inicio del div del cuadrado -->
+
 
       <div id="textoScroll"> <!--textoScroll-->
         <section>
-          <div>
+          <div class="textoScrollResponsiveNO">
             <h1 class="scrollh1">
-              <span style="height: 35px; align-items: center;">Bienvenid@ a la web oficial de </span>
-              <span style="height: 255px;;">Resultados Waterpolo
+              <span style="height: 35px; align-items: center;">Bienvenid@ a la web oficial de los </span>
+              <span style="height: 200px;;">Resultados Waterpolo
                 <br>
                 Español
                 <br>
@@ -49,12 +55,18 @@
               </span>
             </h1>
           </div>
+
+          <div class="textoScrollResponsiveSI">
+
+            <h1 class="h1ScrollResponsive">Resultados del waterpolo español</h1>
+
+          </div>
         </section>
 
         <div class="ppc"> <!--proximosPartidos-->
 
           <div style="margin-left: 2%; margin-bottom: -25px;">
-            <article>
+            <article class="ppcResponsive">
 
               <h2> Próximos Partidos </h2>
               <hr>
@@ -67,22 +79,24 @@
           </div>
 
           <!-- El texto de Clasificación esta en el doc tablaClasificacion por motivos de estilos -->
-          <div style="margin-left: 20px;" id="tablaClasificacion"> <!--tablaClasificación-->
+          <div style="margin-left: 40px;" id="tablaClasificacion"> <!--tablaClasificación-->
             <!-- Aqui se mostrara la clasificación -->
           </div>
         </div>
 
-        <!-- Noticias destacadas -->
-        <section>
-          <h3 class="scrollh3">Noticias Destacadas</h3>
-          <hr>
-          <div id="noticias" class="noticias">
-            <!-- Aqui iran las noticias -->
-          </div>
-        </section>
+
+
+
       </div>
 
-
+      <!-- Noticias destacadas -->
+      <section>
+        <h3 class="scrollh3" style="font-style: underline;">Noticias Destacadas</h3>
+        <hr>
+        <div id="noticias" class="noticias">
+          <!-- Aqui iran las noticias -->
+        </div>
+      </section> <br>
 
     </div> <!-- Fin del div del cuadrado -->
   </article>
@@ -92,5 +106,25 @@
     <footer id="footer"> </footer>
   </div>
 </body>
+
+
+<script>
+  // Función para obtener el parámetro de la URL
+  function obtenerParametroURL(nombre) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(nombre);
+  }
+
+  // Obtenemos el usuario de la URL
+  const usuario = obtenerParametroURL('admin');
+
+  // Si se encontró un usuario en la URL, lo guardamos en sessionStorage
+  if (usuario) {
+    sessionStorage.setItem('usuario', usuario);
+    console.log('Usuario guardado en sessionStorage:', usuario);
+  }
+</script>
+
+
 
 </html>

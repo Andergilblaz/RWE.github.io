@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="temporadas.xsd"?>
+<?xml-stylesheet type="text/xsl" href="temporadas.xsl"?>
+
+<temporadas>
+    <temporada id="2023">
+        <equipos>
+            <equipo id="e1" >
+                <nombreEquipo>Tenerife</nombreEquipo>
+                <escudo>../xml/2023/Escudos/SC Tenerife Echeyde.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo id="e2">
+                <nombreEquipo>Barceloneta</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudo>
+                <ciudad>Barcelona</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>../xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>../xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo id="e3">
+                <nombreEquipo>Boadilla</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CDN Boadilla.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo id="e4">
+                <nombreEquipo>Barcelona</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CN Barcelona.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo id="e5">
+                <nombreEquipo>Catalunya</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CN Catalunya.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo id="e6">
+                <nombreEquipo>Mediterrani</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CE Mediterrani.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+        </equipos>
+        <jornadas>
+            <jornada id="1">
+                <numeroJornada>1</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Boadilla</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN%20Atletic%20Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>1-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Catalunya</equipoLocal>
+                        <equipoVisitante>Mediterrani</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Catalunya.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CE Mediterrani.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>1-6</resultado>
+
+                    </partido>
+                    <partido>
+                        <equipoLocal>Tenerife</equipoLocal>
+                        <equipoVisitante>Barcelona</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CN Barcelona.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-12</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="2">
+                <numeroJornada>2</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="3">
+                <numeroJornada>3</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="4">
+                <numeroJornada>4</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="5">
+                <numeroJornada>5</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="6"> 
+                <numeroJornada>6</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="7">
+                <numeroJornada>7</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="8">
+                <numeroJornada>8</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="9">
+                <numeroJornada>9</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="10">
+                <numeroJornada>10</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+        </jornadas>
+    </temporada>
+
+    <temporada  id="2024">
+        
+        <equipos>
+            <equipo id="e1">
+                <nombreEquipo>Tenerife</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barceloneta</nombreEquipo>
+                <escudo>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Boadilla</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Barcelona</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Catalunya</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+            <equipo>
+                <nombreEquipo>Mediterrani</nombreEquipo>
+                <escudo>escudo1.jpg</escudo>
+                <ciudad>Tenerife</ciudad>
+                <jugadores>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>jugador1.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>jugador2.jpg</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Antonio</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Centrocampista</posicion>
+                        <dorsal>3</dorsal>
+                        <foto>jugado3.jpg</foto>
+                    </jugador>
+
+                </jugadores>
+
+            </equipo>
+        </equipos>
+        <jornadas>
+            <jornada id="1">
+                <numeroJornada>1</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Boadilla</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>1-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Catalunya</equipoLocal>
+                        <equipoVisitante>Mediterrani</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Catalunya.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CE Mediterrani.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>1-6</resultado>
+
+                    </partido>
+                    <partido>
+                        <equipoLocal>Tenerife</equipoLocal>
+                        <equipoVisitante>Barcelona</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CN Barcelona.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-12</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="2">
+                <numeroJornada >2</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="3" >
+                <numeroJornada>3</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="4" >
+                <numeroJornada>4</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="5" >
+                <numeroJornada >5</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="6" >
+                <numeroJornada >6</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="7">
+                <numeroJornada>7</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada id="8" >
+                <numeroJornada>8</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="9" >
+                <numeroJornada>9</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+            <jornada  id="10">
+                <numeroJornada>10</numeroJornada>
+                <partidos>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>5-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                    <partido>
+                        <equipoLocal>Barceloneta</equipoLocal>
+                        <equipoVisitante>Barceloneta</equipoVisitante>
+                        <escudoLocal>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoVisitante>../xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
+                        <fechaPartido>20-04-2024 15:00</fechaPartido>
+                        <resultado>3-2</resultado>
+                    </partido>
+                </partidos>
+            </jornada>
+        </jornadas>
+    </temporada>
+</temporadas>

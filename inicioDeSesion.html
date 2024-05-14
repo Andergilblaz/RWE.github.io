@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultados Waterpolo Español</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
 
-<script> //Script para cargar la pagina principal por defecto
+<script>
+
     window.onload = function () {
-        cargarTablaMenu()
-        cargarFooter()
-       
-    };
-</script>
+  
+      cargarTablaMenu();
+      cargarFooter();
+      
+    }
+  </script>
 
 <body>
 
@@ -24,7 +27,7 @@
         <header id="tablaMenu"> </header>
     </div>
     <img src="Multimedia/Fotos/Chica.png" class="chica" width="500px" style="float: left; margin-top: 130px;">
-    <img src="Multimedia/Fotos/Chico.png" class="chico" width="500px" style="float: right; margin-top: 120px;">
+    <img src="Multimedia/Fotos/Chico.png" class="chico" width="500px" style="float: right; margin-top: 90px;">
     
     <article class="cuadradoInfoInicioDeSesion"> <!--CuadradoInfo-->
 
@@ -35,7 +38,7 @@
             <p>Sección para administradores⚠️</p>
                 <hr>
                 <img src="Multimedia/Fotos/LogoWaterpolo.png" alt="Logotipo" width="100px" style="float: right; margin-top:-120px; margin-right: 10px;">
-            <form id="formContacto" action="PHP-XML-XSL-XSD/inicioDeSesion.php" method="post">
+            <form id="formContacto" action="PHP/inicioDeSesion.php" method="post">
 
               
                     <div style="display: flex; width: 342px;">
@@ -91,9 +94,6 @@
         });
     </script>
     
-    
-
-
 </body>
 
 </html>
