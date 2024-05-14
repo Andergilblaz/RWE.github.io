@@ -18,7 +18,7 @@
                         <nacionalidad>Española</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>1</dorsal>
-                        <foto>jugador1.jpg</foto>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
                     </jugador>
 
                     <jugador>
@@ -28,7 +28,7 @@
                         <nacionalidad>Española</nacionalidad>
                         <posicion>Defensa</posicion>
                         <dorsal>2</dorsal>
-                        <foto>jugador2.jpg</foto>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
                     </jugador>
 
                     <jugador>
@@ -47,7 +47,7 @@
             <equipo id="e2">
                 <nombreEquipo>Barceloneta</nombreEquipo>
                 <escudo>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudo>
-                <ciudad>Tenerife</ciudad>
+                <ciudad>Barcelona</ciudad>
                 <habitantes>100000</habitantes>
                 <jugadores>
                     <jugador>
@@ -57,7 +57,7 @@
                         <nacionalidad>Española</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>1</dorsal>
-                        <foto>jugador1.jpg</foto>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
                     </jugador>
 
                     <jugador>
@@ -67,17 +67,83 @@
                         <nacionalidad>Española</nacionalidad>
                         <posicion>Defensa</posicion>
                         <dorsal>2</dorsal>
-                        <foto>jugador2.jpg</foto>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
                     </jugador>
-
                     <jugador>
-                        <nombre>Antonio</nombre>
+                        <nombre>Juan</nombre>
                         <apellidos>García</apellidos>
                         <fechaNacimiento>1990-01-01</fechaNacimiento>
                         <nacionalidad>Española</nacionalidad>
-                        <posicion>Centrocampista</posicion>
-                        <dorsal>3</dorsal>
-                        <foto>jugado3.jpg</foto>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
+                    </jugador>
+                    <jugador>
+                        <nombre>Juan</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Portero</posicion>
+                        <dorsal>1</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Carlos.png</foto>
+                    </jugador>
+
+                    <jugador>
+                        <nombre>Carlos</nombre>
+                        <apellidos>García</apellidos>
+                        <fechaNacimiento>1990-01-01</fechaNacimiento>
+                        <nacionalidad>Española</nacionalidad>
+                        <posicion>Defensa</posicion>
+                        <dorsal>2</dorsal>
+                        <foto>http://10.9.51.56/xml/2023/Jugadores/Fran.png</foto>
                     </jugador>
 
                 </jugadores>
@@ -85,7 +151,7 @@
             </equipo>
             <equipo id="e3">
                 <nombreEquipo>Boadilla</nombreEquipo>
-                <escudo>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudo>
+                <escudo>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudo>
                 <ciudad>Tenerife</ciudad>
                 <habitantes>100000</habitantes>
                 <jugadores>
@@ -247,7 +313,7 @@
                     <partido>
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Boadilla</equipoVisitante>
-                        <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                        <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN%20Atletic%20Barceloneta.png</escudoLocal>
                         <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>1-2</resultado>
@@ -278,7 +344,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -286,7 +352,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -294,7 +360,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -307,7 +373,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -315,7 +381,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -323,7 +389,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -336,7 +402,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -344,7 +410,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -352,7 +418,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -365,7 +431,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -373,7 +439,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -381,7 +447,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -394,7 +460,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -402,7 +468,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -410,7 +476,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -423,7 +489,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -431,7 +497,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -439,7 +505,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -452,7 +518,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -460,7 +526,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -468,7 +534,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -481,7 +547,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -489,7 +555,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -497,7 +563,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -510,7 +576,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -518,7 +584,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -526,7 +592,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -538,7 +604,7 @@
     <temporada  id="2024">
         
         <equipos>
-            <equipo>
+            <equipo id="e1">
                 <nombreEquipo>Tenerife</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
                 <ciudad>Tenerife</ciudad>
@@ -811,7 +877,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -819,7 +885,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -827,7 +893,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -840,7 +906,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -848,7 +914,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -856,7 +922,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -869,7 +935,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -877,7 +943,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -885,7 +951,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -898,7 +964,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -906,7 +972,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -914,7 +980,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -927,7 +993,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -935,7 +1001,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -943,7 +1009,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -956,7 +1022,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -964,7 +1030,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -972,7 +1038,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -985,7 +1051,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -993,7 +1059,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -1001,7 +1067,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -1014,7 +1080,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -1022,7 +1088,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -1030,7 +1096,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -1043,7 +1109,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>5-2</resultado>
                     </partido>
@@ -1051,7 +1117,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>
@@ -1059,7 +1125,7 @@
                         <equipoLocal>Barceloneta</equipoLocal>
                         <equipoVisitante>Barceloneta</equipoVisitante>
                         <escudoLocal>http://10.9.51.56/xml/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CND Boadilla.png</escudoVisitante>
+                        <escudoVisitante>http://10.9.51.56/xml/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                         <fechaPartido>20-04-2024 15:00</fechaPartido>
                         <resultado>3-2</resultado>
                     </partido>

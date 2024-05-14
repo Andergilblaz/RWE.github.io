@@ -25,12 +25,13 @@
                         </td>
                         <td><xsl:value-of select="equipoLocal"/></td>
                         <td><strong><xsl:value-of select="resultado"/></strong></td>
+                        <td><xsl:value-of select="equipoVisitante"/></td>
                         <td>
                             <a href="equipos.php?{../../../@nombreTemporada}&escudo;={escudoVisitante}">
-                                <img src="{escudVisitante}" alt="Escudo Visitante" width="100px"/>
+                                <img src="{escudoVisitante}" alt="Escudo Visitante" width="100px"/>
                             </a>
                         </td>
-                        <td><img src="{escudoVisitante}" alt="Escudo Visitante" width="100px"/></td>
+                        
                         <!-- Insertar una celda vacía para separar cada tres partidos -->
                         <xsl:if test="position() mod 3 = 0 and position() != last()"></xsl:if>
                     </tr>

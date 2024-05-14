@@ -1,4 +1,4 @@
-<?php $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024'; ?>  
+<?php $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -16,7 +16,6 @@
   window.onload = function () {
     cargarTablaMenu();
     cargarFooter();
-    cargarSeleccionarEquipo();
   };
 </script>
 
@@ -30,30 +29,75 @@
 
   <article class="cuadradoInfo"> <!--CuadradoInfo-->
 
-    <!--Botón para el cambio de temporada-->
+  <!--------------------------------------CARGA INFO EQUIPO--------------------------------->
 
-    <div class="dropdownNone" style="float:left;">
-      <li class="dropdown"
-        style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
-        <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;" width="10px">
-          <a href="./equipos.php?temporada=2023">2023</a>
-          <a href="./equipos.php?temporada=2024">2024</a>
-        </div>
-        <button id="botonTemporada" class="dropbtn" style=" font-size: large; border-radius: 5px;"><?php echo $temporada; ?>↓</button>
-      </li>
-    </div>
+    <?php
+    // Inicia la sesión
+    session_start();
 
-    <div id="seleccionarEquipo">
-      <!-- Aqui se mostrara el contenido -->
-    </div>
+    // Función para cargar el equipo desde el archivo XML
+    function cargarEquipo($xmlFile, $urlEscudo)
+    {
+      // Verificar si el archivo XML existe
+      if (file_exists($xmlFile)) {
+        $xml = simplexml_load_file($xmlFile);
+        if ($xml) {
+          foreach ($xml->temporada->equipos->equipo as $equipo) {
+            $escudo = (string) $equipo->escudo;
+            // Si el escudo coincide con la URL del escudo buscado, retorna todo el nodo del equipo
+            if ($escudo === $urlEscudo) {
+              return $equipo;
+            }
+          }
+        } else {
+          echo "Error al cargar el archivo XML.";
+        }
+      } else {
+        echo "El archivo XML de equipos no existe.";
+      }
 
-    <div id="infoEquipo">
-      <!-- Aqui se mostrara la info del equipo seleccionado -->
-    </div>
+      return null; // Retorna null si no se encontró el equipo
+    }
 
-    <div id="infoJugadores">
-      <!-- Aqui se mostrara la info del equipo seleccionado -->
-    </div>
+    // Ruta al archivo XML de equipos
+    $xmlFileEquipos = './XML/temporadas.xml';
+
+    // Obtener la URL del escudo desde la URL de la página
+    $urlEscudo = isset($_GET['entity-value']) ? $_GET['entity-value'] : null;
+
+    // Inicializar la variable del equipo
+    $equipo = null;
+
+    // Si se encontró una URL de escudo en la URL de la página, intentar cargar el equipo desde el archivo XML
+    if ($urlEscudo) {
+      $equipo = cargarEquipo($xmlFileEquipos, $urlEscudo);
+    }
+
+    // Si se encontró un equipo, imprimir toda la información del equipo
+    if ($equipo) {
+      
+      echo "<h2 style='text-align:center;'> " . $equipo->nombreEquipo . "</h2><br>";
+      echo "<img src='" . $equipo->escudo . "' alt='Escudo del equipo' style='width: 75px; margin: 0 auto; display: block; margin-top:-25px;'><br>";
+        // Imprimir la foto y el nombre de cada jugador
+
+        echo "<div style='background-color: white; display: flex; border-radius:12px; overflow-x: auto;'>";
+        foreach ($equipo->jugadores->jugador as $jugador) {
+          echo "<div style='margin: 15px;'>";
+          echo "<img src='" . $jugador->foto . "' alt='Foto del jugador' style='width: 100px;'><br>";
+          echo "<p style='text-align:center; margin-top:-1px; margin-bottom: -15px;'>" . $jugador->nombre . "</p> <br>";
+          echo "</div>";
+        }
+        echo "</div>";
+      
+      echo "<div style='background-color: white; padding: 10px; width: 77%; margin-top: 20px; justify-content:center; margin-left: auto; margin-right: auto; border-radius:12px'>"; 
+      echo "<h2 style='text-align:center'>Información de la ciudad</h2>";
+      echo "Ciudad: " . $equipo->ciudad . "<br>";
+      echo "Habitantes: " . $equipo->habitantes . "<br>";
+      echo "</div>";
+      echo "<br>";
+    
+    }
+    ?>
 
     </div> <!-- Fin del div del cuadrado -->
   </article>
