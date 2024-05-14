@@ -33,7 +33,6 @@
                 <xs:element name="nombreEquipo" type="xs:string"/>
                 <xs:element name="escudo" type="xs:string"/>
                 <xs:element name="ciudad" type="xs:string"/>
-                <xs:element name="habitantes" type="xs:integer"/>
                 <xs:element ref="jugadores"/>
             </xs:sequence>
               <xs:attribute name="id" type="xs:string"/>

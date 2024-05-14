@@ -77,24 +77,18 @@
     if ($equipo) {
       
       echo "<h2 style='text-align:center;'> " . $equipo->nombreEquipo . "</h2><br>";
-      echo "<img src='" . $equipo->escudo . "' alt='Escudo del equipo' style='width: 75px; margin: 0 auto; display: block; margin-top:-25px;'><br>";
-        // Imprimir la foto y el nombre de cada jugador
-
-        echo "<div style='background-color: white; display: flex; border-radius:12px; overflow-x: auto;'>";
+      echo "<img src='" . $equipo->escudo . "' alt='Escudo del equipo' style='width: 100px; margin: 0 auto; display: block; margin-top:-25px;'><br>";
+      echo "<h2 style='margin-bottom:-10px; margin-top:-10px; text-decoration:underline;'>Jugadores</h2><br>";
+      // Poner la foto y el nombre de cada jugador en un cuadrado contenedor
+        echo "<div style='background-color: white; display: flex; flex-wrap: wrap; justify-content: center; border-radius:12px; overflow-x: auto;'>";
         foreach ($equipo->jugadores->jugador as $jugador) {
           echo "<div style='margin: 15px;'>";
-          echo "<img src='" . $jugador->foto . "' alt='Foto del jugador' style='width: 100px;'><br>";
+          echo "<a href='infoJugadores.php?jugador=" . $jugador->foto . "'><img src='" . $jugador->foto . "' alt='Foto del jugador' style='width: 100px;'></a><br>";
           echo "<p style='text-align:center; margin-top:-1px; margin-bottom: -15px;'>" . $jugador->nombre . "</p> <br>";
           echo "</div>";
         }
         echo "</div>";
-      
-      echo "<div style='background-color: white; padding: 10px; width: 77%; margin-top: 20px; justify-content:center; margin-left: auto; margin-right: auto; border-radius:12px'>"; 
-      echo "<h2 style='text-align:center'>Información de la ciudad</h2>";
-      echo "Ciudad: " . $equipo->ciudad . "<br>";
-      echo "Habitantes: " . $equipo->habitantes . "<br>";
-      echo "</div>";
-      echo "<br>";
+            echo "<br> <br>";
     
     }
     ?>
