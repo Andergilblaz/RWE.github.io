@@ -8,7 +8,7 @@
             <equipo id="e1" >
                 <nombreEquipo>Tenerife</nombreEquipo>
                 <escudo>../xml/2023/Escudos/SC Tenerife Echeyde.png</escudo>
-                <ciudad>Tenerife</ciudad>
+               
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -46,7 +46,6 @@
             <equipo id="e2">
                 <nombreEquipo>Barceloneta</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudo>
-                <ciudad>Barcelona</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -150,7 +149,6 @@
             <equipo id="e3">
                 <nombreEquipo>Boadilla</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CDN Boadilla.png</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -188,7 +186,6 @@
             <equipo id="e4">
                 <nombreEquipo>Barcelona</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CN Barcelona.png</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -226,7 +223,6 @@
             <equipo id="e5">
                 <nombreEquipo>Catalunya</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CN Catalunya.png</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -264,7 +260,6 @@
             <equipo id="e6">
                 <nombreEquipo>Mediterrani</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CE Mediterrani.png</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -601,7 +596,6 @@
             <equipo id="e1">
                 <nombreEquipo>Tenerife</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -639,7 +633,6 @@
             <equipo>
                 <nombreEquipo>Barceloneta</nombreEquipo>
                 <escudo>../xml/2023/Escudos/CN Atletic Barceloneta.png</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -677,7 +670,6 @@
             <equipo>
                 <nombreEquipo>Boadilla</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -715,7 +707,6 @@
             <equipo>
                 <nombreEquipo>Barcelona</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -753,7 +744,6 @@
             <equipo>
                 <nombreEquipo>Catalunya</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>
@@ -791,7 +781,6 @@
             <equipo>
                 <nombreEquipo>Mediterrani</nombreEquipo>
                 <escudo>escudo1.jpg</escudo>
-                <ciudad>Tenerife</ciudad>
                 <jugadores>
                     <jugador>
                         <nombre>Juan</nombre>

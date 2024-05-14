@@ -50,7 +50,7 @@
             }
           }
         } else {
-          echo "Error al cargar el archivo XML.";
+          echo "Error al  cargar el archivo XML.";
         }
       } else {
         echo "El archivo XML de equipos no existe.";
