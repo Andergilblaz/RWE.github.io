@@ -104,7 +104,7 @@
 
             <br><br><br>
             <div id="tabla-container" class="contenedorGeneralPartidos">
-                <!-- Aquí se generaran los partidos -->
+                <!-- Aquí se generaran los partidos por JS -->
             </div>
             <br><br>
         </div>

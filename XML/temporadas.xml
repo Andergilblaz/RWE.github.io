@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="xml/temporadas.xsd"?>
+<?xml-model href="temporadas.xsd"?>
 <?xml-stylesheet type="text/xsl" href="temporadas.xsl" ?>
 <temporadas>
     <temporada id="2023">
-        <nombreTemporada>1</nombreTemporada>
-        <fechaTemporada>2023</fechaTemporada>
         <equipos>
             <equipo id="e1">
                 <nombreEquipo>CDN Boadilla</nombreEquipo>
@@ -13,7 +11,7 @@
                     <jugador id="1">
                         <nombre>Fran</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1998-09-11</fechanacimiento>
+                        <fechaNacimiento>1998-09-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>32</dorsal>
@@ -22,7 +20,7 @@
                     <jugador id="2">
                         <nombre>Carlos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1996-10-01</fechanacimiento>
+                        <fechaNacimiento>1996-10-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>28</dorsal>
@@ -31,7 +29,7 @@
                     <jugador id="3">
                         <nombre>Guzmán</nombre>
                         <apellidos>Quispe</apellidos>
-                        <fechanacimiento>2002-09-20</fechanacimiento>
+                        <fechaNacimiento>2002-09-20</fechaNacimiento>
                         <nacionalidad>Peruano</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>18</dorsal>
@@ -40,7 +38,7 @@
                     <jugador id="4">
                         <nombre>Marc</nombre>
                         <apellidos>Larumbe</apellidos>
-                        <fechanacimiento>1999-08-06</fechanacimiento>
+                        <fechaNacimiento>1999-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -49,7 +47,7 @@
                     <jugador id="5">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>1993-09-13</fechanacimiento>
+                        <fechaNacimiento>1993-09-13</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>28</dorsal>
@@ -58,7 +56,7 @@
                     <jugador id="6">
                         <nombre>Amadeo</nombre>
                         <apellidos>Llados</apellidos>
-                        <fechanacimiento>1998-01-15</fechanacimiento>
+                        <fechaNacimiento>1998-01-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -67,7 +65,7 @@
                     <jugador id="7">
                         <nombre>Daniel</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1996-09-15</fechanacimiento>
+                        <fechaNacimiento>1996-09-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -76,7 +74,7 @@
                     <jugador id="8">
                         <nombre>Mathew</nombre>
                         <apellidos>Ortega</apellidos>
-                        <fechanacimiento>1994-01-14</fechanacimiento>
+                        <fechaNacimiento>1994-01-14</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -85,7 +83,7 @@
                     <jugador id="9">
                         <nombre>Roger</nombre>
                         <apellidos>Tahull</apellidos>
-                        <fechanacimiento>1994-06-12</fechanacimiento>
+                        <fechaNacimiento>1994-06-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>20</dorsal>
@@ -94,7 +92,7 @@
                     <jugador id="10">
                         <nombre>Miguel</nombre>
                         <apellidos>de Toro</apellidos>
-                        <fechanacimiento>1992-07-13</fechanacimiento>
+                        <fechaNacimiento>1992-07-13</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -109,7 +107,7 @@
                     <jugador id="1">
                         <nombre>Gonzalo</nombre>
                         <apellidos>Echenique</apellidos>
-                        <fechanacimiento>1994-07-19</fechanacimiento>
+                        <fechaNacimiento>1994-07-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>21</dorsal>
@@ -118,7 +116,7 @@
                     <jugador id="2">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutiérrez</apellidos>
-                        <fechanacimiento>1997-10-15</fechanacimiento>
+                        <fechaNacimiento>1997-10-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>25</dorsal>
@@ -127,7 +125,7 @@
                     <jugador id="3">
                         <nombre>Unai</nombre>
                         <apellidos>Agirre</apellidos>
-                        <fechanacimiento>1996-04-07</fechanacimiento>
+                        <fechaNacimiento>1996-04-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -136,7 +134,7 @@
                     <jugador id="4">
                         <nombre>Andrija</nombre>
                         <apellidos>Prlainovic</apellidos>
-                        <fechanacimiento>2002-07-11</fechanacimiento>
+                        <fechaNacimiento>2002-07-11</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -145,7 +143,7 @@
                     <jugador id="5">
                         <nombre>Martínez</nombre>
                         <apellidos>Banderas</apellidos>
-                        <fechanacimiento>1993-12-27</fechanacimiento>
+                        <fechaNacimiento>1993-12-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>21</dorsal>
@@ -154,7 +152,7 @@
                     <jugador id="6">
                         <nombre>Inglés</nombre>
                         <apellidos>Corres</apellidos>
-                        <fechanacimiento>2004-10-21</fechanacimiento>
+                        <fechaNacimiento>2004-10-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -163,7 +161,7 @@
                     <jugador id="7">
                         <nombre>Xavi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1993-03-19</fechanacimiento>
+                        <fechaNacimiento>1993-03-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -172,7 +170,7 @@
                     <jugador id="8">
                         <nombre>Adrián</nombre>
                         <apellidos>Delgado</apellidos>
-                        <fechanacimiento>2000-12-01</fechanacimiento>
+                        <fechaNacimiento>2000-12-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -181,7 +179,7 @@
                     <jugador id="9">
                         <nombre>Javi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1997-04-11</fechanacimiento>
+                        <fechaNacimiento>1997-04-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>9</dorsal>
@@ -190,7 +188,7 @@
                     <jugador id="10">
                         <nombre>Mario</nombre>
                         <apellidos>Peris</apellidos>
-                        <fechanacimiento>1996-10-14</fechanacimiento>
+                        <fechaNacimiento>1996-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>5</dorsal>
@@ -205,7 +203,7 @@
                     <jugador id="1">
                         <nombre>Pablo</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1998-02-14</fechanacimiento>
+                        <fechaNacimiento>1998-02-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>30</dorsal>
@@ -214,7 +212,7 @@
                     <jugador id="2">
                         <nombre>Guillermo</nombre>
                         <apellidos>Molina</apellidos>
-                        <fechanacimiento>1996-10-03</fechanacimiento>
+                        <fechaNacimiento>1996-10-03</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>33</dorsal>
@@ -223,7 +221,7 @@
                     <jugador id="3">
                         <nombre>Albert</nombre>
                         <apellidos>Espanyol</apellidos>
-                        <fechanacimiento>1999-10-14</fechanacimiento>
+                        <fechaNacimiento>1999-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>14</dorsal>
@@ -232,7 +230,7 @@
                     <jugador id="4">
                         <nombre>Slobodan</nombre>
                         <apellidos>Nikic</apellidos>
-                        <fechanacimiento>2003-03-28</fechanacimiento>
+                        <fechaNacimiento>2003-03-28</fechaNacimiento>
                         <nacionalidad>Montenegrino</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -241,7 +239,7 @@
                     <jugador id="5">
                         <nombre>Jesse</nombre>
                         <apellidos>Smith</apellidos>
-                        <fechanacimiento>1992-12-20</fechanacimiento>
+                        <fechaNacimiento>1992-12-20</fechaNacimiento>
                         <nacionalidad>Estados Unidos</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -250,7 +248,7 @@
                     <jugador id="6">
                         <nombre>Pujol</nombre>
                         <apellidos>Fuentes</apellidos>
-                        <fechanacimiento>2003-06-21</fechanacimiento>
+                        <fechaNacimiento>2003-06-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -259,7 +257,7 @@
                     <jugador id="7">
                         <nombre>Aritz</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2004-04-06</fechanacimiento>
+                        <fechaNacimiento>2004-04-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -268,7 +266,7 @@
                     <jugador id="8">
                         <nombre>Miki</nombre>
                         <apellidos>Lorrio</apellidos>
-                        <fechanacimiento>1994-10-30</fechanacimiento>
+                        <fechaNacimiento>1994-10-30</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -277,7 +275,7 @@
                     <jugador id="9">
                         <nombre>Arturo</nombre>
                         <apellidos>Torres</apellidos>
-                        <fechanacimiento>1996-01-07</fechanacimiento>
+                        <fechaNacimiento>1996-01-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>7</dorsal>
@@ -286,7 +284,7 @@
                     <jugador id="10">
                         <nombre>Eric</nombre>
                         <apellidos>Andrés</apellidos>
-                        <fechanacimiento>1994-05-06</fechanacimiento>
+                        <fechaNacimiento>1994-05-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>29</dorsal>
@@ -301,7 +299,7 @@
                     <jugador id="1">
                         <nombre>Sergio</nombre>
                         <apellidos>Moreno</apellidos>
-                        <fechanacimiento>2006-02-12</fechanacimiento>
+                        <fechaNacimiento>2006-02-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -310,7 +308,7 @@
                     <jugador id="2">
                         <nombre>Pepe</nombre>
                         <apellidos>Biel</apellidos>
-                        <fechanacimiento>2002-12-15</fechanacimiento>
+                        <fechaNacimiento>2002-12-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>20</dorsal>
@@ -319,7 +317,7 @@
                     <jugador id="3">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>2004-03-15</fechanacimiento>
+                        <fechaNacimiento>2004-03-15</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>32</dorsal>
@@ -328,7 +326,7 @@
                     <jugador id="4">
                         <nombre>Manuel</nombre>
                         <apellidos>Esquer</apellidos>
-                        <fechanacimiento>2000-05-23</fechanacimiento>
+                        <fechaNacimiento>2000-05-23</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -337,7 +335,7 @@
                     <jugador id="5">
                         <nombre>Aaron</nombre>
                         <apellidos>Young</apellidos>
-                        <fechanacimiento>2004-06-06</fechanacimiento>
+                        <fechaNacimiento>2004-06-06</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -346,7 +344,7 @@
                     <jugador id="6">
                         <nombre>Isaac</nombre>
                         <apellidos>Alonso</apellidos>
-                        <fechanacimiento>2004-02-05</fechanacimiento>
+                        <fechaNacimiento>2004-02-05</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>16</dorsal>
@@ -355,7 +353,7 @@
                     <jugador id="7">
                         <nombre>Omar</nombre>
                         <apellidos>Blanco</apellidos>
-                        <fechanacimiento>1998-02-01</fechanacimiento>
+                        <fechaNacimiento>1998-02-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -364,7 +362,7 @@
                     <jugador id="8">
                         <nombre>Mateo</nombre>
                         <apellidos>Morales</apellidos>
-                        <fechanacimiento>1998-10-19</fechanacimiento>
+                        <fechaNacimiento>1998-10-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>10</dorsal>
@@ -373,7 +371,7 @@
                     <jugador id="9">
                         <nombre>Lucas</nombre>
                         <apellidos>Santos</apellidos>
-                        <fechanacimiento>2004-09-27</fechanacimiento>
+                        <fechaNacimiento>2004-09-27</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>19</dorsal>
@@ -382,7 +380,7 @@
                     <jugador id="10">
                         <nombre>Toni</nombre>
                         <apellidos>Sánchez</apellidos>
-                        <fechanacimiento>2002-02-08</fechanacimiento>
+                        <fechaNacimiento>2002-02-08</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -397,7 +395,7 @@
                     <jugador id="1">
                         <nombre>Javier</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1998-04-18</fechanacimiento>
+                        <fechaNacimiento>1998-04-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>26</dorsal>
@@ -406,7 +404,7 @@
                     <jugador id="2">
                         <nombre>Hugo</nombre>
                         <apellidos>Rodríguez</apellidos>
-                        <fechanacimiento>1999-03-17</fechanacimiento>
+                        <fechaNacimiento>1999-03-17</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>32</dorsal>
@@ -415,7 +413,7 @@
                     <jugador id="3">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutierrez</apellidos>
-                        <fechanacimiento>1994-12-18</fechanacimiento>
+                        <fechaNacimiento>1994-12-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>5</dorsal>
@@ -424,7 +422,7 @@
                     <jugador id="4">
                         <nombre>David</nombre>
                         <apellidos>Baron</apellidos>
-                        <fechanacimiento>1994-10-09</fechanacimiento>
+                        <fechaNacimiento>1994-10-09</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -433,7 +431,7 @@
                     <jugador id="5">
                         <nombre>Andrija</nombre>
                         <apellidos>Prainovic</apellidos>
-                        <fechanacimiento>1993-03-18</fechanacimiento>
+                        <fechaNacimiento>1993-03-18</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>7</dorsal>
@@ -442,7 +440,7 @@
                     <jugador id="6">
                         <nombre>Alejandro</nombre>
                         <apellidos>Bonilla</apellidos>
-                        <fechanacimiento>1992-08-06</fechanacimiento>
+                        <fechaNacimiento>1992-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>11</dorsal>
@@ -451,7 +449,7 @@
                     <jugador id="7">
                         <nombre>Ignacio</nombre>
                         <apellidos>Carrasco</apellidos>
-                        <fechanacimiento>1992-06-27</fechanacimiento>
+                        <fechaNacimiento>1992-06-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -460,7 +458,7 @@
                     <jugador id="8">
                         <nombre>Marcos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2006-10-12</fechanacimiento>
+                        <fechaNacimiento>2006-10-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>32</dorsal>
@@ -469,7 +467,7 @@
                     <jugador id="9">
                         <nombre>Ignasi</nombre>
                         <apellidos>Gómez</apellidos>
-                        <fechanacimiento>2004-09-28</fechanacimiento>
+                        <fechaNacimiento>2004-09-28</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>31</dorsal>
@@ -478,7 +476,7 @@
                     <jugador id="10">
                         <nombre>Lucas</nombre>
                         <apellidos>Belmonte</apellidos>
-                        <fechanacimiento>2002-02-16</fechanacimiento>
+                        <fechaNacimiento>2002-02-16</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>8</dorsal>
@@ -493,7 +491,7 @@
                     <jugador id="1">
                         <nombre>Iván</nombre>
                         <apellidos>Giménez Defensor</apellidos>
-                        <fechanacimiento>2002-07-11</fechanacimiento>
+                        <fechaNacimiento>2002-07-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>18</dorsal>
@@ -502,7 +500,7 @@
                     <jugador id="2">
                         <nombre>Edu</nombre>
                         <apellidos>Lorca Boya</apellidos>
-                        <fechanacimiento>1998-10-06</fechanacimiento>
+                        <fechaNacimiento>1998-10-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>26</dorsal>
@@ -511,7 +509,7 @@
                     <jugador id="3">
                         <nombre>Jorge</nombre>
                         <apellidos>Ramírez Boya</apellidos>
-                        <fechanacimiento>1998-06-16</fechanacimiento>
+                        <fechaNacimiento>1998-06-16</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>7</dorsal>
@@ -520,7 +518,7 @@
                     <jugador id="4">
                         <nombre>Toni</nombre>
                         <apellidos>Segovia Portero</apellidos>
-                        <fechanacimiento>2002-02-24</fechanacimiento>
+                        <fechaNacimiento>2002-02-24</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -529,7 +527,7 @@
                     <jugador id="5">
                         <nombre>Niksa</nombre>
                         <apellidos>Dobud</apellidos>
-                        <fechanacimiento>1995-02-23</fechanacimiento>
+                        <fechaNacimiento>1995-02-23</fechaNacimiento>
                         <nacionalidad>Croata</nacionalidad>
                         <posicion></posicion>
                         <dorsal>20</dorsal>
@@ -538,7 +536,7 @@
                     <jugador id="6">
                         <nombre>Pepe</nombre>
                         <apellidos>García Defensor</apellidos>
-                        <fechanacimiento>2005-07-29</fechanacimiento>
+                        <fechaNacimiento>2005-07-29</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>6</dorsal>
@@ -547,7 +545,7 @@
                     <jugador id="7">
                         <nombre>Diego</nombre>
                         <apellidos>Martínez Portero</apellidos>
-                        <fechanacimiento>2002-08-27</fechanacimiento>
+                        <fechaNacimiento>2002-08-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -556,7 +554,7 @@
                     <jugador id="8">
                         <nombre>Martín</nombre>
                         <apellidos>Sánchez Alero</apellidos>
-                        <fechanacimiento>1997-06-01</fechanacimiento>
+                        <fechaNacimiento>1997-06-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -565,7 +563,7 @@
                     <jugador id="9">
                         <nombre>Lluis</nombre>
                         <apellidos>Moreno Alero</apellidos>
-                        <fechanacimiento>1998-09-01</fechanacimiento>
+                        <fechaNacimiento>1998-09-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>12</dorsal>
@@ -574,7 +572,7 @@
                     <jugador id="10">
                         <nombre>Jordi</nombre>
                         <apellidos>Rodríguez Defensor</apellidos>
-                        <fechanacimiento>2005-08-10</fechanacimiento>
+                        <fechaNacimiento>2005-08-10</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>6</dorsal>
@@ -590,8 +588,8 @@
                             <partido>
                                 <equipoLocal>CDN Boadilla</equipoLocal>
                                 <equipoVisitante>CE Mediterrani</equipoVisitante>
-                                <escudoLocal>Escudos/CDN Boadilla.png</escudoLocal>
-                                <escudoVisitante>Escudos/CE Mediterrani.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 17:00:00</fechaPartido>
                                 <goleslocal>5</goleslocal>
                                 <golesvisitante>9</golesvisitante>
@@ -599,8 +597,8 @@
                             <partido>
                                 <equipoLocal>CN Atletic Barceloneta</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>13</goleslocal>
                                 <golesvisitante>12</golesvisitante>
@@ -608,8 +606,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>SC Tenerife Echeyde</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/SC Tenerife Echeyde.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>5</goleslocal>
                                 <golesvisitante>11</golesvisitante>
@@ -622,8 +620,8 @@
                             <partido>
                                 <equipoLocal>CE Mediterrani</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/CE Mediterrani.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>12</goleslocal>
                                 <golesvisitante>10</golesvisitante>
@@ -631,8 +629,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>CDN Boadilla</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/CDN Boadilla.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>13</goleslocal>
                                 <golesvisitante>7</golesvisitante>
@@ -640,8 +638,8 @@
                             <partido>
                                 <equipoLocal>SC Tenerife Echeyde</equipoLocal>
                                 <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
-                                <escudoLocal>Escudos/SC Tenerife Echeyde.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>4</goleslocal>
                                 <golesvisitante>11</golesvisitante>
@@ -654,8 +652,8 @@
                             <partido>
                                 <equipoLocal>CN Barcelona</equipoLocal>
                                 <equipoVisitante>CN Catalunya</equipoVisitante>
-                                <escudoLocal>Escudos/CN Barcelona.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Catalunya.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>3</goleslocal>
                                 <golesvisitante>3</golesvisitante>
@@ -663,8 +661,8 @@
                             <partido>
                                 <equipoLocal>CDN Boadilla</equipoLocal>
                                 <equipoVisitante>SC Tenerife Echeyde</equipoVisitante>
-                                <escudoLocal>Escudos/CDN Boadilla.png</escudoLocal>
-                                <escudoVisitante>Escudos/SC Tenerife Echeyde.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>4</goleslocal>
                                 <golesvisitante>9</golesvisitante>
@@ -672,8 +670,8 @@
                             <partido>
                                 <equipoLocal>CN Atletic Barceloneta</equipoLocal>
                                 <equipoVisitante>CE Mediterrani</equipoVisitante>
-                                <escudoLocal>Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                                <escudoVisitante>Escudos/CE Mediterrani.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>6</goleslocal>
                                 <golesvisitante>10</golesvisitante>
@@ -686,8 +684,8 @@
                             <partido>
                                 <equipoLocal>CN Barcelona</equipoLocal>
                                 <equipoVisitante>CDN Boadilla</equipoVisitante>
-                                <escudoLocal>Escudos/CN Barcelona.png</escudoLocal>
-                                <escudoVisitante>Escudos/CDN Boadilla.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 17:00:00</fechaPartido>
                                 <goleslocal>7</goleslocal>
                                 <golesvisitante>12</golesvisitante>
@@ -695,8 +693,8 @@
                             <partido>
                                 <equipoLocal>CE Mediterrani</equipoLocal>
                                 <equipoVisitante>CN Catalunya</equipoVisitante>
-                                <escudoLocal>Escudos/CE Mediterrani.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Catalunya.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>13</goleslocal>
                                 <golesvisitante>11</golesvisitante>
@@ -704,8 +702,8 @@
                             <partido>
                                 <equipoLocal>SC Tenerife Echeyde</equipoLocal>
                                 <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
-                                <escudoLocal>Escudos/SC Tenerife Echeyde.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>14</goleslocal>
                                 <golesvisitante>9</golesvisitante>
@@ -718,8 +716,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>12</goleslocal>
                                 <golesvisitante>5</golesvisitante>
@@ -727,8 +725,8 @@
                             <partido>
                                 <equipoLocal>SC Tenerife Echeyde</equipoLocal>
                                 <equipoVisitante>CE Mediterrani</equipoVisitante>
-                                <escudoLocal>Escudos/SC Tenerife Echeyde.png</escudoLocal>
-                                <escudoVisitante>Escudos/CE Mediterrani.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>15</goleslocal>
                                 <golesvisitante>4</golesvisitante>
@@ -736,8 +734,8 @@
                             <partido>
                                 <equipoLocal>CN Atletic Barceloneta</equipoLocal>
                                 <equipoVisitante>CDN Boadilla</equipoVisitante>
-                                <escudoLocal>Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                                <escudoVisitante>Escudos/CDN Boadilla.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>10</goleslocal>
                                 <golesvisitante>12</golesvisitante>
@@ -750,8 +748,8 @@
                             <partido>
                                 <equipoLocal>CE Mediterrani</equipoLocal>
                                 <equipoVisitante>SC Tenerife Echeyde</equipoVisitante>
-                                <escudoLocal>Escudos/CE Mediterrani.png</escudoLocal>
-                                <escudoVisitante>Escudos/SC Tenerife Echeyde.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>13</goleslocal>
                                 <golesvisitante>12</golesvisitante>
@@ -759,8 +757,8 @@
                             <partido>
                                 <equipoLocal>CN Barcelona</equipoLocal>
                                 <equipoVisitante>CN Catalunya</equipoVisitante>
-                                <escudoLocal>Escudos/CN Barcelona.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Catalunya.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>8</goleslocal>
                                 <golesvisitante>13</golesvisitante>
@@ -768,8 +766,8 @@
                             <partido>
                                 <equipoLocal>CN Atletic Barceloneta</equipoLocal>
                                 <equipoVisitante>CDN Boadilla</equipoVisitante>
-                                <escudoLocal>Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                                <escudoVisitante>Escudos/CDN Boadilla.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>12</goleslocal>
                                 <golesvisitante>5</golesvisitante>
@@ -782,8 +780,8 @@
                             <partido>
                                 <equipoLocal>CDN Boadilla</equipoLocal>
                                 <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
-                                <escudoLocal>Escudos/CDN Boadilla.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>13</goleslocal>
                                 <golesvisitante>8</golesvisitante>
@@ -791,8 +789,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>SC Tenerife Echeyde</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/SC Tenerife Echeyde.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>11</goleslocal>
                                 <golesvisitante>3</golesvisitante>
@@ -800,8 +798,8 @@
                             <partido>
                                 <equipoLocal>CE Mediterrani</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/CE Mediterrani.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 17:00:00</fechaPartido>
                                 <goleslocal>7</goleslocal>
                                 <golesvisitante>10</golesvisitante>
@@ -814,8 +812,8 @@
                             <partido>
                                 <equipoLocal>CDN Boadilla</equipoLocal>
                                 <equipoVisitante>CE Mediterrani</equipoVisitante>
-                                <escudoLocal>Escudos/CDN Boadilla.png</escudoLocal>
-                                <escudoVisitante>Escudos/CE Mediterrani.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>12</goleslocal>
                                 <golesvisitante>14</golesvisitante>
@@ -823,8 +821,8 @@
                             <partido>
                                 <equipoLocal>CN Atletic Barceloneta</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/CN Atletic Barceloneta.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>5</goleslocal>
                                 <golesvisitante>6</golesvisitante>
@@ -832,8 +830,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>SC Tenerife Echeyde</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/SC Tenerife Echeyde.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>14</goleslocal>
                                 <golesvisitante>10</golesvisitante>
@@ -846,8 +844,8 @@
                             <partido>
                                 <equipoLocal>CN Barcelona</equipoLocal>
                                 <equipoVisitante>CDN Boadilla</equipoVisitante>
-                                <escudoLocal>Escudos/CN Barcelona.png</escudoLocal>
-                                <escudoVisitante>Escudos/CDN Boadilla.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>6</goleslocal>
                                 <golesvisitante>9</golesvisitante>
@@ -855,8 +853,8 @@
                             <partido>
                                 <equipoLocal>SC Tenerife Echeyde</equipoLocal>
                                 <equipoVisitante>CE Mediterrani</equipoVisitante>
-                                <escudoLocal>Escudos/SC Tenerife Echeyde.png</escudoLocal>
-                                <escudoVisitante>Escudos/CE Mediterrani.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>11</goleslocal>
                                 <golesvisitante>14</golesvisitante>
@@ -864,8 +862,8 @@
                             <partido>
                                 <equipoLocal>CN Catalunya</equipoLocal>
                                 <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
-                                <escudoLocal>Escudos/CN Catalunya.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>9</goleslocal>
                                 <golesvisitante>15</golesvisitante>
@@ -878,8 +876,8 @@
                             <partido>
                                 <equipoLocal>CDN Boadilla</equipoLocal>
                                 <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
-                                <escudoLocal>Escudos/CDN Boadilla.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>3</goleslocal>
                                 <golesvisitante>9</golesvisitante>
@@ -887,8 +885,8 @@
                             <partido>
                                 <equipoLocal>CE Mediterrani</equipoLocal>
                                 <equipoVisitante>CN Catalunya</equipoVisitante>
-                                <escudoLocal>Escudos/CE Mediterrani.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Catalunya.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Catalunya.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>8</goleslocal>
                                 <golesvisitante>8</golesvisitante>
@@ -896,8 +894,8 @@
                             <partido>
                                 <equipoLocal>SC Tenerife Echeyde</equipoLocal>
                                 <equipoVisitante>CN Barcelona</equipoVisitante>
-                                <escudoLocal>Escudos/SC Tenerife Echeyde.png</escudoLocal>
-                                <escudoVisitante>Escudos/CN Barcelona.png</escudoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2023/Escudos/SC Tenerife Echeyde.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2023/Escudos/CN Barcelona.png</escudoVisitante>
                                 <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                                 <goleslocal>15</goleslocal>
                                 <golesvisitante>8</golesvisitante>
@@ -907,8 +905,6 @@
                 </jornadas>
     </temporada>
     <temporada id="2024">
-        <nombreTemporada>2</nombreTemporada>
-        <fechaTemporada>2024</fechaTemporada>
         <equipos>
             <equipo id="e1">
                 <nombreEquipo>asdadasdad</nombreEquipo>
@@ -923,7 +919,7 @@
                     <jugador id="1">
                         <nombre>Fran</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1998-09-11</fechanacimiento>
+                        <fechaNacimiento>1998-09-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>32</dorsal>
@@ -932,7 +928,7 @@
                     <jugador id="2">
                         <nombre>Carlos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1996-10-01</fechanacimiento>
+                        <fechaNacimiento>1996-10-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>28</dorsal>
@@ -941,7 +937,7 @@
                     <jugador id="3">
                         <nombre>Guzmán</nombre>
                         <apellidos>Quispe</apellidos>
-                        <fechanacimiento>2002-09-20</fechanacimiento>
+                        <fechaNacimiento>2002-09-20</fechaNacimiento>
                         <nacionalidad>Peruano</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>18</dorsal>
@@ -950,7 +946,7 @@
                     <jugador id="4">
                         <nombre>Marc</nombre>
                         <apellidos>Larumbe</apellidos>
-                        <fechanacimiento>1999-08-06</fechanacimiento>
+                        <fechaNacimiento>1999-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -959,7 +955,7 @@
                     <jugador id="5">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>1993-09-13</fechanacimiento>
+                        <fechaNacimiento>1993-09-13</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>28</dorsal>
@@ -968,7 +964,7 @@
                     <jugador id="6">
                         <nombre>Amadeo</nombre>
                         <apellidos>Llados</apellidos>
-                        <fechanacimiento>1998-01-15</fechanacimiento>
+                        <fechaNacimiento>1998-01-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -977,7 +973,7 @@
                     <jugador id="7">
                         <nombre>Daniel</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1996-09-15</fechanacimiento>
+                        <fechaNacimiento>1996-09-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -986,7 +982,7 @@
                     <jugador id="8">
                         <nombre>Mathew</nombre>
                         <apellidos>Ortega</apellidos>
-                        <fechanacimiento>1994-01-14</fechanacimiento>
+                        <fechaNacimiento>1994-01-14</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -995,7 +991,7 @@
                     <jugador id="9">
                         <nombre>Roger</nombre>
                         <apellidos>Tahull</apellidos>
-                        <fechanacimiento>1994-06-12</fechanacimiento>
+                        <fechaNacimiento>1994-06-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>20</dorsal>
@@ -1004,7 +1000,7 @@
                     <jugador id="10">
                         <nombre>Miguel</nombre>
                         <apellidos>de Toro</apellidos>
-                        <fechanacimiento>1992-07-13</fechanacimiento>
+                        <fechaNacimiento>1992-07-13</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -1019,7 +1015,7 @@
                     <jugador id="1">
                         <nombre>Gonzalo</nombre>
                         <apellidos>Echenique</apellidos>
-                        <fechanacimiento>1994-07-19</fechanacimiento>
+                        <fechaNacimiento>1994-07-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>21</dorsal>
@@ -1028,7 +1024,7 @@
                     <jugador id="2">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutiérrez</apellidos>
-                        <fechanacimiento>1997-10-15</fechanacimiento>
+                        <fechaNacimiento>1997-10-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>25</dorsal>
@@ -1037,7 +1033,7 @@
                     <jugador id="3">
                         <nombre>Unai</nombre>
                         <apellidos>Agirre</apellidos>
-                        <fechanacimiento>1996-04-07</fechanacimiento>
+                        <fechaNacimiento>1996-04-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1046,7 +1042,7 @@
                     <jugador id="4">
                         <nombre>Andrija</nombre>
                         <apellidos>Prlainovic</apellidos>
-                        <fechanacimiento>2002-07-11</fechanacimiento>
+                        <fechaNacimiento>2002-07-11</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -1055,7 +1051,7 @@
                     <jugador id="5">
                         <nombre>Martínez</nombre>
                         <apellidos>Banderas</apellidos>
-                        <fechanacimiento>1993-12-27</fechanacimiento>
+                        <fechaNacimiento>1993-12-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>21</dorsal>
@@ -1064,7 +1060,7 @@
                     <jugador id="6">
                         <nombre>Inglés</nombre>
                         <apellidos>Corres</apellidos>
-                        <fechanacimiento>2004-10-21</fechanacimiento>
+                        <fechaNacimiento>2004-10-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1073,7 +1069,7 @@
                     <jugador id="7">
                         <nombre>Xavi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1993-03-19</fechanacimiento>
+                        <fechaNacimiento>1993-03-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -1082,7 +1078,7 @@
                     <jugador id="8">
                         <nombre>Adrián</nombre>
                         <apellidos>Delgado</apellidos>
-                        <fechanacimiento>2000-12-01</fechanacimiento>
+                        <fechaNacimiento>2000-12-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -1091,7 +1087,7 @@
                     <jugador id="9">
                         <nombre>Javi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1997-04-11</fechanacimiento>
+                        <fechaNacimiento>1997-04-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>9</dorsal>
@@ -1100,7 +1096,7 @@
                     <jugador id="10">
                         <nombre>Mario</nombre>
                         <apellidos>Peris</apellidos>
-                        <fechanacimiento>1996-10-14</fechanacimiento>
+                        <fechaNacimiento>1996-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>5</dorsal>
@@ -1115,7 +1111,7 @@
                     <jugador id="1">
                         <nombre>Pablo</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1998-02-14</fechanacimiento>
+                        <fechaNacimiento>1998-02-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>30</dorsal>
@@ -1124,7 +1120,7 @@
                     <jugador id="2">
                         <nombre>Guillermo</nombre>
                         <apellidos>Molina</apellidos>
-                        <fechanacimiento>1996-10-03</fechanacimiento>
+                        <fechaNacimiento>1996-10-03</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>33</dorsal>
@@ -1133,7 +1129,7 @@
                     <jugador id="3">
                         <nombre>Albert</nombre>
                         <apellidos>Espanyol</apellidos>
-                        <fechanacimiento>1999-10-14</fechanacimiento>
+                        <fechaNacimiento>1999-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>14</dorsal>
@@ -1142,7 +1138,7 @@
                     <jugador id="4">
                         <nombre>Slobodan</nombre>
                         <apellidos>Nikic</apellidos>
-                        <fechanacimiento>2003-03-28</fechanacimiento>
+                        <fechaNacimiento>2003-03-28</fechaNacimiento>
                         <nacionalidad>Montenegrino</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -1151,7 +1147,7 @@
                     <jugador id="5">
                         <nombre>Jesse</nombre>
                         <apellidos>Smith</apellidos>
-                        <fechanacimiento>1992-12-20</fechanacimiento>
+                        <fechaNacimiento>1992-12-20</fechaNacimiento>
                         <nacionalidad>Estados Unidos</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1160,7 +1156,7 @@
                     <jugador id="6">
                         <nombre>Pujol</nombre>
                         <apellidos>Fuentes</apellidos>
-                        <fechanacimiento>2003-06-21</fechanacimiento>
+                        <fechaNacimiento>2003-06-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1169,7 +1165,7 @@
                     <jugador id="7">
                         <nombre>Aritz</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2004-04-06</fechanacimiento>
+                        <fechaNacimiento>2004-04-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -1178,7 +1174,7 @@
                     <jugador id="8">
                         <nombre>Miki</nombre>
                         <apellidos>Lorrio</apellidos>
-                        <fechanacimiento>1994-10-30</fechanacimiento>
+                        <fechaNacimiento>1994-10-30</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -1187,7 +1183,7 @@
                     <jugador id="9">
                         <nombre>Arturo</nombre>
                         <apellidos>Torres</apellidos>
-                        <fechanacimiento>1996-01-07</fechanacimiento>
+                        <fechaNacimiento>1996-01-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>7</dorsal>
@@ -1196,7 +1192,7 @@
                     <jugador id="10">
                         <nombre>Eric</nombre>
                         <apellidos>Andrés</apellidos>
-                        <fechanacimiento>1994-05-06</fechanacimiento>
+                        <fechaNacimiento>1994-05-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>29</dorsal>
@@ -1211,7 +1207,7 @@
                     <jugador id="1">
                         <nombre>Sergio</nombre>
                         <apellidos>Moreno</apellidos>
-                        <fechanacimiento>2006-02-12</fechanacimiento>
+                        <fechaNacimiento>2006-02-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1220,7 +1216,7 @@
                     <jugador id="2">
                         <nombre>Pepe</nombre>
                         <apellidos>Biel</apellidos>
-                        <fechanacimiento>2002-12-15</fechanacimiento>
+                        <fechaNacimiento>2002-12-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>20</dorsal>
@@ -1229,7 +1225,7 @@
                     <jugador id="3">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>2004-03-15</fechanacimiento>
+                        <fechaNacimiento>2004-03-15</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>32</dorsal>
@@ -1238,7 +1234,7 @@
                     <jugador id="4">
                         <nombre>Manuel</nombre>
                         <apellidos>Esquer</apellidos>
-                        <fechanacimiento>2000-05-23</fechanacimiento>
+                        <fechaNacimiento>2000-05-23</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1247,7 +1243,7 @@
                     <jugador id="5">
                         <nombre>Aaron</nombre>
                         <apellidos>Young</apellidos>
-                        <fechanacimiento>2004-06-06</fechanacimiento>
+                        <fechaNacimiento>2004-06-06</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -1256,7 +1252,7 @@
                     <jugador id="6">
                         <nombre>Isaac</nombre>
                         <apellidos>Alonso</apellidos>
-                        <fechanacimiento>2004-02-05</fechanacimiento>
+                        <fechaNacimiento>2004-02-05</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>16</dorsal>
@@ -1265,7 +1261,7 @@
                     <jugador id="7">
                         <nombre>Omar</nombre>
                         <apellidos>Blanco</apellidos>
-                        <fechanacimiento>1998-02-01</fechanacimiento>
+                        <fechaNacimiento>1998-02-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -1274,7 +1270,7 @@
                     <jugador id="8">
                         <nombre>Mateo</nombre>
                         <apellidos>Morales</apellidos>
-                        <fechanacimiento>1998-10-19</fechanacimiento>
+                        <fechaNacimiento>1998-10-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>10</dorsal>
@@ -1283,7 +1279,7 @@
                     <jugador id="9">
                         <nombre>Lucas</nombre>
                         <apellidos>Santos</apellidos>
-                        <fechanacimiento>2004-09-27</fechanacimiento>
+                        <fechaNacimiento>2004-09-27</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>19</dorsal>
@@ -1292,7 +1288,7 @@
                     <jugador id="10">
                         <nombre>Toni</nombre>
                         <apellidos>Sánchez</apellidos>
-                        <fechanacimiento>2002-02-08</fechanacimiento>
+                        <fechaNacimiento>2002-02-08</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1307,7 +1303,7 @@
                     <jugador id="1">
                         <nombre>Javier</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1998-04-18</fechanacimiento>
+                        <fechaNacimiento>1998-04-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>26</dorsal>
@@ -1316,7 +1312,7 @@
                     <jugador id="2">
                         <nombre>Hugo</nombre>
                         <apellidos>Rodríguez</apellidos>
-                        <fechanacimiento>1999-03-17</fechanacimiento>
+                        <fechaNacimiento>1999-03-17</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>32</dorsal>
@@ -1325,7 +1321,7 @@
                     <jugador id="3">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutierrez</apellidos>
-                        <fechanacimiento>1994-12-18</fechanacimiento>
+                        <fechaNacimiento>1994-12-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>5</dorsal>
@@ -1334,7 +1330,7 @@
                     <jugador id="4">
                         <nombre>David</nombre>
                         <apellidos>Baron</apellidos>
-                        <fechanacimiento>1994-10-09</fechanacimiento>
+                        <fechaNacimiento>1994-10-09</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1343,7 +1339,7 @@
                     <jugador id="5">
                         <nombre>Andrija</nombre>
                         <apellidos>Prainovic</apellidos>
-                        <fechanacimiento>1993-03-18</fechanacimiento>
+                        <fechaNacimiento>1993-03-18</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>7</dorsal>
@@ -1352,7 +1348,7 @@
                     <jugador id="6">
                         <nombre>Alejandro</nombre>
                         <apellidos>Bonilla</apellidos>
-                        <fechanacimiento>1992-08-06</fechanacimiento>
+                        <fechaNacimiento>1992-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>11</dorsal>
@@ -1361,7 +1357,7 @@
                     <jugador id="7">
                         <nombre>Ignacio</nombre>
                         <apellidos>Carrasco</apellidos>
-                        <fechanacimiento>1992-06-27</fechanacimiento>
+                        <fechaNacimiento>1992-06-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1370,7 +1366,7 @@
                     <jugador id="8">
                         <nombre>Marcos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2006-10-12</fechanacimiento>
+                        <fechaNacimiento>2006-10-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>32</dorsal>
@@ -1379,7 +1375,7 @@
                     <jugador id="9">
                         <nombre>Ignasi</nombre>
                         <apellidos>Gómez</apellidos>
-                        <fechanacimiento>2004-09-28</fechanacimiento>
+                        <fechaNacimiento>2004-09-28</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>31</dorsal>
@@ -1388,7 +1384,7 @@
                     <jugador id="10">
                         <nombre>Lucas</nombre>
                         <apellidos>Belmonte</apellidos>
-                        <fechanacimiento>2002-02-16</fechanacimiento>
+                        <fechaNacimiento>2002-02-16</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>8</dorsal>
@@ -1451,8 +1447,6 @@
                 </jornadas>
     </temporada>
     <temporada id="2025">
-        <nombreTemporada>3</nombreTemporada>
-        <fechaTemporada>2025</fechaTemporada>
         <equipos>
             <equipo id="e1">
                 <nombreEquipo>CDN Boadilla</nombreEquipo>
@@ -1461,7 +1455,7 @@
                     <jugador id="1">
                         <nombre>Fran</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1998-09-11</fechanacimiento>
+                        <fechaNacimiento>1998-09-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>32</dorsal>
@@ -1470,7 +1464,7 @@
                     <jugador id="2">
                         <nombre>Carlos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>1996-10-01</fechanacimiento>
+                        <fechaNacimiento>1996-10-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>28</dorsal>
@@ -1479,7 +1473,7 @@
                     <jugador id="3">
                         <nombre>Guzmán</nombre>
                         <apellidos>Quispe</apellidos>
-                        <fechanacimiento>2002-09-20</fechanacimiento>
+                        <fechaNacimiento>2002-09-20</fechaNacimiento>
                         <nacionalidad>Peruano</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>18</dorsal>
@@ -1488,7 +1482,7 @@
                     <jugador id="4">
                         <nombre>Marc</nombre>
                         <apellidos>Larumbe</apellidos>
-                        <fechanacimiento>1999-08-06</fechanacimiento>
+                        <fechaNacimiento>1999-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1497,7 +1491,7 @@
                     <jugador id="5">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>1993-09-13</fechanacimiento>
+                        <fechaNacimiento>1993-09-13</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>28</dorsal>
@@ -1506,7 +1500,7 @@
                     <jugador id="6">
                         <nombre>Amadeo</nombre>
                         <apellidos>Llados</apellidos>
-                        <fechanacimiento>1998-01-15</fechanacimiento>
+                        <fechaNacimiento>1998-01-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -1515,7 +1509,7 @@
                     <jugador id="7">
                         <nombre>Daniel</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1996-09-15</fechanacimiento>
+                        <fechaNacimiento>1996-09-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1524,7 +1518,7 @@
                     <jugador id="8">
                         <nombre>Mathew</nombre>
                         <apellidos>Ortega</apellidos>
-                        <fechanacimiento>1994-01-14</fechanacimiento>
+                        <fechaNacimiento>1994-01-14</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -1533,7 +1527,7 @@
                     <jugador id="9">
                         <nombre>Roger</nombre>
                         <apellidos>Tahull</apellidos>
-                        <fechanacimiento>1994-06-12</fechanacimiento>
+                        <fechaNacimiento>1994-06-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>20</dorsal>
@@ -1542,7 +1536,7 @@
                     <jugador id="10">
                         <nombre>Miguel</nombre>
                         <apellidos>de Toro</apellidos>
-                        <fechanacimiento>1992-07-13</fechanacimiento>
+                        <fechaNacimiento>1992-07-13</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -1557,7 +1551,7 @@
                     <jugador id="1">
                         <nombre>Gonzalo</nombre>
                         <apellidos>Echenique</apellidos>
-                        <fechanacimiento>1994-07-19</fechanacimiento>
+                        <fechaNacimiento>1994-07-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>21</dorsal>
@@ -1566,7 +1560,7 @@
                     <jugador id="2">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutiérrez</apellidos>
-                        <fechanacimiento>1997-10-15</fechanacimiento>
+                        <fechaNacimiento>1997-10-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>25</dorsal>
@@ -1575,7 +1569,7 @@
                     <jugador id="3">
                         <nombre>Unai</nombre>
                         <apellidos>Agirre</apellidos>
-                        <fechanacimiento>1996-04-07</fechanacimiento>
+                        <fechaNacimiento>1996-04-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1584,7 +1578,7 @@
                     <jugador id="4">
                         <nombre>Andrija</nombre>
                         <apellidos>Prlainovic</apellidos>
-                        <fechanacimiento>2002-07-11</fechanacimiento>
+                        <fechaNacimiento>2002-07-11</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -1593,7 +1587,7 @@
                     <jugador id="5">
                         <nombre>Martínez</nombre>
                         <apellidos>Banderas</apellidos>
-                        <fechanacimiento>1993-12-27</fechanacimiento>
+                        <fechaNacimiento>1993-12-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>21</dorsal>
@@ -1602,7 +1596,7 @@
                     <jugador id="6">
                         <nombre>Inglés</nombre>
                         <apellidos>Corres</apellidos>
-                        <fechanacimiento>2004-10-21</fechanacimiento>
+                        <fechaNacimiento>2004-10-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1611,7 +1605,7 @@
                     <jugador id="7">
                         <nombre>Xavi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1993-03-19</fechanacimiento>
+                        <fechaNacimiento>1993-03-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -1620,7 +1614,7 @@
                     <jugador id="8">
                         <nombre>Adrián</nombre>
                         <apellidos>Delgado</apellidos>
-                        <fechanacimiento>2000-12-01</fechanacimiento>
+                        <fechaNacimiento>2000-12-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -1629,7 +1623,7 @@
                     <jugador id="9">
                         <nombre>Javi</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1997-04-11</fechanacimiento>
+                        <fechaNacimiento>1997-04-11</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>9</dorsal>
@@ -1638,7 +1632,7 @@
                     <jugador id="10">
                         <nombre>Mario</nombre>
                         <apellidos>Peris</apellidos>
-                        <fechanacimiento>1996-10-14</fechanacimiento>
+                        <fechaNacimiento>1996-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>5</dorsal>
@@ -1653,7 +1647,7 @@
                     <jugador id="1">
                         <nombre>Pablo</nombre>
                         <apellidos>García</apellidos>
-                        <fechanacimiento>1998-02-14</fechanacimiento>
+                        <fechaNacimiento>1998-02-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>30</dorsal>
@@ -1662,7 +1656,7 @@
                     <jugador id="2">
                         <nombre>Guillermo</nombre>
                         <apellidos>Molina</apellidos>
-                        <fechanacimiento>1996-10-03</fechanacimiento>
+                        <fechaNacimiento>1996-10-03</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>33</dorsal>
@@ -1671,7 +1665,7 @@
                     <jugador id="3">
                         <nombre>Albert</nombre>
                         <apellidos>Espanyol</apellidos>
-                        <fechanacimiento>1999-10-14</fechanacimiento>
+                        <fechaNacimiento>1999-10-14</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>14</dorsal>
@@ -1680,7 +1674,7 @@
                     <jugador id="4">
                         <nombre>Slobodan</nombre>
                         <apellidos>Nikic</apellidos>
-                        <fechanacimiento>2003-03-28</fechanacimiento>
+                        <fechaNacimiento>2003-03-28</fechaNacimiento>
                         <nacionalidad>Montenegrino</nacionalidad>
                         <posicion></posicion>
                         <dorsal>14</dorsal>
@@ -1689,7 +1683,7 @@
                     <jugador id="5">
                         <nombre>Jesse</nombre>
                         <apellidos>Smith</apellidos>
-                        <fechanacimiento>1992-12-20</fechanacimiento>
+                        <fechaNacimiento>1992-12-20</fechaNacimiento>
                         <nacionalidad>Estados Unidos</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1698,7 +1692,7 @@
                     <jugador id="6">
                         <nombre>Pujol</nombre>
                         <apellidos>Fuentes</apellidos>
-                        <fechanacimiento>2003-06-21</fechanacimiento>
+                        <fechaNacimiento>2003-06-21</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1707,7 +1701,7 @@
                     <jugador id="7">
                         <nombre>Aritz</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2004-04-06</fechanacimiento>
+                        <fechaNacimiento>2004-04-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>25</dorsal>
@@ -1716,7 +1710,7 @@
                     <jugador id="8">
                         <nombre>Miki</nombre>
                         <apellidos>Lorrio</apellidos>
-                        <fechanacimiento>1994-10-30</fechanacimiento>
+                        <fechaNacimiento>1994-10-30</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>5</dorsal>
@@ -1725,7 +1719,7 @@
                     <jugador id="9">
                         <nombre>Arturo</nombre>
                         <apellidos>Torres</apellidos>
-                        <fechanacimiento>1996-01-07</fechanacimiento>
+                        <fechaNacimiento>1996-01-07</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>7</dorsal>
@@ -1734,7 +1728,7 @@
                     <jugador id="10">
                         <nombre>Eric</nombre>
                         <apellidos>Andrés</apellidos>
-                        <fechanacimiento>1994-05-06</fechanacimiento>
+                        <fechaNacimiento>1994-05-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>29</dorsal>
@@ -1749,7 +1743,7 @@
                     <jugador id="1">
                         <nombre>Sergio</nombre>
                         <apellidos>Moreno</apellidos>
-                        <fechanacimiento>2006-02-12</fechanacimiento>
+                        <fechaNacimiento>2006-02-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1758,7 +1752,7 @@
                     <jugador id="2">
                         <nombre>Pepe</nombre>
                         <apellidos>Biel</apellidos>
-                        <fechanacimiento>2002-12-15</fechanacimiento>
+                        <fechaNacimiento>2002-12-15</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>20</dorsal>
@@ -1767,7 +1761,7 @@
                     <jugador id="3">
                         <nombre>Felipe</nombre>
                         <apellidos>Perrone</apellidos>
-                        <fechanacimiento>2004-03-15</fechanacimiento>
+                        <fechaNacimiento>2004-03-15</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>32</dorsal>
@@ -1776,7 +1770,7 @@
                     <jugador id="4">
                         <nombre>Manuel</nombre>
                         <apellidos>Esquer</apellidos>
-                        <fechanacimiento>2000-05-23</fechanacimiento>
+                        <fechaNacimiento>2000-05-23</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1785,7 +1779,7 @@
                     <jugador id="5">
                         <nombre>Aaron</nombre>
                         <apellidos>Young</apellidos>
-                        <fechanacimiento>2004-06-06</fechanacimiento>
+                        <fechaNacimiento>2004-06-06</fechaNacimiento>
                         <nacionalidad>Inglés</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>15</dorsal>
@@ -1794,7 +1788,7 @@
                     <jugador id="6">
                         <nombre>Isaac</nombre>
                         <apellidos>Alonso</apellidos>
-                        <fechanacimiento>2004-02-05</fechanacimiento>
+                        <fechaNacimiento>2004-02-05</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>16</dorsal>
@@ -1803,7 +1797,7 @@
                     <jugador id="7">
                         <nombre>Omar</nombre>
                         <apellidos>Blanco</apellidos>
-                        <fechanacimiento>1998-02-01</fechanacimiento>
+                        <fechaNacimiento>1998-02-01</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>24</dorsal>
@@ -1812,7 +1806,7 @@
                     <jugador id="8">
                         <nombre>Mateo</nombre>
                         <apellidos>Morales</apellidos>
-                        <fechanacimiento>1998-10-19</fechanacimiento>
+                        <fechaNacimiento>1998-10-19</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>10</dorsal>
@@ -1821,7 +1815,7 @@
                     <jugador id="9">
                         <nombre>Lucas</nombre>
                         <apellidos>Santos</apellidos>
-                        <fechanacimiento>2004-09-27</fechanacimiento>
+                        <fechaNacimiento>2004-09-27</fechaNacimiento>
                         <nacionalidad>Brasileño</nacionalidad>
                         <posicion></posicion>
                         <dorsal>19</dorsal>
@@ -1830,7 +1824,7 @@
                     <jugador id="10">
                         <nombre>Toni</nombre>
                         <apellidos>Sánchez</apellidos>
-                        <fechanacimiento>2002-02-08</fechanacimiento>
+                        <fechaNacimiento>2002-02-08</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>23</dorsal>
@@ -1845,7 +1839,7 @@
                     <jugador id="1">
                         <nombre>Javier</nombre>
                         <apellidos>López</apellidos>
-                        <fechanacimiento>1998-04-18</fechanacimiento>
+                        <fechaNacimiento>1998-04-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>26</dorsal>
@@ -1854,7 +1848,7 @@
                     <jugador id="2">
                         <nombre>Hugo</nombre>
                         <apellidos>Rodríguez</apellidos>
-                        <fechanacimiento>1999-03-17</fechanacimiento>
+                        <fechaNacimiento>1999-03-17</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>32</dorsal>
@@ -1863,7 +1857,7 @@
                     <jugador id="3">
                         <nombre>Víctor</nombre>
                         <apellidos>Gutierrez</apellidos>
-                        <fechanacimiento>1994-12-18</fechanacimiento>
+                        <fechaNacimiento>1994-12-18</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Boya</posicion>
                         <dorsal>5</dorsal>
@@ -1872,7 +1866,7 @@
                     <jugador id="4">
                         <nombre>David</nombre>
                         <apellidos>Baron</apellidos>
-                        <fechanacimiento>1994-10-09</fechanacimiento>
+                        <fechaNacimiento>1994-10-09</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1881,7 +1875,7 @@
                     <jugador id="5">
                         <nombre>Andrija</nombre>
                         <apellidos>Prainovic</apellidos>
-                        <fechanacimiento>1993-03-18</fechanacimiento>
+                        <fechaNacimiento>1993-03-18</fechaNacimiento>
                         <nacionalidad>Serbio</nacionalidad>
                         <posicion></posicion>
                         <dorsal>7</dorsal>
@@ -1890,7 +1884,7 @@
                     <jugador id="6">
                         <nombre>Alejandro</nombre>
                         <apellidos>Bonilla</apellidos>
-                        <fechanacimiento>1992-08-06</fechanacimiento>
+                        <fechaNacimiento>1992-08-06</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>11</dorsal>
@@ -1899,7 +1893,7 @@
                     <jugador id="7">
                         <nombre>Ignacio</nombre>
                         <apellidos>Carrasco</apellidos>
-                        <fechanacimiento>1992-06-27</fechanacimiento>
+                        <fechaNacimiento>1992-06-27</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Portero</posicion>
                         <dorsal>13</dorsal>
@@ -1908,7 +1902,7 @@
                     <jugador id="8">
                         <nombre>Marcos</nombre>
                         <apellidos>Fernández</apellidos>
-                        <fechanacimiento>2006-10-12</fechanacimiento>
+                        <fechaNacimiento>2006-10-12</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>32</dorsal>
@@ -1917,7 +1911,7 @@
                     <jugador id="9">
                         <nombre>Ignasi</nombre>
                         <apellidos>Gómez</apellidos>
-                        <fechanacimiento>2004-09-28</fechanacimiento>
+                        <fechaNacimiento>2004-09-28</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Alero</posicion>
                         <dorsal>31</dorsal>
@@ -1926,7 +1920,7 @@
                     <jugador id="10">
                         <nombre>Lucas</nombre>
                         <apellidos>Belmonte</apellidos>
-                        <fechanacimiento>2002-02-16</fechanacimiento>
+                        <fechaNacimiento>2002-02-16</fechaNacimiento>
                         <nacionalidad>Español</nacionalidad>
                         <posicion>Defensor</posicion>
                         <dorsal>8</dorsal>

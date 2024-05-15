@@ -1,3 +1,4 @@
+//Función para que cargue los partidos de cada temporada
 function cargarResultadosTemporada(temporadaId = null) {
     const xmlUrl = './XML/temporadas.xml';
     const xslUrl = './XML/temporadas.xsl';
