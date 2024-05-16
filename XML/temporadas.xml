@@ -910,6 +910,15 @@
                 <nombreEquipo>asdadasdad</nombreEquipo>
                 <escudo>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudo>
                 <jugadores>
+                    <jugador id="1">
+                        <nombre></nombre>
+                        <apellidos></apellidos>
+                        <fechaNacimiento>1995-05-05</fechaNacimiento>
+                        <nacionalidad></nacionalidad>
+                        <posicion></posicion>
+                        <dorsal>10</dorsal>
+                        <foto></foto>
+                    </jugador>
                 </jugadores>
             </equipo>
             <equipo id="e2">
@@ -1397,51 +1406,321 @@
                     <jornada id="1">
                         <numeroJornada>1</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CDN Boadilla</equipoLocal>
+                                <equipoVisitante>CN Barcelona</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 17:00:00</fechaPartido>
+                                <goleslocal>5</goleslocal>
+                                <golesvisitante>9</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CE Mediterrani</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>13</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>asdadasdad</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>5</goleslocal>
+                                <golesvisitante>11</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="2">
                         <numeroJornada>2</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CE Mediterrani</equipoLocal>
+                                <equipoVisitante>CDN Boadilla</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>12</goleslocal>
+                                <golesvisitante>10</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>CN Barcelona</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>13</goleslocal>
+                                <golesvisitante>7</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>4</goleslocal>
+                                <golesvisitante>11</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="3">
                         <numeroJornada>3</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>CDN Boadilla</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>3</goleslocal>
+                                <golesvisitante>3</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>4</goleslocal>
+                                <golesvisitante>9</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Barcelona</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>6</goleslocal>
+                                <golesvisitante>10</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="4">
                         <numeroJornada>4</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CDN Boadilla</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 17:00:00</fechaPartido>
+                                <goleslocal>7</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Barcelona</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>13</goleslocal>
+                                <golesvisitante>11</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>14</goleslocal>
+                                <golesvisitante>9</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="5">
                         <numeroJornada>5</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CN Barcelona</equipoLocal>
+                                <equipoVisitante>CDN Boadilla</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>12</goleslocal>
+                                <golesvisitante>5</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>15</goleslocal>
+                                <golesvisitante>4</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>10</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="6">
                         <numeroJornada>6</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CN Barcelona</equipoLocal>
+                                <equipoVisitante>CDN Boadilla</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>13</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Catalunya</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>8</goleslocal>
+                                <golesvisitante>13</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>12</goleslocal>
+                                <golesvisitante>5</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="7">
                         <numeroJornada>7</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CDN Boadilla</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>13</goleslocal>
+                                <golesvisitante>8</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Barcelona</equipoLocal>
+                                <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>11</goleslocal>
+                                <golesvisitante>3</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Catalunya</equipoLocal>
+                                <equipoVisitante>asdadasdad</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 17:00:00</fechaPartido>
+                                <goleslocal>7</goleslocal>
+                                <golesvisitante>10</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="8">
                         <numeroJornada>8</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CDN Boadilla</equipoLocal>
+                                <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>12</goleslocal>
+                                <golesvisitante>14</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CE Mediterrani</equipoLocal>
+                                <equipoVisitante>asdadasdad</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>5</goleslocal>
+                                <golesvisitante>6</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Catalunya</equipoLocal>
+                                <equipoVisitante>CN Barcelona</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>14</goleslocal>
+                                <golesvisitante>10</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="9">
                         <numeroJornada>9</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CDN Boadilla</equipoLocal>
+                                <equipoVisitante>asdadasdad </equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad .png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>9</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CE Mediterrani</equipoLocal>
+                                <equipoVisitante>CN Barcelona</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>8</goleslocal>
+                                <golesvisitante>11</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Catalunya</equipoLocal>
+                                <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>12</goleslocal>
+                                <golesvisitante>9</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="10">
                         <numeroJornada>10</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal>CDN Boadilla</equipoLocal>
+                                <equipoVisitante>CN Barcelona</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Barcelona.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>10</goleslocal>
+                                <golesvisitante>14</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>CN Atletic Barceloneta</equipoLocal>
+                                <equipoVisitante>CE Mediterrani</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>14</goleslocal>
+                                <golesvisitante>6</golesvisitante>
+                            </partido>
+                            <partido>
+                                <equipoLocal>asdadasdad</equipoLocal>
+                                <equipoVisitante>CN Catalunya</equipoVisitante>
+                                <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/asdadasdad.png</escudoLocal>
+                                <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoVisitante>
+                                <fechaPartido>2015-05-07 20:00:00</fechaPartido>
+                                <goleslocal>16</goleslocal>
+                                <golesvisitante>12</golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                 </jornadas>
@@ -1932,6 +2211,15 @@
                 <nombreEquipo>Marbella</nombreEquipo>
                 <escudo>./Multimedia/Fotos/Temporadas/2025/Escudos/Marbella.png</escudo>
                 <jugadores>
+                    <jugador id="1">
+                        <nombre></nombre>
+                        <apellidos></apellidos>
+                        <fechaNacimiento>1995-05-05</fechaNacimiento>
+                        <nacionalidad></nacionalidad>
+                        <posicion></posicion>
+                        <dorsal>10</dorsal>
+                        <foto></foto>
+                    </jugador>
                 </jugadores>
             </equipo>
         </equipos>
@@ -1939,51 +2227,141 @@
                     <jornada id="1">
                         <numeroJornada>1</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="2">
                         <numeroJornada>2</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="3">
                         <numeroJornada>3</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="4">
                         <numeroJornada>4</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="5">
                         <numeroJornada>5</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="6">
                         <numeroJornada>6</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="7">
                         <numeroJornada>7</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="8">
                         <numeroJornada>8</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="9">
                         <numeroJornada>9</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                     <jornada id="10">
                         <numeroJornada>10</numeroJornada>
                         <partidos>
+                            <partido>
+                                <equipoLocal></equipoLocal>
+                                <equipoVisitante></equipoVisitante>
+                                <escudoLocal></escudoLocal>
+                                <escudoVisitante></escudoVisitante>
+                                <fechaPartido></fechaPartido>
+                                <goleslocal></goleslocal>
+                                <golesvisitante></golesvisitante>
+                            </partido>
                         </partidos>
                     </jornada>
                 </jornadas>
