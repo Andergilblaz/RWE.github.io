@@ -18,22 +18,7 @@
     </envio>
 
 
-    <envio>
-        <nombre>Jose Luis</nombre>
-        <apellidos>Romero Blanco</apellidos>
-        <correo>ana.martinez@ejemplo.com</correo>
-        <mensaje>Buenas tardes,
-      
-        Me gustaría saber si es posible comprar entradas para el próximo partido de waterpolo que se disputará el domingo 18 de junio. ¿Dónde puedo comprarlas y cuál es el precio?
-      
-        También me gustaría saber si hay algún tipo de descuento para grupos o familias.
-      
-        Muchas gracias por su información.
-      
-        Un cordial saludo,
-      
-        Ana Martínez</mensaje>
-    </envio>
+    
 
 
 
@@ -41,4 +26,5 @@
 
 
 
-</formulario>
+<envio><nombre>Andres</nombre><apellidos>Iniesta</apellidos><correo>pepalacerda@gmail.com</correo><mensaje>Hola beba dime como te va&#13;
+</mensaje></envio></formulario>

@@ -1,4 +1,22 @@
-<?php $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024'; ?>
+<?php
+// Ruta del archivo XML
+$xmlFile = './XML/temporadas.xml';
+
+// Cargar el archivo XML
+$xml = simplexml_load_file($xmlFile) or die("Error: No se puede cargar el archivo XML");
+
+// Extraer las temporadas
+$temporadas = [];
+foreach ($xml->temporada as $temporada) {
+    $id = (string) $temporada['id'];
+    $texto = (string) $temporada;
+    $temporadas[$id] = $texto;
+}
+
+// Obtener la temporada seleccionada o la última del XML por defecto
+$temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : '2024';
+$temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id] : 'Temporada no encontrada';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -24,11 +42,13 @@
                     style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
                     <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;"
                         width="10px">
-                        <a href="./partidos.php?temporada=2023">2023</a>
-                        <a href="./partidos.php?temporada=2024">2024</a>
+                        <?php foreach ($temporadas as $id => $texto): ?>
+                            <a href="./partidos.php?temporada=<?php echo $id; ?>"><?php echo $id; ?></a>
+                        <?php endforeach; ?>
+
                     </div>
                     <button id="botonTemporada" class="dropbtn"
-                        style=" font-size: large; border-radius: 5px;"><?php echo $temporada; ?>↓</button>
+                        style="font-size: large; border-radius: 5px;"><?php echo $temporada_texto; ?>↓</button>
                 </li>
             </div>
 
@@ -68,7 +88,6 @@
                             <button class="botonJornadas" onclick="smoothScroll(3600)">10</button>
                         </div>
 
-
                         <style>
                             /*Estilos en este documento para evitar errores*/
                             .botonJornadas {
@@ -97,10 +116,9 @@
                         </script>
                     </div>
                     <button id="botonTemporada" class="dropbtn"
-                        style=" font-size: large; border-radius: 5px;">Jornada↓</button>
+                        style="font-size: large; border-radius: 5px;">Jornada↓</button>
                 </li>
             </div>
-
 
             <br><br><br>
             <div id="tabla-container" class="contenedorGeneralPartidos">

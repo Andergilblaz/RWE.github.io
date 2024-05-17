@@ -56,7 +56,7 @@ if ($nombreUsuario) {
 
         <li><a href="./index.html"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
         <li class="button"><a href="./index.html">Inicio</a></li>
-        <li class="button"><a href="./partidos.php">Temporadas</a></li>
+        <li class="button"><a href="./partidos.php?temporada=2024">Temporadas</a></li>
         <li class="button"><a href="./clasificacion.html">Clasificación</a></li>
         <li class="button"><a href="./noticias.html">Noticias</a></li>
         <li class="button"><a href="./resumenes.html">Resúmenes</a></li>
