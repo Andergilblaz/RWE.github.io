@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
@@ -75,11 +76,6 @@
             const correo = document.getElementById('correo').value.trim();
             const mensaje = document.getElementById('mensaje').value.trim();
 
-            // Verificar que los campos no estén vacíos
-            if (nombre === '' || apellidos === '' || correo === '' || mensaje === '') {
-                alert('Por favor, complete todos los campos del formulario.');
-                return false; // Evita que el formulario se envíe
-            }
 
             // Si todos los campos están completos, se permite enviar el formulario
             return true;

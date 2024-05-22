@@ -120,7 +120,7 @@ function cargarTablaClasificacion() {
 
 // Función para cargar y mostrar el contenido del equipo a seleccionar
 function cargarSeleccionarEquipo() {
-    fetch('CargasDinamicas/infoEquipos.html')
+    fetch('CargasDinamicas/infoEquipos.php')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -134,7 +134,7 @@ function cargarInfoBoadilla() {
     // Ocultar el botón antes de cargar la información del equipo
     document.getElementById('botonTemporada').style.display = 'none';
 
-    fetch('CargasDinamicas/infoEquipos.html')
+    fetch('CargasDinamicas/infoEquipos.php')
         .then(response => response.text())
         .then(data => {
             document.getElementById('infoEquipo').style.display = 'block';
@@ -161,20 +161,6 @@ function cargarInfoBoadilla() {
 }
 
 
-function cargarPartidosJ1() {
-    fetch('CargasDinamicas/infoPartidos.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const htmlDocument = parser.parseFromString(data, 'text/html');
-
-            const partidosJ1 = htmlDocument.getElementById('jornada1').innerHTML; // Obtener el contenido de Jornada1
-            document.getElementById('partidos').innerHTML = partidosJ1; // Asignar el contenido a 'partidosJ1'
-        })
-        .catch(error => {
-            console.error("Error al cargar y procesar el documento HTML:", error);
-        });
-}
 
 
 
@@ -213,10 +199,6 @@ function editarPerfil() {
     alert("Funcionalidad de editar perfil en proceso...");
 }
 
-function cerrarSesion() {
-    // Aquí puedes agregar el código JavaScript para la funcionalidad de cerrar sesión
-    alert("Funcionalidad de cerrar sesión en proceso...");
-}
 
 // Función para obtener el valor del parámetro "temporada" de la URL
 function getSeasonFromURL() {
@@ -231,11 +213,6 @@ function updateButtonSeason() {
         document.querySelector('#botonTemporada').textContent = season + '↓';
     }
 }
-
-// Llamar a la función para actualizar el texto del botón cuando se carga la página
-updateButtonSeason();
-
-
 
 function cargarMenuSegunAdmin() {
     const parametroAdmin = obtenerParametroAdmin();
@@ -265,11 +242,14 @@ function cargarMenuSegunAdmin() {
 }
 
 function cerrarSesion() {
-    alert('Sesión cerrada correctamente.');
+    alert('Sesión cerrada correctamente.'); //Manda un mensaje de que se ha cerrado sesión
 
     window.sessionStorage.clear(); // Borra el sessionStorage
     window.location.href = './index.html'; // Redirige al index
 }
+
+
+
 //----------------------------------------Boton Scroll---------------------------------------//
 document.addEventListener("DOMContentLoaded", function () {
     // Obtener referencia al botón de scroll

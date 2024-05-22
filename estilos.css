@@ -127,7 +127,6 @@ a {
   border-radius: 10px;
   border-color: black;
   border-style: groove;
-  height: 2200px;
 }
 
 .chico {
@@ -494,6 +493,10 @@ section div {
     display: flex;
   }
 
+  .buscador {
+    display: none;
+  }
+
   .chico,
   .chica {
     display: none;
@@ -548,11 +551,10 @@ section div {
 }
 
   .cuadradoInfo {
-    width: 99%;
+    width: 100%;
     margin-left: 4px;
+    margin-right: 0;
     margin-top: 45%;
-    height: 3650px;
-    
   }
 
   .ppc {
@@ -625,6 +627,7 @@ section div {
   }
   .noticias {
   margin: 0;
+  margin-left: 5px;
   }
 }
 
@@ -671,7 +674,7 @@ section div {
 .formBuscador {
   display: inline-block;
   width: 100%;
-  max-width: 300px;
+  max-width:100 px;
   margin: 0 auto;
   text-align: left;
 }
