@@ -1,5 +1,3 @@
-<?php $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : '2024'; ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -29,8 +27,6 @@
 
   <article class="cuadradoInfo"> <!--CuadradoInfo-->
 
-  <!--------------------------------------CARGA INFO EQUIPO--------------------------------->
-
     <?php
     // Inicia la sesión
     session_start();
@@ -42,15 +38,17 @@
       if (file_exists($xmlFile)) {
         $xml = simplexml_load_file($xmlFile);
         if ($xml) {
-          foreach ($xml->temporada->equipos->equipo as $equipo) {
-            $escudo = (string) $equipo->escudo;
-            // Si el escudo coincide con la URL del escudo buscado, retorna todo el nodo del equipo
-            if ($escudo === $urlEscudo) {
-              return $equipo;
+          foreach ($xml->temporada as $temporada) { // Iterar a través de todas las temporadas
+            foreach ($temporada->equipos->equipo as $equipo) {
+              $escudo = (string) $equipo->escudo;
+              // Si el escudo coincide con la URL del escudo buscado, retorna todo el nodo del equipo
+              if ($escudo === $urlEscudo) {
+                return $equipo;
+              }
             }
           }
         } else {
-          echo "Error al  cargar el archivo XML.";
+          echo "Error al cargar el archivo XML.";
         }
       } else {
         echo "El archivo XML de equipos no existe.";
@@ -63,7 +61,7 @@
     $xmlFileEquipos = './XML/temporadas.xml';
 
     // Obtener la URL del escudo desde la URL de la página
-    $urlEscudo = isset($_GET['entity-value']) ? $_GET['entity-value'] : null;
+    $urlEscudo = isset($_GET['escudo']) ? $_GET['escudo'] : null;
 
     // Inicializar la variable del equipo
     $equipo = null;
@@ -75,25 +73,25 @@
 
     // Si se encontró un equipo, imprimir toda la información del equipo
     if ($equipo) {
-      
-      echo "<h2 style='text-align:center;'> " . $equipo->nombreEquipo . "</h2><br>";
-      echo "<img src='" . $equipo->escudo . "' alt='Escudo del equipo' style='width: 100px; margin: 0 auto; display: block; margin-top:-25px;'><br>";
+      echo "<h2 style='text-align:center;'>" . htmlspecialchars($equipo->nombreEquipo) . "</h2><br>";
+      echo "<img src='" . htmlspecialchars($equipo->escudo) . "' alt='Escudo del equipo' style='width: 100px; margin: 0 auto; display: block; margin-top:-25px;'><br>";
       echo "<h2 style='margin-bottom:-10px; margin-top:-10px; text-decoration:underline;'>Jugadores</h2><br>";
+
       // Poner la foto y el nombre de cada jugador en un cuadrado contenedor
-        echo "<div style='background-color: white; display: flex; flex-wrap: wrap; justify-content: center; border-radius:12px; overflow-x: auto;'>";
-        foreach ($equipo->jugadores->jugador as $jugador) {
-          echo "<div style='margin: 15px;'>";
-          echo "<a href='infoJugadores.php?jugador=" . $jugador->foto . "'><img src='" . $jugador->foto . "' alt='Foto del jugador' style='width: 100px;'></a><br>";
-          echo "<p style='text-align:center; margin-top:-1px; margin-bottom: -15px;'>" . $jugador->nombre . "</p> <br>";
-          echo "</div>";
-        }
+      echo "<div style='background-color: white; display: flex; flex-wrap: wrap; justify-content: center; border-radius:12px; overflow-x: auto;'>";
+      foreach ($equipo->jugadores->jugador as $jugador) {
+        echo "<div style='margin: 15px;'>";
+        echo "<a href='infoJugadores.php?jugador=" . urlencode($jugador->foto) . "'><img src='" . htmlspecialchars($jugador->foto) . "' alt='Foto del jugador' style='width: 100px;'></a><br>";
+        echo "<p style='text-align:center; margin-top:-1px; margin-bottom: -15px;'>" . htmlspecialchars($jugador->nombre) . "</p> <br>";
         echo "</div>";
-            echo "<br> <br>";
-    
+      }
+      echo "</div>";
+      echo "<br> <br>";
+    } else {
+      echo "<p>Equipo no encontrado.</p>";
     }
     ?>
 
-    </div> <!-- Fin del div del cuadrado -->
   </article>
 
   <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->

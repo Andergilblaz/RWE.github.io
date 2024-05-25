@@ -34,8 +34,10 @@ $temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id
     </div>
 
     <article>
+        <div class="fotospartidos">
         <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
         <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
+        </div>
         <div class="cuadradoInfo">
             <div class="dropdownNone" style="float:left;"> <!--Botón Temporadas-->
                 <li class="dropdown"
