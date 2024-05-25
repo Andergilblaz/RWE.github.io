@@ -3,7 +3,7 @@ session_start();
 
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['usuario'])) {
-    $alertMessage = "⚠️Inicia sesión para acceder a esta página⚠️";
+    $alertMessage = "⚠️Iasdsadsanicia sesión para acceder a esta página⚠️";
     echo "<script>alert('$alertMessage'); window.location.href='./inicioDeSesion.html';</script>";
    exit();
 }
