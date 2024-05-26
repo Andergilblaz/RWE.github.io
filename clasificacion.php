@@ -9,7 +9,6 @@
     <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
     <script>
-
         window.onload = function () {
             cargarTablaMenu();
             cargarFooter();
@@ -33,7 +32,6 @@
         <div class="cuadradoInfo">
             <div class="dropdownNone" style="float:left;">
                 <form id="temporadaForm" action="clasificacion.php" method="get">
-                    
                     <select id="temporada" name="temporada" style="font-size: large; border-radius: 5px; margin-top: 20px;margin-right: 25px">
                         <?php
                         // Cargar el XML
@@ -44,7 +42,7 @@
                         }
 
                         // Generar opciones para cada temporada
-                        foreach ($xml->temporada as $t) {
+                        foreach ($xml->temporadas->temporada as $t) {
                             $tempId = (string) $t['id'];
                             $selected = isset($_GET['temporada']) && $_GET['temporada'] === $tempId ? 'selected' : '';
                             echo '<option value="' . $tempId . '" ' . $selected . '>' . $tempId . '</option>';
@@ -68,12 +66,12 @@
             <div style="text-align: center;" id="tablaClasificacion">
                 <?php
                 // Obtener la temporada seleccionada
-                $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : (string) $xml->temporada[0]['id'];
+                $temporada = isset($_GET['temporada']) ? $_GET['temporada'] : (string) $xml->temporadas->temporada[0]['id'];
 
                 // Inicializar arrays para los equipos y sus estadísticas
                 $equipos = [];
 
-                foreach ($xml->temporada as $t) {
+                foreach ($xml->temporadas->temporada as $t) {
                     if ((string) $t['id'] === $temporada) {
                         // Inicializar los equipos
                         foreach ($t->equipos->equipo as $equipo) {
@@ -143,8 +141,19 @@
                 });
 
                 // Generar tabla HTML
-                echo '<table>';
-                echo '<tr><th>Posición</th><th>Equipo</th><th>Escudo</th><th>Puntos</th><th>Ganados</th><th>Perdidos</th><th>Empatados</th><th>Partidos</th><th>Goles a Favor</th><th>Goles en Contra</th></tr>';
+                echo '<table style="background-color: white;border-radius:12px; margin-top:10px">';
+                echo '<tr>';
+                echo '<th style="background-color: lightgray; border-radius: 12px 0 0 0;">Posición</th>';
+                echo '<th style="background-color: lightgray;">Equipo</th>';
+                echo '<th style="background-color: lightgray;">Escudo</th>';
+                echo '<th style="background-color: lightgray;">Puntos</th>';
+                echo '<th style="background-color: lightgray;">Ganados</th>';
+                echo '<th style="background-color: lightgray;">Perdidos</th>';
+                echo '<th style="background-color: lightgray;">Empatados</th>';
+                echo '<th style="background-color: lightgray;">Partidos</th>';
+                echo '<th style="background-color: lightgray;">Goles a Favor</th>';
+                echo '<th style="background-color: lightgray; border-radius: 0 12px 0 0;">Goles en Contra</th>';
+                echo '</tr>';
                 $posicion = 1;
                 foreach ($equipos as $equipo) {
                     echo '<tr>';
@@ -162,7 +171,7 @@
                 }
                 echo '</table>';
                 echo '<br>';
-                echo '<br>';    
+                echo '<br>';
                 ?>
             </div>
         </div>

@@ -231,6 +231,8 @@ a {
 
 .ppc {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: -10px;
@@ -243,7 +245,6 @@ a {
   background-color: #f0f0f0;
   transition: opacity 0.5s ease, height 0.5s ease;
   /* Transiciones suaves de opacidad y altura */
-
 }
 
 /* Main container styling */
@@ -296,41 +297,8 @@ a {
   font-size: 20px;
   font-weight: bold;
   color: #333;
-
 }
 
-
-/*-----------------------------------Clasificación----------------------------*/
-.clasificacionContenedor {
-  background-color: white;
-  border-radius: 12px;
-  padding: 12px;
-  width: 600px;
-  /* Adjust width as needed */
-  height: 300px;
-}
-
-.tablaClasificacion {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: center;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-}
-
-.tablaClub {
-  width: 1000px;
-}
 
 /*-----------------------------------Noticias--------------------------------*/
 
@@ -1110,3 +1078,9 @@ input[type="password"] {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 0;
 }
+
+/*-----------------------------Clasificación-------------------------*/
+
+/*Devido a problemas con los estilos
+los estilos de la clasificacion se controlan desde 
+la misma pagina de clasificacion.php*/
