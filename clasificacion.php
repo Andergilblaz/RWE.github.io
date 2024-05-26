@@ -16,8 +16,8 @@
     </script>
     <style>
         .team-logo {
-            width: 100px;
-            height: 100px;
+            width: 75px;
+            height: 75px;
         }
     </style>
 </head>
@@ -32,7 +32,7 @@
         <div class="cuadradoInfo">
             <div class="dropdownNone" style="float:left;">
                 <form id="temporadaForm" action="clasificacion.php" method="get">
-                    <select id="temporada" name="temporada" style="font-size: large; border-radius: 5px; margin-top: 20px;margin-right: 25px">
+                    <select id="temporada" name="temporada" style="font-size: large; border-radius: 5px; margin-top: 20px;margin-right: 25px; background-color:#324679; color: white">
                         <?php
                         // Cargar el XML
                         $xml = simplexml_load_file('./XML/temporadas.xml');

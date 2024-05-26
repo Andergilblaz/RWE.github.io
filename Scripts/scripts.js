@@ -75,7 +75,7 @@ function cargarPP2() {
             const parser = new DOMParser();
             const htmlDocument = parser.parseFromString(data, 'text/html');
             const proximoPartido2 = htmlDocument.getElementById('proximoPartido2').innerHTML;
-            document.getElementById('proximoPartido2').innerHTML = proximoPartido2;
+            document.getElementById('tablaClasificacion').innerHTML = proximoPartido2;
         });
 
 }
