@@ -65,7 +65,7 @@
             </div>
 
             <script>
-                // Obtener el elemento select
+                //  Obtener el elemento select
                 var selectTemporada = document.getElementById("temporada");
 
                 // Escuchar el evento change del select

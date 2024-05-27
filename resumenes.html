@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Mi página de resúmenes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Waterpolo Español</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
 </head>
+
+<script>
+
+    window.onload = function () {
+
+        cargarTablaMenu();
+        cargarPP1();
+        cargarPP2();
+        cargarFooter();
+        cargarNoticias();
+
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
+    }
+</script>
+
+
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Audio</a></li>
-        </ul>
-    </nav>
 
-    <h1>Resúmenes</h1>
+    <div class="tablaMenu"> <!--tablaMenu-->
+        <!-- Aqui se mostrara la tablaMenu -->
+        <div class="admin">
+            <!-- Aquí se mostrara la ventana login -->
+        </div>
+        <header id="tablaMenu"> </header>
+    </div>
 
-    <h2>Videos</h2>
-    <video src="multimedia/videos/video1.mp4" controls></video>
-    <video src="multimedia/videos/video2.mp4" controls></video>
-    <video src="multimedia/videos/video3.mp4" controls></video>
+    <article> <!--CuadradoInfo-->
+        <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
+        <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 100px;">
+        <div class="cuadradoInfo" style="height: 800px;"> <!-- Inicio del div del cuadrado -->
 
-    <h2>Audio</h2>
-    <audio src="multimedia/audios/audio1.mp3" controls></audio>
-    <audio src="multimedia/audios/audio2.mp3" controls></audio>
-    <audio src="multimedia/audios/audio3.mp3" controls></audio>
+            <div>
+                <h1 style="margin-top: -125px; text-decoration: underline;">Resumen más reciente</h1>
 
-    <footer>
-        <p>© 2022 Mi página de resúmenes. Todos los derechos reservados.</p>
-    </footer>
+
+                <iframe width="560" height="315" style="margin-left: 175px;" src="https://www.youtube.com/embed/68cMKxHYJvM?si=OAMW1H8cLWCWvARj"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div>
+                <h1 style="margin-top: -125px; text-decoration: underline;">Himno nacional</h1>
+                <audio controls style="margin-left: 450px;margin-top: 20px;">
+                    <source src="./Multimedia/Audios/Himno.ogg" type="audio/ogg"/>
+                    <source src="./Multimedia/Audios/Himno.mp3" type="audio/mp3"/>
+                 </audio>
+            </div>
+        </div> <!-- Fin del div del cuadrado -->
+    </article>
+    <br><br><br><br> <!--Espacios para que haya hueco hasta el footer-->
+    <div> <!--footer-->
+        <!-- Aqui se mostrara el footer -->
+        <footer id="footer"> </footer>
+    </div>
 </body>
+
+
 </html>
