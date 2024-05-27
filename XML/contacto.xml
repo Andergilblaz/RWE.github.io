@@ -3,7 +3,6 @@
 <?xml-model href="contacto.xsd" ?>
 <formulario>
 
-
     <envio>
         <nombre>Marrano</nombre>
         <apellidos>Rajoy</apellidos>
@@ -17,14 +16,41 @@
         </mensaje>
     </envio>
 
-
     
 
+    <envio>
+        <nombre>Lionel</nombre>
+        <apellidos>Messi</apellidos>
+        <correo>lionel@example.com</correo>
+        <mensaje>Hola, soy Lionel Messi.</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>CRISTIANO</nombre>
+        <apellidos>RONALDO</apellidos>
+        <correo>cristiano@example.com</correo>
+        <mensaje>Hola, soy Cristiano Ronaldo.</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>Thomas</nombre>
+        <apellidos>Müller</apellidos>
+        <correo>thomas@example.com</correo>
+        <mensaje>¡Hola! Soy Thomas Müller. ¿Cómo estás?</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>John</nombre>
+        <apellidos>Doe Smith</apellidos>
+        <correo>john@example.com</correo>
+        <mensaje>Hola, soy John Doe Smith.</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>María</nombre>
+        <apellidos>Gómez</apellidos>
+        <correo>maria_gomez@example.com</correo>
+        <mensaje>Hola, soy María Gómez.</mensaje>
+    </envio>
 
-
-<envio><nombre>Andres</nombre><apellidos>Iniesta</apellidos><correo>pepalacerda@gmail.com</correo><mensaje>Hola beba dime como te va&#13;
-</mensaje></envio></formulario>
+</formulario>

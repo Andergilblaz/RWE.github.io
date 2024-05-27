@@ -1,6 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <!-- Definición de elementos -->
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="temporadas"/>
+                <xs:element ref="usuarios"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
     <xs:element name="temporadas">
         <xs:complexType>
             <xs:sequence>
@@ -35,7 +45,7 @@
                 <xs:element name="escudo" type="xs:string"/>
                 <xs:element ref="jugadores"/>
             </xs:sequence>
-              <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="id" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -96,6 +106,23 @@
                 <xs:element name="fechaPartido" type="xs:string"/>
                 <xs:element name="goleslocal" type="xs:string"/>
                 <xs:element name="golesvisitante" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cuenta" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cuenta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" type="xs:string"/>
+                <xs:element name="contraseña" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

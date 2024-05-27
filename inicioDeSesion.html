@@ -14,12 +14,22 @@
 <script>
 
     window.onload = function () {
-  
-      cargarTablaMenu();
-      cargarFooter();
-      
+
+        cargarTablaMenu();
+        cargarFooter();
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
     }
-  </script>
+</script>
 
 <body>
 
@@ -29,34 +39,37 @@
     </div>
     <img src="Multimedia/Fotos/Chica.png" class="chica" width="500px" style="float: left; margin-top: 130px;">
     <img src="Multimedia/Fotos/Chico.png" class="chico" width="500px" style="float: right; margin-top: 90px;">
-    
+
     <article class="cuadradoInfoInicioDeSesion"> <!--CuadradoInfo-->
 
-        <div class="contacto" >
+        <div class="contacto">
 
             <h2>Identifícate</h2>
-            
+
             <p>Sección para administradores⚠️</p>
-                <hr>
-                <img src="Multimedia/Fotos/LogoWaterpolo.png" alt="Logotipo" width="100px" style="float: right; margin-top:-120px; margin-right: 10px;">
+            <hr>
+            <img src="Multimedia/Fotos/LogoWaterpolo.png" alt="Logotipo" width="100px"
+                style="float: right; margin-top:-120px; margin-right: 10px;">
             <form id="formContacto" action="PHP/inicioDeSesion.php" method="post">
 
-              
-                    <div style="display: flex; width: 342px;">
-                        <div for="message"> <Label>Usuario:</Label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" style="border: 1px solid #ccc;"><br>
-                           
-                        </div>
 
-                        <div style="margin-left: 23px;"> <Label for="message">Contraseña:</Label>
-                            <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" style="border: 1px solid #ccc;"><br>
-                           
-                        </div>
+                <div style="display: flex; width: 342px;">
+                    <div for="message"> <Label>Usuario:</Label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario"
+                            style="border: 1px solid #ccc;"><br>
 
                     </div>
 
+                    <div style="margin-left: 23px;"> <Label for="message">Contraseña:</Label>
+                        <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña"
+                            style="border: 1px solid #ccc;"><br>
+
+                    </div>
+
+                </div>
+
                 <br>
-              
+
 
                 <input type="submit" value="Iniciar sesión" style="width: 114%;"><br><br>
 
@@ -75,14 +88,14 @@
 
     <script>
         // JavaScript para mostrar el mensaje de confirmación si el formulario se ha enviado correctamente
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const incorrecto = urlParams.get('incorrecto');
-            
+
             if (incorrecto === 'true') {
                 const confirmationMessage = '❌Usuario o contraseña incorrectos, prueba otra vez❌\n' +
-                                            '⚠️Inicio de sesión solo habilitado para administradores⚠️';
-    
+                    '⚠️Inicio de sesión solo habilitado para administradores⚠️';
+
                 // Mostrar el cuadro de diálogo de confirmación personalizado
                 if (confirm(confirmationMessage)) {
                     // Redirigir al usuario a inicioDeSesion.html si acepta
@@ -94,7 +107,7 @@
             }
         });
     </script>
-    
+
 </body>
 
 </html>

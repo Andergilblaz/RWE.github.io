@@ -3,7 +3,7 @@
 session_start();
 
 // Ruta al archivo XML que contiene las cuentas de usuario
-$xmlFile = '../XML/usuarios.xml';
+$xmlFile = '../XML/temporadas.xml';
 
 // Verifica si se ha enviado un formulario con datos de inicio de sesión
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $esAdministrador = false;
 
         // Recorre cada cuenta de usuario en el XML
-        foreach ($xml->cuenta as $cuenta) {
+        foreach ($xml->usuarios->cuenta as $cuenta) {
             // Obtiene el usuario y la contraseña de la cuenta actual
             $xmlUsuario = (string) $cuenta->usuario;
             $xmlContraseña = (string) $cuenta->contraseña;
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['usuario'] = $usuario;
 
                 // Redirige según el resultado del inicio de sesión
-                header('Location: ../index.html?admin=' . ($usuario));
+                header('Location: ../index.php?admin=' . ($usuario));
                 exit;
             }
         }
