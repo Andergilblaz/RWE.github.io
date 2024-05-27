@@ -53,4 +53,4 @@
         <mensaje>Hola, soy María Gómez.</mensaje>
     </envio>
 
-</formulario>
+<envio><nombre>ander</nombre><apellidos>a</apellidos><correo>a@gmail.com</correo><mensaje>aaaa</mensaje></envio></formulario>

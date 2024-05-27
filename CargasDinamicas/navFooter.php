@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Inicia la sesión 
-$fotoPerfil = "./Multimedia/Fotos/Usuarios/LogoWaterpoloAdmin.png"; 
+$fotoPerfil = "./Multimedia/Fotos/LogoWaterpoloAdmin.png"; 
 
 ?>
 

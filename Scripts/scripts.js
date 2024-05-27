@@ -207,7 +207,7 @@ function cerrarSesion() {
     alert('Sesión cerrada correctamente.'); //Manda un mensaje de que se ha cerrado sesión
 
     window.sessionStorage.clear(); // Borra el sessionStorage
-    window.location.href = './index.html'; // Redirige al index
+    window.location.href = './index.php'; // Redirige al index
 }
 
 
