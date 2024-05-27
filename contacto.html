@@ -12,8 +12,19 @@
 
 <script>
     window.onload = function () {
-    cargarTablaMenu();
-    cargarFooter();
+        cargarTablaMenu();
+        cargarFooter();
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
     }
 </script>
 

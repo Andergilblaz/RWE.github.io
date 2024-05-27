@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="Scripts/scripts.js"></script> <!-- Incluye el archivo JavaScript -->
+    <script src="Scripts/scripts.js"></script>
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
     <script>
         window.onload = function () {
             cargarTablaMenu();
             cargarFooter();
+            // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+            var scale = window.devicePixelRatio * 100;
+            var zoomLevel = 1.0;
+
+            if (scale === 100) {
+                zoomLevel = 1.25;
+            } else if (scale === 125) {
+                zoomLevel = 1.0;
+            }
+
+            document.body.style.zoom = zoomLevel;
         };
     </script>
     <style>
@@ -32,7 +43,8 @@
         <div class="cuadradoInfo">
             <div class="dropdownNone" style="float:left;">
                 <form id="temporadaForm" action="clasificacion.php" method="get">
-                    <select id="temporada" name="temporada" style="font-size: large; border-radius: 5px; margin-top: 20px;margin-right: 25px; background-color:#324679; color: white">
+                    <select id="temporada" name="temporada"
+                        style="font-size: large; border-radius: 5px; margin-top: 20px;margin-right: 25px; background-color:#324679; color: white">
                         <?php
                         // Cargar el XML
                         $xml = simplexml_load_file('./XML/temporadas.xml');

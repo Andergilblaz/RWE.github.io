@@ -16,12 +16,18 @@
 
         cargarTablaMenu();
         cargarFooter();
-    }
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
 
-    function volverJugador() {
-        window.location.href = 'equipos.html';
-    }
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
 
+        document.body.style.zoom = zoomLevel;
+    }
 
     /*Script para que cargue el jugador con el id que sale en la URL de la pagina*/
     document.addEventListener('DOMContentLoaded', function () {
@@ -57,9 +63,6 @@
     <article> <!--CuadradoInfo-->
         <div class="cuadradoInfo"> <!-- Inicio del div del cuadrado -->
 
-            <img src="Multimedia/Fotos/Chica.png" id="chica" class="chica" width="300px" style="float: left; margin-top: 25px ;">
-            <img src="Multimedia/Fotos/Chico.png" id="chico" class="chico" width="300px" style="float: right; margin-top: 25px ;">
-
             <?php
             // Función para cargar el jugador desde el archivo XML
             function cargarJugador($xmlFile, $urlFoto)
@@ -68,7 +71,7 @@
                 if (file_exists($xmlFile)) {
                     $xml = simplexml_load_file($xmlFile);
                     if ($xml) {
-                        foreach ($xml->temporada->equipos->equipo->jugadores->jugador as $jugador) {
+                        foreach ($xml->temporadas->temporada->equipos->equipo->jugadores->jugador as $jugador) {
                             $foto = (string) $jugador->foto;
                             // Si la foto coincide con la URL de la foto buscada, retorna todo el nodo del jugador
                             if ($foto === $urlFoto) {
@@ -101,6 +104,8 @@
 
             // Si se encontró un jugador, imprimir toda la información del jugador
             if ($jugador) {
+                echo "<img src='Multimedia/Fotos/Chica.png' class='chica' width='300px' style='float: left;'>";
+                echo "<img src='Multimedia/Fotos/Chico.png' class='chico' width='300px' style='float: right;''>";
                 echo "<h2 style='text-align:center;'>" . $jugador->nombre . " " . $jugador->apellidos . "</h2>";
 
                 echo "<div style='background-color: white; padding: 10px; width:55%; margin:0 auto; border-radius:12px;' >";

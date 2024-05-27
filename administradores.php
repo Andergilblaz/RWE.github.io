@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     $alertMessage = "⚠️Inicia sesión para acceder a esta página⚠️";
     echo "<script>alert('$alertMessage'); window.location.href='./inicioDeSesion.html';</script>";
-   exit();
+    exit();
 }
 ?>
 
@@ -24,6 +24,17 @@ if (!isset($_SESSION['usuario'])) {
     window.onload = function () {
         cargarTablaMenu();
     };
+     // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+     var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
 </script>
 
 
@@ -43,8 +54,8 @@ if (!isset($_SESSION['usuario'])) {
     <article class="cuadradoInfo">
         <div class="contacto"> <!-- Cuadrado de mensajes recibidos-->
             <?php
-           
-            
+
+
             // Luego puedes acceder a $_SESSION['usuario']
             if (isset($_SESSION['usuario'])) {
                 $usuario = $_SESSION['usuario'];
@@ -204,86 +215,71 @@ if (!isset($_SESSION['usuario'])) {
             </div>
         </div>
 
-        <article> <!-- Cuadrado de administradores-->
-            <?php
-            // Función para cargar los datos de usuarios desde el archivo XML
-            function cargarUsuarios($xmlFile)
-            {
-                $usuarios = [];
+        <?php
+// Función para cargar los datos de usuarios desde el archivo XML "temporadas.xml"
+function cargarUsuarios($xmlFile)
+{
+    $usuarios = [];
 
-                // Verificar si el archivo XML existe
-                if (file_exists($xmlFile)) {
-                    $xml = simplexml_load_file($xmlFile);
+    // Verificar si el archivo XML existe
+    if (file_exists($xmlFile)) {
+        $xml = simplexml_load_file($xmlFile);
 
-                    if ($xml) {
-                        foreach ($xml->cuenta as $cuenta) {
-                            $usuario = (string) $cuenta->usuario;
-                            $contrasena = (string) $cuenta->contraseña;
-                            $foto = (string) $cuenta->foto; // Obtener la ruta de la foto
-                            $usuarios[] = ['usuario' => $usuario, 'contraseña' => $contrasena, 'foto' => $foto];
-                        }
-                    } else {
-                        echo "Error al cargar el archivo XML.";
-                    }
-                } else {
-                    echo "El archivo XML de usuarios no existe.";
-                }
-
-                return $usuarios;
+        if ($xml) {
+            foreach ($xml->usuarios->cuenta as $cuenta) {
+                $usuario = (string) $cuenta->usuario;
+                $contrasena = (string) $cuenta->contraseña;
+                $usuarios[] = ['usuario' => $usuario, 'contraseña' => $contrasena];
             }
+        } else {
+            echo "Error al cargar el archivo XML.";
+        }
+    } else {
+        echo "El archivo XML de temporadas con usuarios no existe.";
+    }
 
-            // Ruta al archivo XML de usuarios
-            $xmlFileUsuarios = './XML/usuarios.xml';
+    return $usuarios;
+}
 
-            // Cargar la lista de usuarios desde el archivo XML
-            $usuarios = cargarUsuarios($xmlFileUsuarios);
-            ?>
+// Ruta al archivo XML "temporadas.xml" de usuarios
+$xmlFileUsuarios = './XML/temporadas.xml';
 
-            <!DOCTYPE html>
-            <html lang="es">
+// Cargar la lista de usuarios desde el archivo XML "temporadas.xml"
+$usuarios = cargarUsuarios($xmlFileUsuarios);
+?>
 
-            <head>
-                <meta charset="UTF-8">
-                <title>Gestión de Usuarios</title>
-                <link rel="stylesheet" href="estilos.css">
-            </head>
+<!DOCTYPE html>
+<html lang="es">
 
-            <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-                <article class="gestionUsuariosContainer">
-                    <h2>Usuarios registrados</h2>
-                    <hr>
-                    <!-- Tabla de usuarios -->
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Usuario</th>
-                                <th>Contraseña</th>
-                                <th>Imagen</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($usuarios as $usuario): ?>
-                                <tr>
-                                    <td><?php echo $usuario['usuario']; ?></td>
-                                    <td><?php echo $usuario['contraseña']; ?></td>
-                                    <td><img src="<?php echo $usuario['foto']; ?>" width="75"></td>
-                                    <!-- Mostrar la foto -->
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </article>
-
-            </body>
-
-            </html>
-
-
-
-
-        </article>
-
+<body>
+    <article class="gestionUsuariosContainer">
+        <h2>Usuarios registrados</h2>
+        <hr>
+        <!-- Tabla de usuarios -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($usuarios as $usuario): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($usuario['usuario']); ?></td>
+                        <td><?php echo htmlspecialchars($usuario['contraseña']); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </article>
 </body>
 
 </html>
+

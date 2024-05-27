@@ -32,7 +32,49 @@ $temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : null;
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/partidos.js"></script>
 </head>
+
+
+<script>
+    window.onload = function () {
+        cargarTablaMenu();
+        cargarFooter();
+        cargarResultadosURL();
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
+
+    };
+
+    function cargarResultadosURL() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var temporadaParam = urlParams.get('temporada');
+        if (temporadaParam) {
+            cargarResultadosTemporada(temporadaParam);
+            document.querySelector('select[name="temporada"]').value = temporadaParam;
+        } else {
+            // Cargar resultados por defecto si no se especifican parámetros de temporada y jornada
+            cargarResultadosTemporada();
+        }
+    }
+
+    function smoothScroll(offset) {
+        window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 <body>
     <div class="tablaMenu">
@@ -46,8 +88,10 @@ $temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : null;
         </div>
         <div class="cuadradoInfo">
             <form action="./partidos.php" method="GET"> <!-- Formulario para seleccionar la temporada -->
-                <div class="dropdownNone" style="float:left; margin-top: 25px;margin-left:-75px;"> <!--Selector de Temporadas-->
-                    <select name="temporada" class="dropbtn" onchange="this.form.submit()" style="font-size:20px;border-radius:5px;">
+                <div class="dropdownNone" style="float:left; margin-top: 25px;margin-left:-75px;">
+                    <!--Selector de Temporadas-->
+                    <select name="temporada" class="dropbtn" onchange="this.form.submit()"
+                        style="font-size:20px;border-radius:5px;">
                         <?php foreach ($temporadas as $id => $nombre): ?>
                             <option value="<?php echo $id; ?>" <?php if ($id == $temporada_id)
                                    echo 'selected'; ?>>
@@ -86,34 +130,7 @@ $temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : null;
         <footer id="footer"></footer>
     </div>
 
-    <script src="Scripts/scripts.js"></script>
-    <script src="Scripts/partidos.js"></script>
-    <script>
-        window.onload = function () {
-            cargarTablaMenu();
-            cargarFooter();
-            cargarResultadosURL();
-        };
 
-        function cargarResultadosURL() {
-            var urlParams = new URLSearchParams(window.location.search);
-            var temporadaParam = urlParams.get('temporada');
-            if (temporadaParam) {
-                cargarResultadosTemporada(temporadaParam);
-                document.querySelector('select[name="temporada"]').value = temporadaParam;
-            } else {
-                // Cargar resultados por defecto si no se especifican parámetros de temporada y jornada
-                cargarResultadosTemporada();
-            }
-        }
-
-        function smoothScroll(offset) {
-            window.scrollBy({
-                top: offset,
-                behavior: 'smooth'
-            });
-        }
-    </script>
 </body>
 
 </html>

@@ -13,10 +13,10 @@ $fotoPerfil = "./Multimedia/Fotos/Usuarios/LogoWaterpoloAdmin.png";
 
       <ul class="tablaMenu" style="color: white;">
 
-        <li><a href="./index.html"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
-        <li class="button"><a href="./index.html">Inicio</a></li>
+        <li><a href="./index.php"><img src="Multimedia/Fotos/LogoWaterpolo.png" width="70px"></a></li>
+        <li class="button"><a href="./index.php">Inicio</a></li>
         <li class="button"><a href="./partidos.php?temporada=2024">Temporadas</a></li>
-        <li class="button"><a href="./clasificacion.php">Clasificación</a></li>
+        <li class="button"><a href="./clasificacion.php?temporada=2024">Clasificación</a></li>
         <li class="button"><a href="./noticias.html">Noticias</a></li>
         <li class="button"><a href="./resumenes.html">Resúmenes</a></li>
         <li class="button"><a href="./contacto.html">Contacto Web</a></li>
@@ -47,21 +47,22 @@ $fotoPerfil = "./Multimedia/Fotos/Usuarios/LogoWaterpoloAdmin.png";
               <?php echo $_SESSION['usuario']; ?>!
             </p>
 
-            <a href="./administradores.php?" style="margin-bottom: 10px;">Administrar</a>
+            <a href="./administradores.php" style="margin-bottom: 10px;">Administrar</a>
             <button style="margin-right: 10px;" onclick=" window.location.href = './PHP/editarPerfil.php';">Editar
               perfil</button>
             <button class="botonesMenuAdmin" onclick="cerrarSesion()">Cerrar sesión</button>
           </div>
         </div>
 
+        
 
         <!-- Menu responsive -->
         <div class="menuResponsive">
           <li class="dropdown">
             <div class="dropdown-content">
-              <a href="./index.html">Inicio</a>
+              <a href="./index.php">Inicio</a>
               <a href="./partidos.php?temporada=2024">Temporadas</a>
-              <a href="./clasificacion.php">Clasificación</a>
+              <a href="./clasificacion.php?temporada=2024">Clasificación</a>
               <a href="./noticias.html">Noticias</a>
               <a href="./resumenes.html">Resúmenes</a>
               <a href="./contacto.html">Contacto Web</a>
