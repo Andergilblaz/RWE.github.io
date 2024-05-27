@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="Scripts/scripts.js"></script>
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
+    
     <script>
         window.onload = function () {
             cargarTablaMenu();
@@ -25,12 +26,8 @@
             document.body.style.zoom = zoomLevel;
         };
     </script>
-    <style>
-        .team-logo {
-            width: 75px;
-            height: 75px;
-        }
-    </style>
+    
+    
 </head>
 
 <body>
@@ -192,5 +189,57 @@
         <footer id="footer"></footer>
     </div>
 </body>
+
+
+<style>
+        .team-logo {
+            width: 75px;
+            height: 75px;
+        }
+
+        @media screen and (max-width: 1275px) {
+            .chica {
+                display: none;
+            }
+            .chico {
+                display: none;
+            }
+        }
+
+        
+        @media screen and (max-width: 1000px) {
+         .cuadradoInfo {
+                margin-top: 100px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .chica {
+                float: none;
+                margin-top: 0;
+            }
+
+            .chico {
+                float: none;
+                margin-top: 10px;
+            }
+
+            .cuadradoInfo {
+                float: none;
+                margin: 0 auto;
+                width: 90%;
+                margin-top: 100px;
+            }
+
+            .dropdownNone {
+                float: none;
+                margin-bottom: 10px;
+            }
+
+            #tablaClasificacion {
+                overflow-x: auto;
+            }
+        }
+    </style>
 
 </html>
