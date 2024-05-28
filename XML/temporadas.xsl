@@ -12,7 +12,7 @@
             <xsl:for-each select="temporadas/temporada/jornadas/jornada">
                 <!-- Agregar una cabecera con el número de la jornada -->
                 <tr>
-                    <th colspan="7" style="font-size: 20px; background-color: #f2f2f2; padding: 10px; border-bottom: 1px solid #ccc; border-top-left-radius: 10px; border-top-right-radius: 10px;">Jornada <xsl:value-of select="numeroJornada"/></th>
+                    <th colspan="9" style="font-size: 20px; background-color: #f2f2f2; padding: 10px; border-bottom: 1px solid #ccc; border-top-left-radius: 10px; border-top-right-radius: 10px;">Jornada <xsl:value-of select="numeroJornada"/></th>
                 </tr>
                 <!-- Iterar sobre cada partido de la jornada -->
                 <xsl:for-each select="partidos/partido">
@@ -24,7 +24,9 @@
                             </a>
                         </td>
                         <td><xsl:value-of select="equipoLocal"/></td>
-                        <td><strong><xsl:value-of select="resultado"/></strong></td>
+                        <td><strong><xsl:value-of select="goleslocal"/></strong></td>
+                        <td> - </td>
+                        <td><strong><xsl:value-of select="golesvisitante"/></strong></td>
                         <td><xsl:value-of select="equipoVisitante"/></td>
                         <td>
                             <a href="equipos.php?{../../../@nombreTemporada}&escudo;={escudoVisitante}">
@@ -38,7 +40,7 @@
                 </xsl:for-each>
                 <!-- Agregar una fila con una celda vacía para crear un espacio entre las jornadas -->
                 <tr>
-                    <td style="height: 20px;" colspan="5"></td>
+                    <td style="height: 20px;" colspan="7"></td>
                 </tr>
             </xsl:for-each>
         </tbody>

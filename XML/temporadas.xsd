@@ -12,6 +12,7 @@
     <xs:element name="temporada">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="estado" type="xs:string"/>
                 <xs:element ref="equipos"/>
                 <xs:element ref="jornadas" minOccurs="0"/>
             </xs:sequence>
