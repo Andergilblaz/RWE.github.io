@@ -1,21 +1,27 @@
 <?php
-// Ruta del archivo XML
-$xmlFile = './XML/temporadas.xml';
-
 // Cargar el archivo XML
-$xml = simplexml_load_file($xmlFile) or die("Error: No se puede cargar el archivo XML");
+$xml = simplexml_load_file('./XML/temporadas.xml');
 
-// Extraer las temporadas
-$temporadas = [];
-foreach ($xml->temporada as $temporada) {
-    $id = (string) $temporada['id'];
-    $texto = (string) $temporada;
-    $temporadas[$id] = $texto;
+// Verificar si el archivo XML se cargó correctamente
+if ($xml === false) {
+    echo "Error al cargar el archivo XML.";
+    exit;
 }
 
-// Obtener la temporada seleccionada o la última del XML por defecto
-$temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : '2024';
-$temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id] : 'Temporada no encontrada';
+// Inicializar el array de temporadas
+$temporadas = [];
+
+// Iterar sobre todas las temporadas en el archivo XML
+foreach ($xml->temporadas->temporada as $temporada) {
+    // Obtener el id de la temporada
+    $id = (string) $temporada['id'];
+
+    // Agregar la temporada al array de temporadas
+    $temporadas[$id] = $id;
+}
+
+// Obtener el id de la temporada seleccionada
+$temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : null;
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +32,49 @@ $temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id
     <title>Resultados Waterpolo Español</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/jpg" href="Multimedia/Fotos/LogoWaterpolo.png" />
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/partidos.js"></script>
 </head>
+
+
+<script>
+    window.onload = function () {
+        cargarTablaMenu();
+        cargarFooter();
+        cargarResultadosURL();
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
+
+    };
+
+    function cargarResultadosURL() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var temporadaParam = urlParams.get('temporada');
+        if (temporadaParam) {
+            cargarResultadosTemporada(temporadaParam);
+            document.querySelector('select[name="temporada"]').value = temporadaParam;
+        } else {
+            // Cargar resultados por defecto si no se especifican parámetros de temporada y jornada
+            cargarResultadosTemporada();
+        }
+    }
+
+    function smoothScroll(offset) {
+        window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 <body>
     <div class="tablaMenu">
@@ -34,93 +82,43 @@ $temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id
     </div>
 
     <article>
-        <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
-        <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
+        <div class="fotospartidos">
+            <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
+            <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 120px;">
+        </div>
         <div class="cuadradoInfo">
-            <div class="dropdownNone" style="float:left;"> <!--Botón Temporadas-->
-                <li class="dropdown"
-                    style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large;">
-                    <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;"
-                        width="10px">
-                        <?php foreach ($temporadas as $id => $texto): ?>
-                            <a href="./partidos.php?temporada=<?php echo $id; ?>"><?php echo $texto; ?></a>
+            <form action="./partidos.php" method="GET"> <!-- Formulario para seleccionar la temporada -->
+                <div class="dropdownNone" style="float:left; margin-top: 25px;margin-left:-75px;">
+                    <!--Selector de Temporadas-->
+                    <select name="temporada" class="dropbtn" onchange="this.form.submit()"
+                        style="font-size:20px;border-radius:5px;">
+                        <?php foreach ($temporadas as $id => $nombre): ?>
+                            <option value="<?php echo $id; ?>" <?php if ($id == $temporada_id)
+                                   echo 'selected'; ?>>
+                                <?php echo $nombre; ?>
+                            </option>
                         <?php endforeach; ?>
-                    </div>
-                    <button id="botonTemporada" class="dropbtn"
-                        style="font-size: large; border-radius: 5px;"><?php echo $temporada_texto; ?>↓</button>
-                </li>
-            </div>
-
-            <div class="dropdownNone" style="float:right; margin-right:-150px"> <!--Botón Jornadas-->
-                <li class="dropdown"
-                    style="list-style: none; border-radius: 12px; margin-top: 20px; margin-left: -130px; font-size: large; ">
-                    <div class="dropdown-content" style="margin-top: -569px; margin-right: 10px; text-align: center;"
-                        width="10px">
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(0)">1</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(400)">2</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(800)">3</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(1100)">4</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(1500)">5</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(1900)">6</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(2200)">7</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(2600)">8</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(3000)">9</button>
-                        </div>
-                        <div class="button-row">
-                            <button class="botonJornadas" onclick="smoothScroll(3600)">10</button>
-                        </div>
-
-                        <style>
-                            /*Estilos en este documento para evitar errores*/
-                            .botonJornadas {
-                                background-color: #324679;
-                                color: white;
-                                width: 100%;
-                                cursor: pointer;
-                                border: none;
-                                font-size: large;
-                                border-radius: 5px;
-                            }
-
-                            .botonJornadas:hover {
-                                background-color: white;
-                                color: #324679;
-                                border: 1px solid #324679;
-                            }
-                        </style>
-                        <script>
-                            function smoothScroll(offset) {
-                                window.scrollBy({
-                                    top: offset,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        </script>
-                    </div>
-                    <button id="botonTemporada" class="dropbtn"
-                        style="font-size: large; border-radius: 5px;">Jornada↓</button>
-                </li>
+                    </select>
+                </div>
+            </form>
+            <div class="dropdownNone" style="position: sticky; margin-top: 25px; float:right; margin-right:-100px;">
+                <!--Botón Jornadas-->
+                <select name="jornada" class="dropbtn" onchange="smoothScroll(this.value)" style="border-radius:5px;">
+                    <option value="0">Jornada 1</option>
+                    <option value="400">Jornada 2</option>
+                    <option value="800">Jornada 3</option>
+                    <option value="1100">Jornada 4</option>
+                    <option value="1500">Jornada 5</option>
+                    <option value="1900">Jornada 6</option>
+                    <option value="2200">Jornada 7</option>
+                    <option value="2600">Jornada 8</option>
+                    <option value="3000">Jornada 9</option>
+                    <option value="3600">Jornada 10</option>
+                </select>
             </div>
 
             <br><br><br>
-            <div id="tabla-container" class="contenedorGeneralPartidos">
+            <div id="tabla-container" class="contenedorGeneralPartidos" style="margin-top:-50px">
                 <!-- Aquí se generaran los partidos -->
             </div>
             <br><br>
@@ -132,27 +130,61 @@ $temporada_texto = isset($temporadas[$temporada_id]) ? $temporadas[$temporada_id
         <footer id="footer"></footer>
     </div>
 
-    <script src="Scripts/scripts.js"></script>
-    <script src="Scripts/partidos.js"></script>
-    <script>
-        window.onload = function () {
-            cargarTablaMenu();
-            cargarFooter();
-            cargarResultadosURL();
-        };
 
-        function cargarResultadosURL() {
-            var urlParams = new URLSearchParams(window.location.search);
-            var temporadaParam = urlParams.get('temporada');
-            if (temporadaParam) {
-                cargarResultadosTemporada(temporadaParam);
-                document.getElementById('botonTemporada').textContent = temporadaParam + '↓';
-            } else {
-                // Cargar resultados por defecto si no se especifican parámetros de temporada y jornada
-                cargarResultadosTemporada();
-            }
+<style>
+    /* Add CSS styles for responsive layout */
+    @media only screen and (max-width: 600px) {
+        /* Styles for screens smaller than 600px */
+        .fotospartidos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    </script>
-</body>
-
+        .chica,
+        .chico {
+            float: none;
+            margin-top: 0;
+            width: 150px; /* Adjust the width of the logos */
+        }
+        .cuadradoInfo {
+            margin-top: 20px;
+        }
+        .dropdownNone {
+            float: none;
+            margin: 0 auto;
+        }
+        .contenedorGeneralPartidos {
+            margin-top: 0;
+        }
+    }
+</style>
+<style>
+    /* Add CSS styles for responsive layout */
+    @media only screen and (max-width: 600px) {
+        /* Styles for screens smaller than 600px */
+        .fotospartidos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chica,
+        .chico {
+            float: none;
+            margin-top: 0;
+            width: 150px; /* Adjust the width of the logos */
+        }
+        .cuadradoInfo {
+            margin-top: 20px;
+        }
+        .dropdownNone {
+            float: none;
+            margin: 0 auto;
+            display: flex; /* Add this line */
+            justify-content: space-around; /* Add this line */
+        }
+        .contenedorGeneralPartidos {
+            margin-top: 0;
+        }
+    }
+</style>
 </html>

@@ -56,67 +56,29 @@ function cargarNoticias() { //Funcion cargar Footer
         });
 }
 
-function cargarPP() {
-    let partidoIndex = 1; // Índice del primer partido a cargar
-
-    // Función para cargar el próximo partido
-    const cargarProximoPartido = () => {
-        fetch('CargasDinamicas/proximosPartidos.html') // Busca el archivo de partidos
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const htmlDocument = parser.parseFromString(data, 'text/html');
-                const proximoPartidoContainer = document.getElementById('proximoPartido1');
-
-                // Obtener el contenido del próximo partido basado en el índice
-                const proximoPartidoContent = htmlDocument.getElementById(`proximoPartido${partidoIndex}`).innerHTML;
-
-                // Reemplazar el contenido del contenedor actual con el próximo partido
-                proximoPartidoContainer.innerHTML = proximoPartidoContent;
-
-                // Incrementar el índice del partido para cargar el siguiente en la próxima iteración
-                partidoIndex++;
-
-                // Obtener el número total de partidos disponibles (ajusta esto según tu estructura)
-                const totalPartidos = 2; // Por ejemplo, si tienes proximoPartido1, proximoPartido2, proximoPartido3
-
-                // Si llegamos al final de los partidos, reiniciar al primero
-                if (partidoIndex > totalPartidos) {
-                    partidoIndex = 1; // Reiniciar al primer partido
-                }
-            })
-            .catch(error => console.error('Error al cargar el próximo partido:', error));
-    };
-
-    // Llamar a cargarProximoPartido inicialmente
-    cargarProximoPartido();
-
-    // Establecer un intervalo para cargar el próximo partido cada 5 segundos
-    setInterval(cargarProximoPartido, 5000); // Cargar el próximo partido cada 5 segundos (5000 milisegundos)
-}
-
-function cargarTablaClasificacionPreview() {
-    fetch('CargasDinamicas/tablaClasificacion.html')
+function cargarPP1() {
+    fetch('CargasDinamicas/proximosPartidos.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
             const htmlDocument = parser.parseFromString(data, 'text/html');
-            const tablaClasificacionPreview = htmlDocument.getElementById('tablaClasificacionPreview').innerHTML; //Le pones el id que quieras coger
-            document.getElementById('tablaClasificacionPreview').innerHTML = tablaClasificacion; //Pone el contenido donde debe
+            const proximoPartido1 = htmlDocument.getElementById('proximoPartido1').innerHTML;
+            document.getElementById('proximoPartido1').innerHTML = proximoPartido1;
         });
+
 }
 
-function cargarTablaClasificacion() {
-    fetch('CargasDinamicas/tablaClasificacion.html')
+function cargarPP2() {
+    fetch('CargasDinamicas/proximosPartidos.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
             const htmlDocument = parser.parseFromString(data, 'text/html');
-            const tablaClasificacion = htmlDocument.getElementById('tablaClasificacion').innerHTML; //Le pones el id que quieras coger
-            document.getElementById('tablaClasificacion').innerHTML = tablaClasificacion; //Pone el contenido donde debe
+            const proximoPartido2 = htmlDocument.getElementById('proximoPartido2').innerHTML;
+            document.getElementById('tablaClasificacion').innerHTML = proximoPartido2;
         });
-}
 
+}
 
 // Función para cargar y mostrar el contenido del equipo a seleccionar
 function cargarSeleccionarEquipo() {
@@ -245,7 +207,7 @@ function cerrarSesion() {
     alert('Sesión cerrada correctamente.'); //Manda un mensaje de que se ha cerrado sesión
 
     window.sessionStorage.clear(); // Borra el sessionStorage
-    window.location.href = './index.html'; // Redirige al index
+    window.location.href = './index.php'; // Redirige al index
 }
 
 

@@ -15,11 +15,19 @@
     window.onload = function () {
 
         cargarTablaMenu();
-        cargarPP();
         cargarFooter();
         cargarNoticias();
-        cargarTablaClasificacion();
+         // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+         var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
 
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
     }
 </script>
 
@@ -32,15 +40,16 @@
     </div>
 
     <article> <!--CuadradoInfo-->
-       
+
         <div class="cuadradoInfo" style="height: 1100px;"> <!-- Inicio del div del cuadrado -->
 
 
 
             <!-- Noticias destacadas -->
             <section>
-                <h3 class="scrollh3" style="text-decoration: underline; text-shadow: 2px 2px 4px #504f4f;">Noticias Waterpolo Español</h3>
-                
+                <h3 class="scrollh3" style="text-decoration: underline; text-shadow: 2px 2px 4px #504f4f;">Noticias
+                    Waterpolo Español</h3>
+
                 <div id="noticias" class="noticias">
                     <!-- Aqui iran las noticias -->
                 </div>

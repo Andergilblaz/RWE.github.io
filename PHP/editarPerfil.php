@@ -9,7 +9,7 @@ if (!isset($_SESSION['usuario'])) {
 }
 
 // Ruta del archivo XML de usuarios
-$xmlFile = "../XML/usuarios.xml";
+$xmlFile = "../XML/temporadas.xml";
 
 // Función para cargar el archivo XML
 function loadXML($file)
@@ -33,11 +33,11 @@ function saveXML($xml, $file)
 // Función para buscar y actualizar el usuario en el XML
 function updateUserData($xml, $username, $newUsername, $newPassword)
 {
-    foreach ($xml->cuenta as $cuenta) {
+    foreach ($xml->usuarios->cuenta as $cuenta) {
         if ($cuenta->usuario == $username) {
             $cuenta->usuario = $newUsername;
             $cuenta->contraseña = $newPassword;
-            saveXML($xml, "../XML/usuarios.xml");
+            saveXML($xml, "../XML/temporadas.xml");
             return true;
         }
     }
@@ -57,9 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Actualizar los datos del usuario
     if (updateUserData($xml, $oldUsername, $newUsername, $newPassword)) {
         // Actualizar la sesión si se cambió el nombre de usuario
-        $_SESSION['usuario'] = $newUsername;                   //↓Dejamos espacios ya que no se puede hacer por código↓
-        $alertMessage = "Los datos se han actualizado correctamente.                                         Nuevo usuario: $newUsername y Nueva contraseña: $newPassword";
-        echo "<script>alert('$alertMessage'); window.location.href='../index.html';</script>";
+        $_SESSION['usuario'] = $newUsername;
+        $alertMessage = "Los datos se han actualizado correctamente. Nuevo usuario: $newUsername y Nueva contraseña: $newPassword";
+        echo "<script>alert('$alertMessage'); window.location.href='../index.php';</script>";
         exit();
     } else {
         $errorMessage = "Error: No se pudo encontrar al usuario.";
@@ -108,7 +108,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        
     }
 
     div {
@@ -155,7 +154,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         width: 100%;
         height: 50px;
     }
-    
 
     input[type="submit"]:hover {
         background-color: #555;

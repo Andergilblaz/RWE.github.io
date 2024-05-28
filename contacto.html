@@ -12,8 +12,19 @@
 
 <script>
     window.onload = function () {
-    cargarTablaMenu();
-    cargarFooter();
+        cargarTablaMenu();
+        cargarFooter();
+        // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
+        var scale = window.devicePixelRatio * 100;
+        var zoomLevel = 1.0;
+
+        if (scale === 100) {
+            zoomLevel = 1.25;
+        } else if (scale === 125) {
+            zoomLevel = 1.0;
+        }
+
+        document.body.style.zoom = zoomLevel;
     }
 </script>
 
@@ -76,11 +87,6 @@
             const correo = document.getElementById('correo').value.trim();
             const mensaje = document.getElementById('mensaje').value.trim();
 
-            // Verificar que los campos no estén vacíos
-            if (nombre === '' || apellidos === '' || correo === '' || mensaje === '') {
-                alert('Por favor, complete todos los campos del formulario.');
-                return false; // Evita que el formulario se envíe
-            }
 
             // Si todos los campos están completos, se permite enviar el formulario
             return true;

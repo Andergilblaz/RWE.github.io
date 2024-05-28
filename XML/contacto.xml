@@ -3,7 +3,6 @@
 <?xml-model href="contacto.xsd" ?>
 <formulario>
 
-
     <envio>
         <nombre>Marrano</nombre>
         <apellidos>Rajoy</apellidos>
@@ -17,28 +16,41 @@
         </mensaje>
     </envio>
 
+    
 
     <envio>
-        <nombre>Jose Luis</nombre>
-        <apellidos>Romero Blanco</apellidos>
-        <correo>ana.martinez@ejemplo.com</correo>
-        <mensaje>Buenas tardes,
-      
-        Me gustaría saber si es posible comprar entradas para el próximo partido de waterpolo que se disputará el domingo 18 de junio. ¿Dónde puedo comprarlas y cuál es el precio?
-      
-        También me gustaría saber si hay algún tipo de descuento para grupos o familias.
-      
-        Muchas gracias por su información.
-      
-        Un cordial saludo,
-      
-        Ana Martínez</mensaje>
+        <nombre>Lionel</nombre>
+        <apellidos>Messi</apellidos>
+        <correo>lionel@example.com</correo>
+        <mensaje>Hola, soy Lionel Messi.</mensaje>
     </envio>
 
+    <envio>
+        <nombre>CRISTIANO</nombre>
+        <apellidos>RONALDO</apellidos>
+        <correo>cristiano@example.com</correo>
+        <mensaje>Hola, soy Cristiano Ronaldo.</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>Thomas</nombre>
+        <apellidos>Müller</apellidos>
+        <correo>thomas@example.com</correo>
+        <mensaje>¡Hola! Soy Thomas Müller. ¿Cómo estás?</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>John</nombre>
+        <apellidos>Doe Smith</apellidos>
+        <correo>john@example.com</correo>
+        <mensaje>Hola, soy John Doe Smith.</mensaje>
+    </envio>
 
+    <envio>
+        <nombre>María</nombre>
+        <apellidos>Gómez</apellidos>
+        <correo>maria_gomez@example.com</correo>
+        <mensaje>Hola, soy María Gómez.</mensaje>
+    </envio>
 
-
-
-</formulario>
+<envio><nombre>ander</nombre><apellidos>a</apellidos><correo>a@gmail.com</correo><mensaje>aaaa</mensaje></envio></formulario>
