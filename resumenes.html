@@ -15,10 +15,7 @@
     window.onload = function () {
 
         cargarTablaMenu();
-        cargarPP1();
-        cargarPP2();
         cargarFooter();
-        cargarNoticias();
 
         // Detectar la escala de la pantalla y ajustar el zoom para la correcta visualización
         var scale = window.devicePixelRatio * 100;
@@ -51,23 +48,24 @@
         <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 100px;">
         <div class="cuadradoInfo" style="height: 800px;"> <!-- Inicio del div del cuadrado -->
 
-            <div>
+            <div class="videoresumen">
                 <h1 style="margin-top: -125px; text-decoration: underline;">Resumen más reciente</h1>
 
 
-                <iframe width="560" height="315" style="margin-left: 175px;" src="https://www.youtube.com/embed/68cMKxHYJvM?si=OAMW1H8cLWCWvARj"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="560" height="315" style="margin-left: 175px;"
+                    src="https://www.youtube.com/embed/68cMKxHYJvM?si=OAMW1H8cLWCWvARj" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
 
-            <div>
+            <div class="audioresumen">
                 <h1 style="margin-top: -125px; text-decoration: underline;">Himno nacional</h1>
                 <audio controls style="margin-left: 450px;margin-top: 20px;">
-                    <source src="./Multimedia/Audios/Himno.ogg" type="audio/ogg"/>
-                    <source src="./Multimedia/Audios/Himno.mp3" type="audio/mp3"/>
-                 </audio>
+                    <source src="./Multimedia/Audios/Himno.ogg" type="audio/ogg" />
+                    <source src="./Multimedia/Audios/Himno.mp3" type="audio/mp3" />
+                </audio>
             </div>
         </div> <!-- Fin del div del cuadrado -->
     </article>
@@ -78,29 +76,5 @@
     </div>
 </body>
 
-<style>
-    /* Add CSS styles for responsive layout */
-    @media screen and (max-width: 768px) {
-        .chica,
-        .chico {
-            width: 100%;
-            float: none;
-            margin-top: 0;
-        }
 
-        .cuadradoInfo {
-            height: auto;
-        }
-
-        iframe {
-            width: 100%;
-            margin-left: 0;
-        }
-
-        audio {
-            margin-left: -400px;
-            margin-top: 20px;
-        }
-    }
-</style>
 </html>
