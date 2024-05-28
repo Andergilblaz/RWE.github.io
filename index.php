@@ -71,7 +71,7 @@
     <article> <!--CuadradoInfo-->
         <img src="Multimedia/Fotos/Chica.png" class="chica" width="300px" style="float: left; margin-top: 130px;">
         <img src="Multimedia/Fotos/Chico.png" class="chico" width="300px" style="float: right; margin-top: 100px;">
-        <div class="cuadradoInfo" style="height: 2350px;"> <!-- Inicio del div del cuadrado -->
+        <div class="cuadradoInfo" style="height: <?php echo (isset($_SERVER['HTTP_USER_AGENT']) && strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') !== false) ? '3700px' : '2350px'; ?>"> <!-- Inicio del div del cuadrado -->
 
 
             <div id="textoScroll"> <!--textoScroll-->
@@ -129,8 +129,25 @@
                         </article>
                     </div>
 
+                    <style>
+                        /* Estilo para pantallas de tamaño normal */
+                        #tablaClasificacion {
+                            margin-left: 40px;
+                            margin-top: 77px;
+                        }
+                    
+                        /* Estilo para pantallas de tamaño móvil (menos de 600px de ancho) */
+                        @media screen and (max-width: 600px) {
+                            #tablaClasificacion {
+                                margin-left: 5px;
+                            }
+                           
+                        }
+
+                    </style>
+                    
                     <!-- El texto de Clasificación esta en el doc tablaClasificacion por motivos de estilos -->
-                    <div style="margin-left: 40px; margin-top: 77px;" id="tablaClasificacion"> <!--tablaClasificación-->
+                    <div id="tablaClasificacion"> <!--tablaClasificación-->
                         <!-- Aqui se mostrara la clasificación -->
                     </div>
 
@@ -146,7 +163,7 @@
             <section>
                 <h3 class="scrollh3" style="font-style: underline;">Noticias Destacadas</h3>
                 <hr>
-                <div id="noticias" class="noticias">
+                <div id="noticias" class="noticias" style="display: flex; flex-direction: column; align-items: center;"></div>
                     <!-- Aqui iran las noticias -->
                 </div>
             </section> <br>

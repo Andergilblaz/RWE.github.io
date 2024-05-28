@@ -131,6 +131,60 @@ $temporada_id = isset($_GET['temporada']) ? $_GET['temporada'] : null;
     </div>
 
 
-</body>
-
+<style>
+    /* Add CSS styles for responsive layout */
+    @media only screen and (max-width: 600px) {
+        /* Styles for screens smaller than 600px */
+        .fotospartidos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chica,
+        .chico {
+            float: none;
+            margin-top: 0;
+            width: 150px; /* Adjust the width of the logos */
+        }
+        .cuadradoInfo {
+            margin-top: 20px;
+        }
+        .dropdownNone {
+            float: none;
+            margin: 0 auto;
+        }
+        .contenedorGeneralPartidos {
+            margin-top: 0;
+        }
+    }
+</style>
+<style>
+    /* Add CSS styles for responsive layout */
+    @media only screen and (max-width: 600px) {
+        /* Styles for screens smaller than 600px */
+        .fotospartidos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chica,
+        .chico {
+            float: none;
+            margin-top: 0;
+            width: 150px; /* Adjust the width of the logos */
+        }
+        .cuadradoInfo {
+            margin-top: 20px;
+        }
+        .dropdownNone {
+            float: none;
+            margin: 0 auto;
+            display: flex; /* Add this line */
+            justify-content: space-around; /* Add this line */
+        }
+        .contenedorGeneralPartidos {
+            margin-top: 0;
+        }
+    }
+</style>
 </html>

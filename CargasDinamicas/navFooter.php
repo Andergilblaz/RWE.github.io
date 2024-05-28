@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Inicia la sesión 
-$fotoPerfil = "./Multimedia/Fotos/Usuarios/LogoWaterpoloAdmin.png"; 
+$fotoPerfil = "./Multimedia/Fotos/LogoWaterpoloAdmin.png"; 
 
 ?>
 
@@ -25,10 +25,10 @@ $fotoPerfil = "./Multimedia/Fotos/Usuarios/LogoWaterpoloAdmin.png";
         <!-- Si no has iniciado sesión -->
         <div class="menuUsuario" id="menuUsuario">
           <button class="menuUsuario-boton" style="vertical-align: center;"><img id="imagenPerfil"
-              src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" width="40px"
+              src="./Multimedia/Fotos/sinImagen.jpg" width="40px"
               style="border-radius: 50%; margin-top: 5px;"></button>
           <div class="menuUsuario-contenido" style="margin-top: -10px;">
-            <img src="./Multimedia/Fotos/Usuarios/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
+            <img src="./Multimedia/Fotos/sinImagen.jpg" alt="Imagen usuario hover" width="75px">
             <p style="color: black; text-align: center; font-size: larger;">¡Bienvenido! </p>
             <p style="color: rgb(56, 56, 56); text-align: center; margin-top: -15px;">Por favor, Inicia sesión</p>
             <a href="./inicioDeSesion.html">Iniciar Sesión</a>
