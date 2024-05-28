@@ -1429,9 +1429,9 @@
                         </partido>
                         <partido>
                             <equipoLocal>Marbella</equipoLocal>
-                            <equipoVisitante>Marbella</equipoVisitante>
+                            <equipoVisitante>CN Atletic Barceloneta</equipoVisitante>
                             <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoLocal>
-                            <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoVisitante>
+                            <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Atletic Barceloneta.png</escudoVisitante>
                             <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                             <goleslocal>5</goleslocal>
                             <golesvisitante>11</golesvisitante>
@@ -1620,9 +1620,9 @@
                             <golesvisitante>3</golesvisitante>
                         </partido>
                         <partido>
-                            <equipoLocal>Marbella</equipoLocal>
+                            <equipoLocal>CN Catalunya</equipoLocal>
                             <equipoVisitante>Marbella</equipoVisitante>
-                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoLocal>
+                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CN Catalunya.png</escudoLocal>
                             <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoVisitante>
                             <fechaPartido>2015-05-07 17:00:00</fechaPartido>
                             <goleslocal>7</goleslocal>
@@ -1643,9 +1643,9 @@
                             <golesvisitante>14</golesvisitante>
                         </partido>
                         <partido>
-                            <equipoLocal>Marbella</equipoLocal>
+                            <equipoLocal>CE Mediterrani</equipoLocal>
                             <equipoVisitante>Marbella</equipoVisitante>
-                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoLocal>
+                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CE Mediterrani.png</escudoLocal>
                             <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoVisitante>
                             <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                             <goleslocal>5</goleslocal>
@@ -1666,9 +1666,9 @@
                     <numeroJornada>9</numeroJornada>
                     <partidos>
                         <partido>
-                            <equipoLocal>Marbella</equipoLocal>
+                            <equipoLocal>CDN Boadilla</equipoLocal>
                             <equipoVisitante>Marbella</equipoVisitante>
-                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoLocal>
+                            <escudoLocal>./Multimedia/Fotos/Temporadas/2024/Escudos/CDN Boadilla.png</escudoLocal>
                             <escudoVisitante>./Multimedia/Fotos/Temporadas/2024/Escudos/Marbella.png</escudoVisitante>
                             <fechaPartido>2015-05-07 20:00:00</fechaPartido>
                             <goleslocal>9</goleslocal>
